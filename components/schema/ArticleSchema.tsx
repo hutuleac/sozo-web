@@ -1,0 +1,42 @@
+import { site } from "@/lib/site";
+
+type Props = {
+  title: string;
+  description: string;
+  slug: string;
+  datePublished: string;
+  image: string;
+};
+
+export function ArticleSchema({ title, description, slug, datePublished, image }: Props) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    image: [image.startsWith("http") ? image : `${site.url}${image}`],
+    datePublished,
+    dateModified: datePublished,
+    author: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${site.url}/#business`,
+      name: site.legalName,
+      url: site.url,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${site.url}/blog/${slug}`,
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}

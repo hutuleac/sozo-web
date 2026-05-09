@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+.vercel/output/
+
+# Cloudflare build artifacts
+.worker-next/
+
+# Environment variables — set these in Cloudflare Pages dashboard
+.env
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
