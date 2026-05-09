@@ -168,14 +168,20 @@ export default function DespreNoiPage() {
               <div className="font-mono text-xs uppercase tracking-wider text-text-muted mb-2">
                 Proprietar · Inginer
               </div>
-              <h3 className="text-h3 text-text-primary mb-3">Numele proprietarului</h3>
+              <h3 className="text-h3 text-text-primary mb-3">Lucian Bercea</h3>
               <p className="text-text-secondary leading-relaxed mb-5">
-                12+ ani experiență directă în prelucrare metal CNC. Implicat personal în fiecare
-                consultare tehnică — semnalează problemele de design, recomandă optimizări,
-                validează toleranțele înainte de tăiere.
+                Peste 12 ani de experiență în conducerea directă a producției industriale de
+                prelucrare tablă de precizie — inox, oțel, aluminiu, cupru și aliaje speciale.
+                A gestionat întreg lanțul: de la prima discuție cu clientul și validarea designului,
+                ofertare și prototipuri, până la implementarea fluxului de producție cu 50+ oameni
+                și 20+ tipuri de echipamente, inclusiv acoperiri metalice, galvanizare, vopsire,
+                sudură, asamblare și control strict de calitate.
               </p>
-              <p className="text-xs text-text-muted font-mono">
-                Imagine și biografie de actualizat — placeholder.
+              <p className="text-text-secondary leading-relaxed">
+                Pasionat de inginerie în toate formele ei — proiectare, execuție, flux tehnologic,
+                optimizare proces. Implicat personal în fiecare consultare tehnică: identifică
+                problemele de design înainte de tăiere, recomandă soluții mai eficiente și
+                validează toleranțele pentru serii mici, mijlocii sau repere repetitive.
               </p>
             </div>
           </div>
