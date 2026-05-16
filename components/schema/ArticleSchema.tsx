@@ -6,10 +6,11 @@ type Props = {
   description: string;
   slug: string;
   datePublished: string;
+  dateModified?: string;
   image: string;
 };
 
-export function ArticleSchema({ title, description, slug, datePublished, image }: Props) {
+export function ArticleSchema({ title, description, slug, datePublished, dateModified, image }: Props) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -17,7 +18,7 @@ export function ArticleSchema({ title, description, slug, datePublished, image }
     description,
     image: [image.startsWith("http") ? image : `${site.url}${image}`],
     datePublished,
-    dateModified: datePublished,
+    dateModified: dateModified ?? datePublished,
     author: {
       "@type": "Organization",
       name: site.name,

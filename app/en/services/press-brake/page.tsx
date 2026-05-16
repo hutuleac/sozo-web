@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   title: "CNC Press Brake Bending Iași — Precision Sheet Metal",
   description:
     "CNC press brake bending in Iași, Romania. 160T hydraulic press, 4-axis CNC, steel/stainless/aluminium. ±0.1° repeatability. Quote same day. ☎ +40 732 034 386",
-  alternates: { canonical: URL_PATH },
+  alternates: {
+    canonical: URL_PATH,
+    languages: { "en": URL_PATH, "ro": "/servicii/prelucrare-abkant", "x-default": "/servicii/prelucrare-abkant" },
+  },
   openGraph: {
     title: "CNC Press Brake Bending Iași | SOZO PROJECT",
     description: "160T hydraulic press, 4-axis CNC. Complex profiles with ±0.1° repeatability from the first part.",

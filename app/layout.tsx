@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.name }],
   alternates: {
     canonical: "/",
-    languages: { "ro-RO": "/", "x-default": "/" },
+    languages: { "ro": "/", "en": "/en", "x-default": "/" },
   },
   openGraph: {
     type: "website",

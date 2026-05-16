@@ -16,6 +16,7 @@ export type Post = {
   metaTitle: string;
   metaDescription: string;
   datePublished: string; // ISO yyyy-mm-dd
+  dateModified?: string; // ISO yyyy-mm-dd — defaults to datePublished if absent
   readMin: number;
   hero: string; // image URL
   heroAlt: string;

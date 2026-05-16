@@ -14,6 +14,7 @@ const posts: Post[] = [
     metaDescription:
       "Comparație completă debitare laser CNC vs plasma CNC: toleranțe, materiale, costuri, aplicații. Ghid tehnic pentru cumpărători B2B din industrie.",
     datePublished: "2026-05-09",
+    dateModified: "2026-05-16",
     readMin: 6,
     hero: images.heroLaser,
     heroAlt: "Comparație debitare laser CNC vs plasma CNC — atelier industrial",
@@ -84,6 +85,7 @@ const posts: Post[] = [
     metaDescription:
       "Toleranțe standard și de precizie pentru debitare laser CNC pe oțel, inox, aluminiu. Date reale de la Mitsubishi ML3015EX. Cum specifici corect în desen.",
     datePublished: "2026-05-09",
+    dateModified: "2026-05-16",
     readMin: 7,
     hero: images.precisionEdge,
     heroAlt: "Detaliu margine debitată laser pe inox 304 — toleranță ±0.05mm",
@@ -166,6 +168,7 @@ const posts: Post[] = [
     metaDescription:
       "Ghid complet pentru pregătirea fișierelor DXF pentru debitare laser CNC. Layere, scara, contururi închise, erori frecvente. Checklist înainte de trimitere.",
     datePublished: "2026-05-09",
+    dateModified: "2026-05-16",
     readMin: 8,
     hero: images.engineering,
     heroAlt: "Inginer pregătind fișier DXF pentru debitare laser în software CAD",
@@ -268,6 +271,7 @@ const posts: Post[] = [
     metaDescription:
       "Ghid complet de materiale pentru debitare laser CNC: oțel carbon OL37/OL52, inox 304/316, aluminiu 5052/6061. Grosimi maxime, toleranțe, recomandări per aplicație.",
     datePublished: "2026-05-09",
+    dateModified: "2026-05-16",
     readMin: 8,
     hero: images.steelSheet,
     heroAlt: "Tablă oțel pregătită pentru debitare laser CNC, atelier industrial",

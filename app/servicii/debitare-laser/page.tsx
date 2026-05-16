@@ -17,7 +17,10 @@ export const metadata: Metadata = {
   title: "Debitare Laser CNC Iași — Mitsubishi ML3015EX",
   description:
     "Servicii debitare laser CNC în Iași. Mitsubishi ML3015EX, tablă oțel până la 20mm, inox/aluminiu până la 10mm, toleranță ±0.05mm. Ofertă în aceeași zi. ☎ +40 732 034 386",
-  alternates: { canonical: URL_PATH },
+  alternates: {
+    canonical: URL_PATH,
+    languages: { "ro": URL_PATH, "en": "/en/services/laser-cutting", "x-default": URL_PATH },
+  },
   openGraph: {
     title: "Debitare Laser CNC Iași | SOZO PROJECT",
     description:

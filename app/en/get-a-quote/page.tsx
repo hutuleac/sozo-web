@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "Get a Quote — CNC Laser Cutting & Press Brake",
   description:
     "Send your file (DXF, DWG, STEP, PDF) and receive a quote for CNC laser cutting or press brake bending the same day. SOZO PROJECT Iași, Romania.",
-  alternates: { canonical: "/en/get-a-quote" },
+  alternates: {
+    canonical: "/en/get-a-quote",
+    languages: { "en": "/en/get-a-quote", "ro": "/cere-oferta", "x-default": "/cere-oferta" },
+  },
 };
 
 const benefits = [

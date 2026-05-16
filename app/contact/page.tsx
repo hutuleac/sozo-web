@@ -9,7 +9,10 @@ import { site, telLink, mailLink, whatsappLink, mapsLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: `Contact — ${site.phoneDisplay}`,
   description: `Contactează SOZO PROJECT pentru debitare laser și abkant CNC în Iași. Tel: ${site.phoneDisplay}. Email: ${site.email}. Program: L–S 07:00–20:00.`,
-  alternates: { canonical: "/contact" },
+  alternates: {
+    canonical: "/contact",
+    languages: { "ro": "/contact", "en": "/en/contact", "x-default": "/contact" },
+  },
 };
 
 export default function ContactPage() {

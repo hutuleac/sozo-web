@@ -9,7 +9,10 @@ import { site, telLink, mailLink, whatsappLinkEN, mapsLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: `Contact SOZO PROJECT — ${site.phoneDisplay}`,
   description: `Contact SOZO PROJECT for CNC laser cutting and press brake bending in Iași, Romania. Phone: ${site.phoneDisplay}. Email: ${site.email}. Mon–Sat 07:00–20:00.`,
-  alternates: { canonical: "/en/contact" },
+  alternates: {
+    canonical: "/en/contact",
+    languages: { "en": "/en/contact", "ro": "/contact", "x-default": "/contact" },
+  },
 };
 
 export default function EnContactPage() {

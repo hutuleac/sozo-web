@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   title: "CNC Laser Cutting Iași — Mitsubishi ML3015EX",
   description:
     "CNC fiber laser cutting services in Iași, Romania. Mitsubishi ML3015EX, steel up to 20mm, stainless/aluminium up to 10mm, ±0.05mm tolerance. Quote same day. ☎ +40 732 034 386",
-  alternates: { canonical: URL_PATH },
+  alternates: {
+    canonical: URL_PATH,
+    languages: { "en": URL_PATH, "ro": "/servicii/debitare-laser", "x-default": "/servicii/debitare-laser" },
+  },
   openGraph: {
     title: "CNC Laser Cutting Iași | SOZO PROJECT",
     description:

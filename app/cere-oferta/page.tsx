@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "Cere Ofertă Personalizată",
   description:
     "Trimite-ne fișierul tău (DXF, DWG, STEP, PDF) și primești ofertă pentru debitare laser sau abkant CNC în aceeași zi. SOZO PROJECT Iași.",
-  alternates: { canonical: "/cere-oferta" },
+  alternates: {
+    canonical: "/cere-oferta",
+    languages: { "ro": "/cere-oferta", "en": "/en/get-a-quote", "x-default": "/cere-oferta" },
+  },
 };
 
 const benefits = [

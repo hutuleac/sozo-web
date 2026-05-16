@@ -12,7 +12,7 @@ export function AboutPageSchema() {
       "@id": `${site.url}/#business`,
       name: site.legalName,
       legalName: site.legalName,
-      foundingDate: "2021",
+      foundingDate: "2021-01-01",
       url: site.url,
       vatID: site.cui,
       taxID: site.cui,

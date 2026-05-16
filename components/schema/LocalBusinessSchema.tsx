@@ -11,7 +11,7 @@ export function LocalBusinessSchema() {
     url: site.url,
     telephone: site.phone,
     email: site.email,
-    image: `${site.url}/og-default.jpg`,
+    image: `${site.url}/opengraph-image`,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -33,7 +33,7 @@ export function LocalBusinessSchema() {
         closes: "20:00",
       },
     ],
-    sameAs: [site.socials.facebook],
+    sameAs: [site.socials.facebook, site.maps],
     areaServed: [
       { "@type": "City", name: "Iași" },
       { "@type": "AdministrativeArea", name: "Moldova, România" },

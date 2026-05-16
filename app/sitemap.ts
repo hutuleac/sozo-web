@@ -4,7 +4,8 @@ import posts from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const staticPages = [
+
+  const roPages = [
     { path: "/", priority: 1.0, changeFrequency: "weekly" as const },
     { path: "/servicii/debitare-laser", priority: 0.9, changeFrequency: "monthly" as const },
     { path: "/servicii/prelucrare-abkant", priority: 0.9, changeFrequency: "monthly" as const },
@@ -16,15 +17,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/cere-oferta", priority: 0.8, changeFrequency: "yearly" as const },
   ];
 
+  const enPages = [
+    { path: "/en", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/en/services/laser-cutting", priority: 0.9, changeFrequency: "monthly" as const },
+    { path: "/en/services/press-brake", priority: 0.9, changeFrequency: "monthly" as const },
+    { path: "/en/contact", priority: 0.7, changeFrequency: "yearly" as const },
+    { path: "/en/get-a-quote", priority: 0.8, changeFrequency: "yearly" as const },
+  ];
+
   const postEntries = posts.map((p) => ({
     url: `${site.url}/blog/${p.slug}`,
-    lastModified: new Date(p.datePublished),
+    lastModified: new Date(p.dateModified ?? p.datePublished),
     changeFrequency: "yearly" as const,
     priority: 0.6,
   }));
 
   return [
-    ...staticPages.map((p) => ({
+    ...roPages.map((p) => ({
+      url: `${site.url}${p.path}`,
+      lastModified: now,
+      changeFrequency: p.changeFrequency,
+      priority: p.priority,
+    })),
+    ...enPages.map((p) => ({
       url: `${site.url}${p.path}`,
       lastModified: now,
       changeFrequency: p.changeFrequency,

@@ -36,6 +36,7 @@ export async function generateMetadata({
       url: `${site.url}/blog/${slug}`,
       type: "article",
       publishedTime: post.datePublished,
+      modifiedTime: post.dateModified ?? post.datePublished,
       images: [{ url: post.hero, width: 1200, height: 630 }],
     },
     twitter: { card: "summary_large_image" },
@@ -162,6 +163,7 @@ export default async function BlogPostPage({
         description={post.description}
         slug={post.slug}
         datePublished={post.datePublished}
+        dateModified={post.dateModified}
         image={post.hero}
       />
       <BreadcrumbSchema

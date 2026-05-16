@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   title: "Prelucrare Abkant CNC Iași — Îndoire Tablă Precizie",
   description:
     "Servicii prelucrare abkant CNC în Iași. Presă 160T, 4 axe, oțel/inox/aluminiu. Toleranță ±0.1°. Serii mici, consultanță inclusă. ☎ +40 732 034 386",
-  alternates: { canonical: URL_PATH },
+  alternates: {
+    canonical: URL_PATH,
+    languages: { "ro": URL_PATH, "en": "/en/services/press-brake", "x-default": URL_PATH },
+  },
   openGraph: {
     title: "Prelucrare Abkant CNC Iași | SOZO PROJECT",
     description:

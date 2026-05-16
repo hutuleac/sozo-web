@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "CNC Metal Fabrication Iași, Romania — SOZO PROJECT",
   description:
     "SOZO PROJECT — CNC fiber laser cutting and press brake bending in Iași, Romania. Mitsubishi ML3015EX, ±0.05mm precision, same-day quotes. ☎ +40 732 034 386",
-  alternates: { canonical: "/en" },
+  alternates: {
+    canonical: "/en",
+    languages: { "en": "/en", "ro": "/", "x-default": "/" },
+  },
   openGraph: {
     title: "CNC Metal Fabrication Iași | SOZO PROJECT",
     description: "CNC fiber laser cutting & press brake bending. ±0.05mm precision, same-day quotes.",
