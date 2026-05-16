@@ -25,7 +25,7 @@ export function ClientLogos() {
           {clients.map((c) => (
             <div
               key={c.name}
-              className="flex items-center justify-center p-6 rounded-2xl transition-transform duration-300 hover:scale-105"
+              className="group flex items-center justify-center p-6 rounded-2xl transition-transform duration-300 hover:scale-105"
               style={cardStyle}
             >
               <Image
@@ -33,7 +33,7 @@ export function ClientLogos() {
                 alt={c.name}
                 width={c.width}
                 height={c.height}
-                className="object-contain w-full max-h-[80px]"
+                className="object-contain w-full max-h-[80px] brightness-0 group-hover:brightness-100 transition-[filter] duration-300"
                 unoptimized={c.src.endsWith(".svg")}
               />
             </div>
