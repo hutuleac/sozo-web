@@ -130,6 +130,25 @@ body {
   border-radius: 2px;
 }
 
+/* ─── Client logo filters ────────────────────────────────────────────────── */
+
+/* Base: all logos start as black silhouettes */
+.logo-img {
+  filter: brightness(0);
+  transition: filter 0.35s ease;
+}
+
+/* On hover: show Tehmec-matching blue (#0080C0)
+   Filter math: black → gray (invert 40%) → sepia brown → saturate + hue-rotate to 200° → darken */
+.group:hover .logo-blue {
+  filter: brightness(0) invert(40%) sepia(100%) saturate(560%) hue-rotate(162deg) brightness(82%);
+}
+
+/* On hover: reveal original brand colours */
+.group:hover .logo-natural {
+  filter: brightness(1);
+}
+
 /* ─── Utilities ──────────────────────────────────────────────────────────── */
 
 .bg-grid {
