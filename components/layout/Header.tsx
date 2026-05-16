@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Logo } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navRO = [
   {
@@ -144,6 +145,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          {/* Theme toggle */}
+          <div className="hidden md:flex">
+            <ThemeToggle />
+          </div>
+
           {/* Language switcher */}
           <div className="hidden md:flex items-center gap-0.5 text-xs font-mono border border-border rounded px-2 py-1.5">
             {!isEn ? (
@@ -221,6 +227,12 @@ export function Header() {
                 </Link>
               </>
             )}
+
+            {/* Mobile theme toggle */}
+            <div className="flex items-center gap-3 py-4 border-b border-border-subtle">
+              <span className="text-text-muted text-xs font-mono uppercase tracking-wider">Theme</span>
+              <ThemeToggle />
+            </div>
 
             {/* Mobile language toggle */}
             <div className="flex items-center gap-3 py-4 border-b border-border-subtle">

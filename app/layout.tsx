@@ -35,7 +35,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0A0A0F",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#0A0A0F" },
+    { media: "(prefers-color-scheme: light)", color: "#FFFFFF" },
+  ],
   width: "device-width",
   initialScale: 1,
 };
@@ -43,6 +46,12 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ro" className={`${spaceGrotesk.variable} ${dmMono.variable}`}>
+      {/* Runs before React hydration to prevent dark→light flash */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){var s=localStorage.getItem('theme');var p=window.matchMedia('(prefers-color-scheme: dark)').matches;var dark=s?s==='dark':p;if(!dark)document.documentElement.classList.add('light');})();`,
+        }}
+      />
       <body className="min-h-screen flex flex-col">
         <a
           href="#main"
