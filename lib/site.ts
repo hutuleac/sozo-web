@@ -29,3 +29,6 @@ export const whatsappLinkEN = `https://wa.me/${site.whatsapp}?text=${encodeURICo
 export const telLink = `tel:${site.phone}`;
 export const mailLink = `mailto:${site.email}`;
 export const mapsLink = site.maps;
+// Embed URL pinned to the GBP listing via place ID (0x40cafb0007d725c5:0xcd3918a2334dce31)
+export const mapsEmbed =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706!2d27.6341905!3d47.1553776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb0007d725c5%3A0xcd3918a2334dce31!2sSoZo%20PROJECT%20-%20Prelucrare%20Metal%20LASER%20si%20Abkant%20CNC!5e0!3m2!1sro!2sro!4v1716000000000!5m2!1sro!2sro";

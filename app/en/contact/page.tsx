@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Breadcrumbs } from "@/components/sections/Breadcrumbs";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { site, telLink, mailLink, whatsappLinkEN, mapsLink } from "@/lib/site";
+import { site, telLink, mailLink, whatsappLinkEN, mapsLink, mapsEmbed } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `Contact SOZO PROJECT — ${site.phoneDisplay}`,
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 };
 
 export default function EnContactPage() {
-  const mapsEmbed = `https://www.google.com/maps?q=${site.geo.lat},${site.geo.lng}&z=16&output=embed`;
   return (
     <>
       <section className="pt-32 pb-12 md:pt-40 md:pb-16 border-b border-border">
