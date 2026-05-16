@@ -61,6 +61,9 @@
   --hero-overlay-mid2: rgba(10, 10, 15, 0.55);
   --hero-overlay-to:   rgba(10, 10, 15, 0.30);
   --grid-line: rgba(42, 42, 56, 0.35);
+  --logo-card-bg: rgba(255, 255, 255, 0.94);
+  --logo-card-border: rgba(255, 255, 255, 0.08);
+  --logo-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Light theme overrides — higher specificity than :root */
@@ -89,6 +92,10 @@ html.light {
   /* Blue — darker for white backgrounds */
   --color-tech:       #0077AA;
   --color-tech-muted: rgba(0, 119, 170, 0.10);
+
+  --logo-card-bg: #EBEBED;
+  --logo-card-border: rgba(0, 0, 0, 0.07);
+  --logo-card-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 
   /* Hero / grid */
   --hero-overlay-from: rgba(255, 255, 255, 0.96);
