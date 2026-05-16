@@ -7,7 +7,7 @@ const csp = [
   "img-src 'self' data: blob: https:",
   "font-src 'self'",
   "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://region1.google-analytics.com https://region1.analytics.google.com",
-  "frame-src https://www.googletagmanager.com",
+  "frame-src https://www.googletagmanager.com https://www.google.com https://maps.google.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
