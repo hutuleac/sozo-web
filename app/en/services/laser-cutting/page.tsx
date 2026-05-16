@@ -8,7 +8,7 @@ import { ServiceSchema } from "@/components/schema/ServiceSchema";
 import { FAQSchema } from "@/components/schema/FAQSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { images } from "@/lib/images";
-import { site } from "@/lib/site";
+import { site, whatsappLinkEN } from "@/lib/site";
 
 const URL_PATH = "/en/services/laser-cutting";
 
@@ -289,6 +289,8 @@ export default function LaserCuttingPage() {
       <CtaSection
         title="Ready to send your file?"
         subtitle="Quote same day. Consultation included."
+        primary={{ href: "/en/get-a-quote", label: "Get a quote" }}
+        secondary={{ href: whatsappLinkEN, label: "WhatsApp direct", external: true }}
       />
 
       <ServiceSchema

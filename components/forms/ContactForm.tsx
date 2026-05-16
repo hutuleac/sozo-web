@@ -5,7 +5,27 @@ import { Send, Check, AlertCircle } from "lucide-react";
 
 type State = "idle" | "submitting" | "success" | "error";
 
-export function ContactForm() {
+const i18n = {
+  ro: {
+    name: "Nume și companie", contact: "Telefon sau email", message: "Mesajul tău",
+    submit: "Trimite mesaj", sending: "Se trimite...",
+    successTitle: "Mulțumim! Am primit mesajul.",
+    successMsg: "Te contactăm de obicei în 2–4h în intervalul L–S, 07:00–20:00.",
+    errFallback: "Eroare la trimitere",
+    privacy: "Datele tale sunt folosite doar pentru a-ți răspunde la cerere. Nu le partajăm cu terți.",
+  },
+  en: {
+    name: "Name and company", contact: "Phone or email", message: "Your message",
+    submit: "Send message", sending: "Sending...",
+    successTitle: "Thank you! Message received.",
+    successMsg: "We typically reply within 2–4h, Mon–Sat 07:00–20:00.",
+    errFallback: "Submission failed",
+    privacy: "Your data is used only to reply to your enquiry. We don't share it with third parties.",
+  },
+};
+
+export function ContactForm({ lang = "ro" }: { lang?: "ro" | "en" }) {
+  const t = i18n[lang];
   const [state, setState] = useState<State>("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -17,11 +37,11 @@ export function ContactForm() {
     try {
       const res = await fetch("/api/contact", { method: "POST", body: formData });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Trimitere eșuată");
+      if (!res.ok) throw new Error(data.error || t.errFallback);
       setState("success");
       e.currentTarget.reset();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Eroare la trimitere");
+      setError(err instanceof Error ? err.message : t.errFallback);
       setState("error");
     }
   }
@@ -32,22 +52,19 @@ export function ContactForm() {
         <div className="w-12 h-12 rounded-full bg-success/15 text-success flex items-center justify-center mx-auto mb-4">
           <Check className="w-6 h-6" />
         </div>
-        <h3 className="text-h4 text-text-primary mb-2">Mulțumim! Am primit mesajul.</h3>
-        <p className="text-text-secondary text-sm">
-          Te contactăm de obicei în 2–4h în intervalul L–S, 07:00–20:00.
-        </p>
+        <h3 className="text-h4 text-text-primary mb-2">{t.successTitle}</h3>
+        <p className="text-text-secondary text-sm">{t.successMsg}</p>
       </div>
     );
   }
 
   return (
     <form onSubmit={onSubmit} className="space-y-4">
-      {/* Honeypot */}
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
 
-      <Field label="Nume și companie" name="name" required />
-      <Field label="Telefon sau email" name="contact" required type="text" />
-      <Field label="Mesajul tău" name="message" required textarea />
+      <Field label={t.name} name="name" required />
+      <Field label={t.contact} name="contact" required type="text" />
+      <Field label={t.message} name="message" required textarea />
 
       {error && (
         <div className="flex items-center gap-2 text-error text-sm">
@@ -61,17 +78,15 @@ export function ContactForm() {
         disabled={state === "submitting"}
         className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-sm px-6 py-3 rounded transition-colors w-full sm:w-auto"
       >
-        {state === "submitting" ? "Se trimite..." : (
+        {state === "submitting" ? t.sending : (
           <>
             <Send className="w-4 h-4" />
-            Trimite mesaj
+            {t.submit}
           </>
         )}
       </button>
 
-      <p className="text-xs text-text-muted">
-        Datele tale sunt folosite doar pentru a-ți răspunde la cerere. Nu le partajăm cu terți.
-      </p>
+      <p className="text-xs text-text-muted">{t.privacy}</p>
     </form>
   );
 }

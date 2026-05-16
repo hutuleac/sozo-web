@@ -24,8 +24,8 @@ export const site = {
   defaultLocale: "ro" as const,
 };
 
-export const whatsappLink = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Bună ziua! Vă scriu de pe sozoproject.eu. Aș dori o ofertă pentru: "
-)}`;
+export const whatsappLink = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Bună ziua! Vă scriu de pe sozoproject.eu. Aș dori o ofertă pentru: ")}`;
+export const whatsappLinkEN = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello! I'm writing from sozoproject.eu. I would like a quote for: ")}`;
 export const telLink = `tel:${site.phone}`;
 export const mailLink = `mailto:${site.email}`;
 export const mapsLink = site.maps;
