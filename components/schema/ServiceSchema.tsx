@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import { safeJsonLd } from "@/lib/schema";
 
 type Props = {
   name: string;
@@ -27,7 +28,7 @@ export function ServiceSchema({ name, description, url, serviceType, areaServed 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(data) }}
     />
   );
 }

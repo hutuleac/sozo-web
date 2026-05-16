@@ -58,7 +58,7 @@ const benefits = [
 
 const process = [
   { n: 1, t: "Trimiți fișierul sau schița", d: "Cu unghiul și dimensiunile clare. Acceptăm DXF, DWG, STEP, PDF cu cote." },
-  { n: 2, t: "Primești oferta", d: "Maximum 2 ore în intervalul L–S, 07:00–20:00." },
+  { n: 2, t: "Primești oferta", d: "Fișier pregătit și specificații clare: de obicei 2–4h. Proiecte complexe sau cu consultanță: 24–48h. Program L–S, 07:00–20:00." },
   { n: 3, t: "Confirmi", d: "Acord pe preț, cantitate și termen." },
   { n: 4, t: "Producem", d: "Programare CNC → debitare (dacă e cazul) → îndoire → control unghi/dimensiune." },
   { n: 5, t: "Ridici sau livrăm", d: "Sediul Strada Aviației 9, Iași — sau curier rapid în toată România." },
@@ -70,7 +70,7 @@ const faqs: FAQItem[] = [
   { q: "Lucrați și cu serii de 5–10 bucăți?", a: "Absolut. Suntem specializați tocmai în serii mici de complexitate ridicată. Nu avem limită minimă de bucăți." },
   { q: "Puteți îndoi și piesele tăiate de voi cu laserul?", a: "Da, și acesta este serviciul complet cel mai eficient: tăiem și îndoim în cadrul aceleiași comenzi, fără costuri de transport intermediare." },
   { q: "Care este toleranța la îndoire?", a: "Repetabilitate unghiulară ±0.1° (precizie). Toleranță dimensională ±0.1mm pentru cote critice, ±0.3mm standard." },
-  { q: "Cum primesc oferta?", a: "Trimiți fișierul sau schița pe WhatsApp, email sau formularul de ofertă. Răspundem în maximum 2 ore." },
+  { q: "Cum primesc oferta?", a: "Trimiți fișierul sau schița pe WhatsApp, email sau formularul de ofertă. Fișier clar și piesă standard: de obicei 2–4h. Proiecte cu consultanță sau iterații: 24–48h. Program L–S, 07:00–20:00." },
 ];
 
 const breadcrumbs = [
@@ -229,7 +229,7 @@ export default function PrelucrareAbkantPage() {
 
       <CtaSection
         title="Ai un desen sau o schiță?"
-        subtitle="Trimite-ne și primești ofertă în 2 ore. Tăiem și îndoim în cadrul aceleiași comenzi."
+        subtitle="Ofertă în aceeași zi. Tăiem și îndoim în cadrul aceleiași comenzi."
       />
 
       <ServiceSchema

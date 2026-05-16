@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Check, FileCode, Zap, Target, Layers, Repeat } from "lucide-react";
 import { ServiceHero } from "@/components/sections/ServiceHero";
 import { CtaSection } from "@/components/sections/CtaSection";
@@ -11,93 +10,93 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { images } from "@/lib/images";
 import { site } from "@/lib/site";
 
-const URL_PATH = "/servicii/debitare-laser";
+const URL_PATH = "/en/services/laser-cutting";
 
 export const metadata: Metadata = {
-  title: "Debitare Laser CNC Iași — Mitsubishi ML3015EX",
+  title: "CNC Laser Cutting Iași — Mitsubishi ML3015EX",
   description:
-    "Servicii debitare laser CNC în Iași. Mitsubishi ML3015EX, tablă oțel până la 20mm, inox/aluminiu până la 10mm, toleranță ±0.05mm. Ofertă în aceeași zi. ☎ +40 732 034 386",
+    "CNC fiber laser cutting services in Iași, Romania. Mitsubishi ML3015EX, steel up to 20mm, stainless/aluminium up to 10mm, ±0.05mm tolerance. Quote same day. ☎ +40 732 034 386",
   alternates: { canonical: URL_PATH },
   openGraph: {
-    title: "Debitare Laser CNC Iași | SOZO PROJECT",
+    title: "CNC Laser Cutting Iași | SOZO PROJECT",
     description:
-      "Mitsubishi ML3015EX, fibră 4.5kW, precizie ±0.05mm. Oțel până la 20mm, inox/aluminiu până la 10mm.",
+      "Mitsubishi ML3015EX, 4.5kW fiber laser, ±0.05mm precision. Steel up to 20mm, stainless/aluminium up to 10mm.",
     url: `${site.url}${URL_PATH}`,
   },
 };
 
 const materials = [
-  { name: "Oțel carbon (OL37, OL52)", thick: "20 mm", tol: "±0.1 mm", note: "Suprafață curată, fără bavuri" },
-  { name: "Inox 304", thick: "10 mm", tol: "±0.1 mm", note: "Fără decolorare excesivă la 6mm și sub" },
-  { name: "Inox 316", thick: "10 mm", tol: "±0.1 mm", note: "Rezistență chimică superioară" },
-  { name: "Aluminiu 5052 / 6061", thick: "10 mm", tol: "±0.1 mm", note: "Contururi fine fără deformare" },
+  { name: "Carbon steel (OL37, OL52)", thick: "20 mm", tol: "±0.1 mm", note: "Clean edge, no burrs" },
+  { name: "Stainless 304", thick: "10 mm", tol: "±0.1 mm", note: "No discolouration at 6mm and below" },
+  { name: "Stainless 316", thick: "10 mm", tol: "±0.1 mm", note: "Superior chemical resistance" },
+  { name: "Aluminium 5052 / 6061", thick: "10 mm", tol: "±0.1 mm", note: "Fine contours without deformation" },
 ];
 
 const equipmentSpecs = [
-  { k: "Putere laser", v: "4.5 kW" },
-  { k: "Suprafață tăiere", v: "3050 × 1525 mm" },
-  { k: "Precizie pozițională", v: "±0.05 mm/500 mm" },
-  { k: "Repetabilitate", v: "±0.02 mm" },
-  { k: "Greutate max foaie", v: "950 kg" },
+  { k: "Laser power", v: "4.5 kW" },
+  { k: "Cutting area", v: "3050 × 1525 mm" },
+  { k: "Positional accuracy", v: "±0.05 mm/500 mm" },
+  { k: "Repeatability", v: "±0.02 mm" },
+  { k: "Max sheet weight", v: "950 kg" },
   { k: "Control", v: "Mitsubishi M800 CNC" },
 ];
 
 const benefits = [
-  { icon: Target, title: "Precizie", text: "±0.05mm pozițional, ±0.02mm repetabilitate. De 3× mai precis decât media mașinilor de import comod." },
-  { icon: Zap, title: "Viteză", text: "Fibră laser pe tablă subțire — de câteva ori mai rapid decât CO₂. Fișier clar: ofertă în 2–4h. Proiecte complexe: 24–48h. Urgențele — prioritizate." },
-  { icon: Layers, title: "Versatilitate", text: "Oțel, inox, aluminiu. Contururi fine, găuri mici, profile complexe imposibil de făcut cu plasma." },
-  { icon: Repeat, title: "Eficiență", text: "Loturi de la 1 piesă. Zero costuri matriță. Primul lot costă cât al sutălea." },
+  { icon: Target, title: "Precision", text: "±0.05mm positional, ±0.02mm repeatability. 3× better than the average import machine." },
+  { icon: Zap, title: "Speed", text: "Fiber laser on thin sheet — several times faster than CO₂. Clear file: quote in 2–4h. Complex projects: 24–48h. Urgent orders prioritised." },
+  { icon: Layers, title: "Versatility", text: "Steel, stainless, aluminium. Fine contours, small holes, complex profiles impossible with plasma." },
+  { icon: Repeat, title: "Efficiency", text: "Batches from 1 piece. Zero tooling costs. Part 1 costs the same as part 100." },
 ];
 
 const process = [
-  { n: 1, t: "Trimiți fișierul", d: "DXF / DWG / STEP pe WhatsApp, email sau formularul de ofertă." },
-  { n: 2, t: "Primești oferta", d: "Fișier pregătit și specificații clare: de obicei 2–4h. Proiecte complexe sau cu consultanță: 24–48h. Program L–S, 07:00–20:00." },
-  { n: 3, t: "Consultanță", d: "Revizuim designul. Semnalăm orice optimizare posibilă înainte de tăiere." },
-  { n: 4, t: "Confirmi comanda", d: "Acord pe preț, cantitate și termen. Acont sau credit pentru clienți recurenți." },
-  { n: 5, t: "Producem", d: "Programare CNC → tăiere → control calitate dimensional și vizual." },
-  { n: 6, t: "Ridici sau livrăm", d: "Sediul Strada Aviației 9, Iași — sau curier rapid în toată România." },
+  { n: 1, t: "Send your file", d: "DXF / DWG / STEP via WhatsApp, email, or the quote form." },
+  { n: 2, t: "Receive your quote", d: "Clear file and standard part: usually 2–4h. Complex projects or requiring consultation: 24–48h. Mon–Sat 07:00–20:00." },
+  { n: 3, t: "Consultation", d: "We review your design and flag any optimisation before cutting." },
+  { n: 4, t: "Confirm order", d: "Agree on price, quantity, and lead time. Deposit or credit for recurring clients." },
+  { n: 5, t: "We produce", d: "CNC programming → cutting → dimensional and visual quality control." },
+  { n: 6, t: "Pick up or delivery", d: "Strada Aviației 9, Iași — or fast courier anywhere in Romania." },
 ];
 
 const fileFormats = [
-  { ext: "DXF / DWG", note: "AutoCAD, SolidWorks, Fusion 360, LibreCAD — preferat" },
-  { ext: "STEP / STP", note: "Modele 3D pentru piese complexe" },
-  { ext: "PDF", note: "Cu dimensiuni; pentru ofertă inițială sau inginerie inversă" },
-  { ext: "Piesă fizică", note: "Fără desen? Măsurăm noi (inginerie inversă)" },
+  { ext: "DXF / DWG", note: "AutoCAD, SolidWorks, Fusion 360, LibreCAD — preferred" },
+  { ext: "STEP / STP", note: "3D models for complex parts" },
+  { ext: "PDF", note: "With dimensions; for initial quote or reverse engineering" },
+  { ext: "Physical part", note: "No drawing? We measure it (reverse engineering)" },
 ];
 
 const dxfTips = [
-  "Scara 1:1 în milimetri",
-  "Un singur layer de tăiere (sau layere clar etichetate)",
-  "Toate contururile închise",
-  "Fără texte, cotații sau umpleri pe layerul de tăiere",
-  "Fără linii duble suprapuse",
+  "Scale 1:1 in millimetres",
+  "Single cut layer (or clearly labelled layers)",
+  "All contours closed",
+  "No text, dimensions or fills on the cut layer",
+  "No duplicate overlapping lines",
 ];
 
 const faqs: FAQItem[] = [
-  { q: "Ce materiale puteți debita cu laserul?", a: "Oțel carbon OL37 și OL52 până la 20mm, inox 304/316 până la 10mm, aluminiu până la 10mm." },
-  { q: "Care este toleranța de precizie?", a: "Echipamentul nostru Mitsubishi ML3015EX oferă precizie pozițională de ±0.05mm/500mm și repetabilitate ±0.02mm." },
-  { q: "Ce formate de fișiere acceptați?", a: "DXF și DWG (AutoCAD), STEP/STP (modele 3D), PDF cu dimensiuni. Lucrăm și din piese fizice prin inginerie inversă." },
-  { q: "Care este termenul de livrare?", a: "Standard: 2–5 zile lucrătoare. Urgente: livrare în aceeași zi (disponibilitate confirmată la comandă)." },
-  { q: "Care este comanda minimă?", a: "Nu există limită minimă de bucăți. Acceptăm și piese unice. Valoare minimă facturabilă: 50 RON + TVA." },
-  { q: "Puteți face inginerie inversă?", a: "Da. Aduceți sau trimiteți piesa fizică, o măsurăm și creăm fișierul de producție. Serviciu inclus fără cost adițional pentru piese simple." },
+  { q: "What materials can you cut with the laser?", a: "Carbon steel OL37 and OL52 up to 20mm, stainless 304/316 up to 10mm, aluminium up to 10mm." },
+  { q: "What is the precision tolerance?", a: "Our Mitsubishi ML3015EX delivers positional accuracy of ±0.05mm/500mm and repeatability of ±0.02mm." },
+  { q: "What file formats do you accept?", a: "DXF and DWG (AutoCAD), STEP/STP (3D models), PDF with dimensions. We also work from physical parts via reverse engineering." },
+  { q: "What is the lead time?", a: "Standard: 2–5 business days. Urgent: same-day delivery (availability confirmed at order)." },
+  { q: "Is there a minimum order?", a: "No minimum piece count. We accept single parts. Minimum billable value: 50 RON + VAT (~€10)." },
+  { q: "Can you do reverse engineering?", a: "Yes. Bring or send the physical part, we measure it and create the production file. Included at no extra cost for simple parts." },
 ];
 
 const breadcrumbs = [
-  { label: "Acasă", href: "/" },
-  { label: "Servicii", href: "/servicii" },
-  { label: "Debitare Laser CNC" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/en/services/laser-cutting" },
+  { label: "CNC Laser Cutting" },
 ];
 
-export default function DebitareLaserPage() {
+export default function LaserCuttingPage() {
   return (
     <>
       <ServiceHero
-        eyebrow="Serviciu · Debitare Laser CNC"
-        title="Debitare Laser CNC în Iași"
-        intro="SOZO PROJECT oferă servicii de debitare laser CNC în Iași cu echipament Mitsubishi ML3015EX, fibră laser de 4.5kW. Tăiem oțel carbon până la 20mm, inox 304/316 și aluminiu până la 10mm, cu precizie pozițională de ±0.05mm/500mm. Trimiți fișierul DXF, DWG sau STEP și primești ofertă în aceeași zi."
-        badges={["Mitsubishi ML3015EX", "Fibră 4.5kW", "±0.05mm", "3050 × 1525mm"]}
+        eyebrow="Service · CNC Laser Cutting"
+        title="CNC Laser Cutting in Iași"
+        intro="SOZO PROJECT provides CNC fiber laser cutting in Iași using a Mitsubishi ML3015EX, 4.5kW fiber laser. We cut carbon steel up to 20mm, stainless 304/316 and aluminium up to 10mm, with positional accuracy of ±0.05mm/500mm. Send your DXF, DWG or STEP file and get a quote the same day."
+        badges={["Mitsubishi ML3015EX", "4.5kW Fiber", "±0.05mm", "3050 × 1525mm"]}
         image={images.precisionEdge}
-        imageAlt="Margine debitată laser pe tablă inox 304, fără bavuri, suprafață curată"
+        imageAlt="Laser-cut edge on 304 stainless steel — no burrs, clean surface"
         crumbs={breadcrumbs}
       />
 
@@ -107,19 +106,19 @@ export default function DebitareLaserPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeader
-                eyebrow="Echipament"
+                eyebrow="Equipment"
                 heading="Mitsubishi ML3015EX"
-                subheading="Investim în echipamente de calitate industrială pentru că știm că precizia nu se negociază."
+                subheading="We invest in industrial-grade equipment because precision is non-negotiable."
               />
               <p className="text-text-secondary leading-relaxed mb-6">
-                Mitsubishi ML3015EX este o mașină de debitare cu fibră laser din gama industrială — același tip de echipament folosit de furnizori Tier 1 din industria automotive. Precizia pozițională de ±0.05mm este de 3 ori mai bună decât media mașinilor de categorie inferioară, iar suprafața de tăiere rămâne curată, fără slag.
+                The Mitsubishi ML3015EX is an industrial-class fiber laser cutting machine — the same type used by Tier 1 automotive suppliers. Its positional accuracy of ±0.05mm is 3× better than entry-level machines, and the cut surface is clean with no slag.
               </p>
               <ul className="space-y-3">
                 {[
-                  "±0.05mm precizie — 3× mai bună decât media",
-                  "Suprafață curată, fără slag, fără oxidare excesivă",
-                  "Repetabilitate ±0.02mm — piesa 100 e ca prima",
-                  "Foaie până la 3050 × 1525mm, max 950kg",
+                  "±0.05mm precision — 3× better than average",
+                  "Clean surface, no slag, no excessive oxidation",
+                  "±0.02mm repeatability — part 100 matches part 1",
+                  "Sheet up to 3050 × 1525mm, max 950kg",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3 text-text-primary">
                     <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -130,7 +129,7 @@ export default function DebitareLaserPage() {
             </div>
 
             <div className="bg-bg-elevated border border-border rounded-lg p-8">
-              <div className="text-accent font-mono text-xs uppercase tracking-widest mb-4">Specificații</div>
+              <div className="text-accent font-mono text-xs uppercase tracking-widest mb-4">Specifications</div>
               <dl className="divide-y divide-border-subtle">
                 {equipmentSpecs.map((s) => (
                   <div key={s.k} className="flex justify-between py-3 text-sm">
@@ -147,16 +146,16 @@ export default function DebitareLaserPage() {
       {/* Materials table */}
       <section className="py-20 md:py-24 bg-bg-elevated border-y border-border">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 lg:px-12">
-          <SectionHeader eyebrow="Materiale & grosimi" heading="Ce tăiem și până la ce grosime" />
+          <SectionHeader eyebrow="Materials & thickness" heading="What we cut and up to what thickness" />
           <div className="bg-bg-base border border-border rounded-lg overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-border bg-bg-surface">
                     <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-4 px-6">Material</th>
-                    <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-4 px-6">Grosime max</th>
-                    <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-4 px-6">Toleranță</th>
-                    <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-4 px-6">Note</th>
+                    <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-4 px-6">Max thickness</th>
+                    <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-4 px-6">Tolerance</th>
+                    <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-4 px-6">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -178,7 +177,7 @@ export default function DebitareLaserPage() {
       {/* Benefits */}
       <section className="py-20 md:py-28">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 lg:px-12">
-          <SectionHeader eyebrow="Beneficii" heading="De ce alegi laserul (vs plasma, ștanțare, frezare)" />
+          <SectionHeader eyebrow="Why laser" heading="Laser vs plasma, stamping, and milling" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((b) => {
               const Icon = b.icon;
@@ -199,7 +198,7 @@ export default function DebitareLaserPage() {
       {/* Process */}
       <section className="py-20 md:py-28 bg-bg-elevated border-y border-border">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 lg:px-12">
-          <SectionHeader eyebrow="Proces" heading="Cum funcționează — de la fișier la piesă" />
+          <SectionHeader eyebrow="Process" heading="How it works — from file to finished part" />
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
             {process.map((step) => (
               <div key={step.n} className="flex gap-5 items-start">
@@ -221,7 +220,7 @@ export default function DebitareLaserPage() {
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 lg:px-12">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <SectionHeader eyebrow="Fișiere" heading="Formate de fișiere acceptate" />
+              <SectionHeader eyebrow="Files" heading="Accepted file formats" />
               <ul className="space-y-4">
                 {fileFormats.map((f) => (
                   <li key={f.ext} className="flex gap-4 items-start">
@@ -237,7 +236,7 @@ export default function DebitareLaserPage() {
               </ul>
             </div>
             <div className="bg-bg-elevated border border-border rounded-lg p-8">
-              <h3 className="text-h4 text-text-primary mb-5">Recomandări pentru fișierul DXF</h3>
+              <h3 className="text-h4 text-text-primary mb-5">DXF file checklist</h3>
               <ul className="space-y-3">
                 {dxfTips.map((t) => (
                   <li key={t} className="flex items-start gap-3 text-text-secondary text-sm">
@@ -247,25 +246,25 @@ export default function DebitareLaserPage() {
                 ))}
               </ul>
               <div className="mt-6 pt-6 border-t border-border-subtle text-xs text-text-muted">
-                Fișier corect = ofertă corectă + piesă corectă. Dacă ai dubii, trimite-ne fișierul — verificăm gratuit înainte de comandă.
+                A correct file = a correct quote + a correct part. If unsure, send us the file — we check it for free before you commit.
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Industries / applications */}
+      {/* Industries */}
       <section className="py-20 md:py-24 bg-bg-elevated border-y border-border">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 lg:px-12">
-          <SectionHeader eyebrow="Aplicații" heading="Industrii și aplicații tipice" />
+          <SectionHeader eyebrow="Applications" heading="Industries and typical use cases" />
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { t: "Construcții metalice", d: "Console, bride, plăci de bază, gusete, panouri." },
-              { t: "Automotive", d: "Suporți de montaj, scuturi termice, plăci de ranforsare, prototipuri." },
-              { t: "Mobilă industrială", d: "Rame metalice, componente rafturi, uși metalice." },
-              { t: "Echipamente agricole", d: "Plăci de uzură, piese de schimb, cuplaje." },
-              { t: "Prototipuri R&D", d: "Iterații rapide design, validare forme, machete funcționale." },
-              { t: "Inginerie inversă", d: "Reproducere piese fără desen — măsurăm, creăm fișierul, producem." },
+              { t: "Metal construction", d: "Brackets, flanges, base plates, gussets, panels." },
+              { t: "Automotive", d: "Mounting brackets, heat shields, reinforcement plates, prototypes." },
+              { t: "Industrial furniture", d: "Metal frames, shelf components, metal doors." },
+              { t: "Agricultural equipment", d: "Wear plates, spare parts, couplings." },
+              { t: "R&D prototypes", d: "Rapid design iterations, form validation, functional mockups." },
+              { t: "Reverse engineering", d: "Parts without drawings — we measure, create the file, produce." },
             ].map((a) => (
               <div key={a.t} className="flex gap-4 p-5 bg-bg-base border border-border rounded">
                 <div className="w-1 bg-accent rounded-full flex-shrink-0" />
@@ -282,28 +281,28 @@ export default function DebitareLaserPage() {
       {/* FAQ */}
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 md:px-8 lg:px-12">
-          <SectionHeader eyebrow="FAQ" heading="Întrebări frecvente — debitare laser" align="center" />
+          <SectionHeader eyebrow="FAQ" heading="Frequently asked questions — laser cutting" align="center" />
           <FAQAccordion items={faqs} />
         </div>
       </section>
 
       <CtaSection
-        title="Gata să trimiți fișierul?"
-        subtitle="Ofertă în aceeași zi. Consultanță inclusă."
+        title="Ready to send your file?"
+        subtitle="Quote same day. Consultation included."
       />
 
       <ServiceSchema
-        name="Debitare Laser CNC"
-        description="Servicii debitare laser CNC pe Mitsubishi ML3015EX. Oțel până la 20mm, inox/aluminiu până la 10mm. Toleranță ±0.05mm."
+        name="CNC Laser Cutting"
+        description="CNC fiber laser cutting on Mitsubishi ML3015EX. Steel up to 20mm, stainless/aluminium up to 10mm. Tolerance ±0.05mm."
         url={`${site.url}${URL_PATH}`}
         serviceType="Laser cutting / CNC fiber laser"
       />
       <FAQSchema items={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: "Acasă", href: "/" },
-          { name: "Servicii", href: "/servicii" },
-          { name: "Debitare Laser CNC", href: URL_PATH },
+          { name: "Home", href: "/" },
+          { name: "Services", href: "/en/services/laser-cutting" },
+          { name: "CNC Laser Cutting", href: URL_PATH },
         ]}
       />
     </>

@@ -5,8 +5,30 @@ import { site } from "@/lib/site";
 export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
-const MAX_FILE_BYTES = 20 * 1024 * 1024; // 20 MB
+const MAX_FILE_BYTES = 20 * 1024 * 1024;
 const ALLOWED_EXT = ["dxf", "dwg", "step", "stp", "pdf"];
+const MAX_NAME = 200;
+const MAX_CONTACT = 200;
+const MAX_MESSAGE = 5000;
+const MAX_SHORT = 300;
+
+// In-memory rate limiter — persists within an isolate, resets on cold starts.
+const _rl = new Map<string, { n: number; t: number }>();
+const RL_WINDOW = 3_600_000;
+const RL_MAX = 5;
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  if (_rl.size > 5_000) {
+    const cutoff = now - RL_WINDOW;
+    for (const [k, v] of _rl) if (v.t < cutoff) _rl.delete(k);
+  }
+  const e = _rl.get(ip);
+  if (!e || now - e.t > RL_WINDOW) { _rl.set(ip, { n: 1, t: now }); return false; }
+  if (e.n >= RL_MAX) return true;
+  e.n++;
+  return false;
+}
 
 function escapeHtml(s: string) {
   return s.replace(/[&<>"']/g, (c) =>
@@ -16,6 +38,13 @@ function escapeHtml(s: string) {
 
 export async function POST(req: Request) {
   try {
+    const ip = req.headers.get("cf-connecting-ip")
+      || req.headers.get("x-forwarded-for")?.split(",")[0].trim()
+      || "anon";
+    if (isRateLimited(ip)) {
+      return NextResponse.json({ error: "Prea multe cereri. Încearcă mai târziu." }, { status: 429 });
+    }
+
     const form = await req.formData();
 
     // Honeypot
@@ -26,7 +55,7 @@ export async function POST(req: Request) {
 
     const kind = String(form.get("kind") || "contact");
     const name = String(form.get("name") || "").trim();
-    const contact = String(form.get("contact") || "").trim();
+    const contact = String(form.get("contact") || "").trim().replace(/[\r\n]/g, "");
     const message = String(form.get("message") || "").trim();
     const service = String(form.get("service") || "").trim();
     const material = String(form.get("material") || "").trim();
@@ -38,6 +67,15 @@ export async function POST(req: Request) {
     }
     if (kind === "contact" && !message) {
       return NextResponse.json({ error: "Adaugă un mesaj." }, { status: 400 });
+    }
+    if (name.length > MAX_NAME || contact.length > MAX_CONTACT) {
+      return NextResponse.json({ error: "Câmpuri prea lungi." }, { status: 400 });
+    }
+    if (message.length > MAX_MESSAGE) {
+      return NextResponse.json({ error: "Mesajul depășește 5000 de caractere." }, { status: 400 });
+    }
+    if (service.length > MAX_SHORT || material.length > MAX_SHORT || quantity.length > MAX_SHORT) {
+      return NextResponse.json({ error: "Câmpuri prea lungi." }, { status: 400 });
     }
 
     // File validation

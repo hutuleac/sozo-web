@@ -1,4 +1,5 @@
 import type { FAQItem } from "@/components/ui/FAQAccordion";
+import { safeJsonLd } from "@/lib/schema";
 
 export function FAQSchema({ items }: { items: FAQItem[] }) {
   const data = {
@@ -16,7 +17,7 @@ export function FAQSchema({ items }: { items: FAQItem[] }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(data) }}
     />
   );
 }

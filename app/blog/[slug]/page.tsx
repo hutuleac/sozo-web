@@ -154,7 +154,7 @@ export default async function BlogPostPage({
 
       <CtaSection
         title="Ai o întrebare specifică?"
-        subtitle="Scrie-ne pe WhatsApp sau trimite-ne fișierul direct. Răspuns în 2 ore."
+        subtitle="Scrie-ne pe WhatsApp sau trimite-ne fișierul direct. Răspuns în aceeași zi."
       />
 
       <ArticleSchema

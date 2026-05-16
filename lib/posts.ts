@@ -246,8 +246,8 @@ const posts: Post[] = [
         "Splines convertite în polilinii dacă există",
         "Verificat într-un viewer extern",
       ]},
-      { type: "p", text: "Dacă ai trecut toate punctele, fișierul e pregătit pentru ofertă rapidă. Trimite-l pe WhatsApp sau prin formularul de ofertă și îți răspundem în maximum 2 ore." },
-      { type: "internal", href: "/cere-oferta", label: "Trimite fișierul DXF acum", text: "Ai pregătit fișierul după checklist? Încarcă-l în formularul de ofertă și primești prețul în 2 ore." },
+      { type: "p", text: "Dacă ai trecut toate punctele, fișierul e pregătit. Trimite-l pe WhatsApp sau prin formularul de ofertă — fișier clar înseamnă ofertă rapidă, de obicei în 2–4h." },
+      { type: "internal", href: "/cere-oferta", label: "Trimite fișierul DXF acum", text: "Ai pregătit fișierul după checklist? Încarcă-l în formularul de ofertă — primești oferta în aceeași zi." },
     ],
     faqs: [
       { q: "Pot trimite DXF din Adobe Illustrator?", a: "Da, dar verifică unitățile (default e adesea points/inches) și convertește textul în path-uri. Atenție la linii duble — Illustrator generează des duplicate." },

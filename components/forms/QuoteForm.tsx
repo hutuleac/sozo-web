@@ -44,7 +44,7 @@ export function QuoteForm() {
         </div>
         <h3 className="text-h3 text-text-primary mb-3">Mulțumim! Am primit cererea ta.</h3>
         <p className="text-text-secondary">
-          Te contactăm în maximum 2 ore în intervalul L–S, 07:00–20:00.
+          Te contactăm de obicei în 2–4h în intervalul L–S, 07:00–20:00.
           <br />Între timp, ne poți scrie direct pe WhatsApp pentru un răspuns instant.
         </p>
       </div>
@@ -56,7 +56,7 @@ export function QuoteForm() {
   return (
     <form onSubmit={onSubmit} className="space-y-5">
       {/* Honeypot */}
-      <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
 
       <div className="grid md:grid-cols-2 gap-5">
         <Field label="Nume și companie" name="name" required />
@@ -125,7 +125,7 @@ export function QuoteForm() {
           )}
         </button>
         <p className="text-xs text-text-muted">
-          Răspuns în max 2 ore. Datele se folosesc doar pentru ofertă.
+          Răspuns în aceeași zi. Datele se folosesc doar pentru ofertă.
         </p>
       </div>
     </form>

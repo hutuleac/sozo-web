@@ -12,7 +12,7 @@ type Props = {
 
 export function CtaSection({
   title = "Ai un proiect?",
-  subtitle = "Contactează-ne acum și primești ofertă în 2 ore.",
+  subtitle = "Contactează-ne acum — ofertă în aceeași zi.",
   primary = { href: "/cere-oferta", label: "Cere o ofertă" },
   secondary = { href: whatsappLink, label: "WhatsApp direct", external: true },
 }: Props) {

@@ -16,6 +16,7 @@ export const site = {
     full: "Strada Aviației 9, Iași 700383, România",
   },
   geo: { lat: 47.1553776, lng: 27.6341905 },
+  maps: "https://maps.app.goo.gl/xGuMCVnRpMgbrjmf8",
   hours: "Luni–Sâmbătă, 07:00–20:00",
   socials: {
     facebook: "https://facebook.com/61569075448456",
@@ -23,6 +24,8 @@ export const site = {
   defaultLocale: "ro" as const,
 };
 
-export const whatsappLink = `https://wa.me/${site.whatsapp}`;
+export const whatsappLink = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Bună ziua! Vă scriu de pe sozoproject.eu. Aș dori o ofertă pentru: "
+)}`;
 export const telLink = `tel:${site.phone}`;
 export const mailLink = `mailto:${site.email}`;
+export const mapsLink = site.maps;

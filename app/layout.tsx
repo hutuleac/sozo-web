@@ -14,20 +14,9 @@ export const metadata: Metadata = {
     template: "%s | SOZO PROJECT",
   },
   description:
-    "Servicii debitare laser CNC și prelucrare abkant în Iași. Mitsubishi ML3015EX, precizie ±0.05mm. Ofertă în 2h, consultanță inclusă. ☎ +40 732 034 386",
+    "Servicii debitare laser CNC și prelucrare abkant în Iași. Mitsubishi ML3015EX, precizie ±0.05mm. Ofertă în aceeași zi, consultanță inclusă. ☎ +40 732 034 386",
   applicationName: site.name,
   authors: [{ name: site.name }],
-  generator: "Next.js",
-  keywords: [
-    "debitare laser Iași",
-    "debitare laser CNC Iași",
-    "prelucrare abkant Iași",
-    "îndoire tablă CNC Iași",
-    "Mitsubishi ML3015EX",
-    "prelucrare metal Iași",
-    "debitare inox Iași",
-    "debitare aluminiu Iași",
-  ],
   alternates: {
     canonical: "/",
     languages: { "ro-RO": "/", "x-default": "/" },
@@ -39,7 +28,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Debitare Laser & Abkant CNC Iași | SOZO PROJECT",
     description:
-      "Mitsubishi ML3015EX, precizie ±0.05mm. Ofertă în 2h, consultanță inclusă.",
+      "Mitsubishi ML3015EX, precizie ±0.05mm. Ofertă în aceeași zi, consultanță inclusă.",
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true, "max-image-preview": "large" },

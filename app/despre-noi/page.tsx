@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const values = [
   { icon: Target, t: "Precizie", d: "Nu tăiem estimativ. Fiecare piesă are o toleranță, și o respectăm." },
   { icon: Heart, t: "Onestitate", d: "Dacă un design are o problemă, o spunem înainte să tăiem, nu după." },
-  { icon: Zap, t: "Viteză", d: "Înțelegem că termenele contează. Oferta în 2 ore, livrarea promisă, fără surprize." },
+  { icon: Zap, t: "Viteză", d: "Înțelegem că termenele contează. Ofertă în aceeași zi, livrarea promisă, fără surprize." },
   { icon: Handshake, t: "Parteneriat", d: "Nu suntem o bandă rulantă. Lucrăm cu tine pe proiect, de la prima schiță." },
 ];
 

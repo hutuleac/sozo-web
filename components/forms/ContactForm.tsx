@@ -34,7 +34,7 @@ export function ContactForm() {
         </div>
         <h3 className="text-h4 text-text-primary mb-2">Mulțumim! Am primit mesajul.</h3>
         <p className="text-text-secondary text-sm">
-          Te contactăm în maximum 2 ore în intervalul L–S, 07:00–20:00.
+          Te contactăm de obicei în 2–4h în intervalul L–S, 07:00–20:00.
         </p>
       </div>
     );
@@ -43,7 +43,7 @@ export function ContactForm() {
   return (
     <form onSubmit={onSubmit} className="space-y-4">
       {/* Honeypot */}
-      <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
 
       <Field label="Nume și companie" name="name" required />
       <Field label="Telefon sau email" name="contact" required type="text" />

@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import { safeJsonLd } from "@/lib/schema";
 
 export function LocalBusinessSchema() {
   const data = {
@@ -50,7 +51,7 @@ export function LocalBusinessSchema() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(data) }}
     />
   );
 }

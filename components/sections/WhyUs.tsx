@@ -9,8 +9,8 @@ const usps = [
   },
   {
     icon: Clock,
-    title: "Ofertă în 2 ore",
-    desc: "Trimiți DXF-ul, primești prețul în 2 ore. Urgențele se livrează în aceeași zi.",
+    title: "Ofertă în aceeași zi",
+    desc: "Fișier clar și piesă standard: de obicei 2–4h. Proiecte cu consultanță sau iterații: 24–48h. Urgențele — prioritizate.",
   },
   {
     icon: Wrench,

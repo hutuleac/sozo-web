@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import { safeJsonLd } from "@/lib/schema";
 
 type Props = {
   title: string;
@@ -36,7 +37,7 @@ export function ArticleSchema({ title, description, slug, datePublished, image }
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(data) }}
     />
   );
 }

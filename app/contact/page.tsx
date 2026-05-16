@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Breadcrumbs } from "@/components/sections/Breadcrumbs";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { site, telLink, mailLink, whatsappLink } from "@/lib/site";
+import { site, telLink, mailLink, whatsappLink, mapsLink } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `Contact — ${site.phoneDisplay}`,
@@ -25,7 +25,7 @@ export default function ContactPage() {
           </div>
           <h1 className="text-h1 text-text-primary mb-4">Hai să discutăm proiectul tău</h1>
           <p className="text-lg text-text-secondary max-w-2xl">
-            Cel mai rapid răspuns pe WhatsApp. Oferta în maximum 2 ore în intervalul L–S, 07:00–20:00.
+            Cel mai rapid răspuns pe WhatsApp. Ofertă în aceeași zi — fișier clar: 2–4h, proiecte complexe: 24–48h. Program L–S, 07:00–20:00.
           </p>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="text-xs font-mono uppercase tracking-wider text-text-muted mb-1">Adresă</div>
-                    <div className="text-text-primary">{site.address.full}</div>
+                    <a href={mapsLink} target="_blank" rel="noreferrer" className="text-text-primary hover:text-accent transition-colors">{site.address.full}</a>
                   </div>
                 </li>
                 <li className="flex gap-4 items-start">
@@ -82,6 +82,9 @@ export default function ContactPage() {
                 </p>
                 <Button href={whatsappLink} external variant="primary" withArrow>
                   Deschide WhatsApp
+                </Button>
+                <Button href={mapsLink} external variant="secondary">
+                  Obține indicații
                 </Button>
               </div>
             </div>

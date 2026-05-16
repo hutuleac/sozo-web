@@ -96,7 +96,7 @@ export default function BlogPage() {
 
       <CtaSection
         title="Ai un proiect tehnic?"
-        subtitle="Trimite-ne specificațiile și primești ofertă în 2 ore. Consultanță inclusă."
+        subtitle="Trimite-ne specificațiile — ofertă în aceeași zi. Consultanță inclusă."
       />
 
       <BreadcrumbSchema

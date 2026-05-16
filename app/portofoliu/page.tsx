@@ -61,7 +61,7 @@ export default function PortofoliuPage() {
 
       <CtaSection
         title="Ai un proiect similar?"
-        subtitle="Trimite-ne fișierul. Calculăm oferta în 2 ore."
+        subtitle="Trimite-ne fișierul. Ofertă în aceeași zi."
       />
 
       <BreadcrumbSchema

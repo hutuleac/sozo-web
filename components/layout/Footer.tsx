@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
 import { Logo } from "./Logo";
-import { site, telLink, mailLink } from "@/lib/site";
+import { site, telLink, mailLink, mapsLink } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -59,9 +59,9 @@ export function Footer() {
               Contact
             </h4>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2 text-text-secondary">
+              <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-text-muted" />
-                <span>{site.address.full}</span>
+                <a href={mapsLink} target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent transition-colors">{site.address.full}</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-text-muted" />

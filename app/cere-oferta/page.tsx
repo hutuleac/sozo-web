@@ -3,17 +3,17 @@ import { MessageCircle, Clock, ShieldCheck, FileCheck } from "lucide-react";
 import { Breadcrumbs } from "@/components/sections/Breadcrumbs";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { QuoteForm } from "@/components/forms/QuoteForm";
-import { whatsappLink, site } from "@/lib/site";
+import { whatsappLink, mapsLink, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cere Ofertă Personalizată",
   description:
-    "Trimite-ne fișierul tău (DXF, DWG, STEP, PDF) și primești ofertă pentru debitare laser sau abkant CNC în maximum 2 ore. SOZO PROJECT Iași.",
+    "Trimite-ne fișierul tău (DXF, DWG, STEP, PDF) și primești ofertă pentru debitare laser sau abkant CNC în aceeași zi. SOZO PROJECT Iași.",
   alternates: { canonical: "/cere-oferta" },
 };
 
 const benefits = [
-  { icon: Clock, t: "Răspuns în 2 ore", d: "În program L–S, 07:00–20:00." },
+  { icon: Clock, t: "Ofertă în aceeași zi", d: "Fișier clar: 2–4h. Proiecte complexe sau cu consultanță: 24–48h. Program L–S, 07:00–20:00." },
   { icon: ShieldCheck, t: "Confidențial", d: "Datele și fișierele tale rămân la noi, doar pentru ofertă." },
   { icon: FileCheck, t: "Consultanță gratuită", d: "Verificăm fișierul înainte. Semnalăm orice problemă posibilă." },
 ];
@@ -29,11 +29,11 @@ export default function CereOfertaPage() {
             Cere ofertă
           </div>
           <h1 className="text-h1 text-text-primary mb-4 max-w-3xl">
-            Trimite-ne fișierul. Primești prețul în 2 ore.
+            Trimite-ne fișierul. Primești oferta în aceeași zi.
           </h1>
           <p className="text-lg text-text-secondary max-w-2xl">
             Acceptăm DXF, DWG, STEP, STP, PDF. Pentru orice tehnică — debitare laser, abkant, ambele —
-            răspundem în maximum 2 ore în intervalul L–S, 07:00–20:00.
+            răspundem în aceeași zi în intervalul L–S, 07:00–20:00. Fișiere clare și piese standard: de obicei 2–4h. Proiecte cu consultanță sau iterații: 24–48h.
           </p>
         </div>
       </section>
@@ -89,7 +89,7 @@ export default function CereOfertaPage() {
                 <p className="font-mono text-xs uppercase tracking-wider text-text-muted mb-2">
                   Sediu
                 </p>
-                <p className="text-text-primary text-sm">{site.address.full}</p>
+                <a href={mapsLink} target="_blank" rel="noreferrer" className="text-text-primary text-sm hover:text-accent transition-colors">{site.address.full}</a>
                 <p className="text-text-secondary text-xs mt-1">{site.hours}</p>
               </div>
             </aside>

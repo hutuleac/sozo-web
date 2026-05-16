@@ -1,14 +1,22 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <Link
       href="/"
       aria-label="SOZO PROJECT — pagina principală"
-      className={`inline-flex items-baseline gap-1 font-semibold tracking-tight ${className}`}
+      className={`inline-flex items-center ${className}`}
     >
-      <span className="text-accent text-xl font-bold">SOZO</span>
-      <span className="text-text-primary text-xl font-bold">PROJECT</span>
+      <Image
+        src="/images/sozo_logo.webp"
+        alt="SOZO PROJECT"
+        width={379}
+        height={165}
+        style={{ height: "36px", width: "auto" }}
+        className="rounded-md"
+        priority
+      />
     </Link>
   );
 }

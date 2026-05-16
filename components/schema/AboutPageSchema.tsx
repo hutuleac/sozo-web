@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import { safeJsonLd } from "@/lib/schema";
 
 export function AboutPageSchema() {
   const data = {
@@ -27,7 +28,7 @@ export function AboutPageSchema() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(data) }}
     />
   );
 }
