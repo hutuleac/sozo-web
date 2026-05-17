@@ -12,6 +12,7 @@ const navRO = [
     label: "Servicii", href: "/servicii", children: [
       { label: "Debitare Laser CNC", href: "/servicii/debitare-laser" },
       { label: "Prelucrare Abkant CNC", href: "/servicii/prelucrare-abkant" },
+      { label: "Piese Industriale", href: "/servicii/piese-industriale-la-comanda" },
     ],
   },
   { label: "Portofoliu", href: "/portofoliu" },
@@ -37,6 +38,7 @@ const routePairs: [string, string][] = [
   ["/", "/en"],
   ["/servicii/debitare-laser", "/en/services/laser-cutting"],
   ["/servicii/prelucrare-abkant", "/en/services/press-brake"],
+  ["/servicii/piese-industriale-la-comanda", "/en"],
   ["/contact", "/en/contact"],
   ["/cere-oferta", "/en/get-a-quote"],
   ["/despre-noi", "/en"],
