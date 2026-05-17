@@ -7,7 +7,8 @@ export type Block =
   | { type: "table"; head: string[]; rows: string[][] }
   | { type: "callout"; text: string }
   | { type: "qa"; q: string; a: string }
-  | { type: "internal"; href: string; label: string; text: string }; // inline-link nudge block
+  | { type: "internal"; href: string; label: string; text: string }
+  | { type: "image"; src: string; alt: string; caption?: string };
 
 export type Post = {
   slug: string;

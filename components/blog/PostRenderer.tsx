@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Info } from "lucide-react";
 import type { Block } from "@/lib/posts-types";
@@ -117,6 +118,25 @@ export function PostRenderer({ blocks }: { blocks: Block[] }) {
                   {b.label} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
+            );
+          case "image":
+            return (
+              <figure key={i} className="my-8">
+                <div className="relative w-full overflow-hidden rounded-lg aspect-[16/9]">
+                  <Image
+                    src={b.src}
+                    alt={b.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 720px"
+                  />
+                </div>
+                {b.caption && (
+                  <figcaption className="text-center text-text-tertiary text-sm mt-3 italic">
+                    {b.caption}
+                  </figcaption>
+                )}
+              </figure>
             );
           default:
             return null;
