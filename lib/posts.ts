@@ -816,6 +816,80 @@ const posts: Post[] = [
       { q: "Faceți și montaj sau doar livrare?", a: "Ne specializăm în producție — debitare laser și îndoire. Nu avem echipă proprie de montaj, dar colaborăm cu echipe specializate din Iași și putem coordona la cerere pentru proiecte mari." },
     ],
   },
+  // ─────────────────────────────────────────────────────────────
+  // 10. Debitare aluminiu laser
+  // ─────────────────────────────────────────────────────────────
+  {
+    slug: "debitare-aluminiu-laser-ghid",
+    title: "Debitare aluminiu cu laser CO2: aliaje, grosimi și ce să specifici la comandă",
+    description:
+      "Ghid tehnic pentru debitare aluminiu cu laser CO2: aliaje 5052 vs 6061, gaz de asistare N₂, grosimi maxime, toleranțe și aplicații tipice — cadre, carcase, panouri și piese industriale ușoare.",
+    metaTitle: "Debitare aluminiu laser CO2 — aliaje, grosimi, toleranțe | SOZO PROJECT Iași",
+    metaDescription:
+      "Debitare aluminiu laser CO2 în Iași: aliaje 5052/6061/1050, grosimi până la 10mm, toleranță ±0.1mm. Cadre aluminiu, carcase, panouri decorative la comandă. Ofertă în aceeași zi.",
+    datePublished: "2026-05-17",
+    readMin: 6,
+    hero: images.portfolioPerforated,
+    heroAlt: "Panouri perforate din tablă tăiate laser CNC — debitare aluminiu și inox la comandă Iași",
+    category: "Tehnic",
+    body: [
+      { type: "p", text: "Aluminiul e al treilea cel mai comun material după oțelul carbon și inox în atelierul nostru — și în același timp cel mai des întrebat cu precauție: 'Se poate tăia cu laserul?' Răspunsul scurt: da, fără probleme. Răspunsul lung urmează mai jos." },
+      { type: "h2", text: "De ce aluminiul se comportă diferit la tăiere laser CO2" },
+      { type: "p", text: "Aluminiul reflectă lumina laser CO2 mai mult decât oțelul sau inoxul — aproximativ 85–90% din energia la lungimea de undă de 10.6μm caracteristică laserului CO2. Asta înseamnă că laserul trebuie să lucreze mai mult pentru a penetra materialul, iar parametrii de tăiere (putere, viteză, gaz de asistare) trebuie adaptați față de oțel. Pe mașina noastră Mitsubishi ML3015EX de 4.5kW, aluminiul se taie curat până la 10mm grosime." },
+      { type: "ul", items: [
+        "Tăierea necesită putere mai mare și viteză mai mică față de oțelul de aceeași grosime",
+        "Gaz de asistare N₂ (azot) recomandat — suprafață fără oxid, aptă pentru eloxare directă",
+        "Cu aer comprimat: margine ușor oxidată, acceptabilă pentru aplicații vopsite sau structurale",
+        "Folia de protecție rămâne intactă în timpul tăierii — piesele nu se zgârie",
+      ]},
+      { type: "h2", text: "Aliaje disponibile și caracteristici de tăiere" },
+      {
+        type: "table",
+        head: ["Aliaj", "Grosime max", "Calitate margine", "Aplicații tipice"],
+        rows: [
+          ["1050 / 1060 (pur)", "6 mm", "Excelentă", "Conductori electrici, schimbătoare de căldură, aplicații termice"],
+          ["5052-H32", "10 mm", "Foarte bună", "Cadre, carcase, panouri decorative, structuri ușoare — cel mai comun"],
+          ["6061-T6", "10 mm", "Bună (la gros poate fi ușor rugos)", "Piese structurale cu cerințe mecanice ridicate, prototipuri inginerești"],
+          ["3003-H14", "8 mm", "Bună", "Panouri HVAC, capace, aplicații cu formabilitate cerută"],
+        ],
+      },
+      { type: "callout", text: "5052-H32 e aliajul de bază pentru 80% din comenzile de aluminiu. Ductil, taie curat și se îndoaie bine după tăiere. Dacă nu ai o cerință specifică, 5052 e alegerea implicită." },
+      { type: "h2", text: "Gaz de asistare: N₂ vs aer comprimat" },
+      {
+        type: "table",
+        head: ["Gaz", "Calitate suprafață", "Cost", "Recomandat pentru"],
+        rows: [
+          ["Azot N₂", "Strălucitoare, fără oxid", "Mai ridicat", "Eloxare, vopsire directă, aplicații vizibile sau de precizie"],
+          ["Aer comprimat", "Ușor mată, cu oxid fin", "Standard", "Piese structurale, vopsite în pulbere sau zincare ulterioară"],
+        ],
+      },
+      { type: "p", text: "Specificați în comandă dacă suprafața de tăiere va fi vizibilă sau va fi eloxată — adaptăm parametrii în consecință fără cost suplimentar." },
+      { type: "h2", text: "Aplicații tipice pentru aluminiu tăiat laser" },
+      { type: "ul", items: [
+        "Cadre și profile la comandă — rame ferestre cu profile custom, cadre echipamente, structuri ușoare pentru mobilier sau displays",
+        "Carcase și panouri tehnice — carcase echipamente electrice și electronice, uși de acces, panouri de control",
+        "Elemente decorative — panouri perforat pentru interior, litere și logo-uri din aluminiu, garduri și ecrane ușoare",
+        "Piese industriale ușoare — suporți, plăci de montaj, ghidaje, console pentru aplicații unde masa contează (industria alimentară, echipamente portabile)",
+        "Prototipuri de design — iterații rapide pentru designeri industriali; aluminiul arată și se comportă aproape ca piesa finală",
+        "Disipatori termici și panouri HVAC — dacă geometria e simplă, tăierea laser e mai ieftină decât frezarea",
+      ]},
+      { type: "h2", text: "Ce să specifici la o comandă de aluminiu" },
+      { type: "ol", items: [
+        "Aliajul exact dacă știi: 5052, 6061, 1050 etc. Dacă nu, specifică ce proprietăți contează (ductilitate pentru îndoire, rezistență mecanică, aspect)",
+        "Grosimea în mm — nu presupunem niciodată grosimea",
+        "Dacă piesa va fi eloxată sau vopsită după tăiere — influențează parametrii și gazul de asistare",
+        "Toleranțele critice — standard ±0.1mm; dacă ai ajustaje sau alezaje precise, specifică explicit",
+        "Dacă piesa va fi îndoită ulterior — verificăm raza minimă și direcția față de fibra aliajului",
+      ]},
+      { type: "internal", href: "/servicii/debitare-laser", label: "Serviciu debitare laser CNC — specificații complete", text: "Grosimi maxime per material, toleranțe, formate fișier și FAQ." },
+    ],
+    faqs: [
+      { q: "Ce aliaj de aluminiu e mai ușor de tăiat — 5052 sau 6061?", a: "5052-H32 taie mai curat și mai consistent. 6061-T6 e mai dur și mai rezistent mecanic, dar marginea de tăiere poate fi ușor mai rugosă la grosimi > 6mm. Pentru aplicații vizibile sau decorative, 5052 e alegerea mai sigură." },
+      { q: "Poate fi aluminiul eloxat direct după tăiere laser?", a: "Da, dacă tăierea s-a făcut cu azot N₂ ca gaz de asistare — suprafața rămâne fără oxid și e aptă pentru eloxare directă. Dacă s-a folosit aer comprimat, e nevoie de o ușoară curățare chimică înainte. Specificați la comandă că piesa va fi eloxată." },
+      { q: "Care e grosimea maximă de aluminiu pe care o tăiați?", a: "10mm pentru aliajele 5052 și 6061, 6mm pentru aluminiu pur 1050/1060. La grosimi > 6mm, calitatea marginii depinde și de aliaj — testăm un eșantion la cerere." },
+      { q: "Ce toleranțe obțin pe aluminiu față de oțel?", a: "Toleranțele sunt similare: ±0.1mm pe contur la grosimi standard. La grosimi mari (8–10mm) sau la piese cu detalii fine, toleranța practică poate fi ±0.15mm — consultați-ne dacă aveți cerințe mai strânse." },
+    ],
+  },
 ];
 
 export default posts;

@@ -33,7 +33,7 @@ export function LocalBusinessSchema() {
         closes: "20:00",
       },
     ],
-    sameAs: [site.socials.facebook, site.maps],
+    sameAs: [site.socials.facebook, site.socials.linkedin, site.maps],
     areaServed: [
       { "@type": "City", name: "Iași" },
       { "@type": "AdministrativeArea", name: "Moldova, România" },
@@ -44,7 +44,62 @@ export function LocalBusinessSchema() {
       "Prelucrare abkant CNC",
       "Inginerie inversă piese metalice",
       "Mitsubishi ML3015EX",
+      "Debitare aluminiu laser",
+      "Confecții metalice la comandă",
+      "Elemente decorative din metal",
+      "Piese industriale la comandă",
     ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Servicii prelucrare metal CNC",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Debitare Laser CNC",
+            description: "Tăiere laser CO2 CNC pentru oțel, inox și aluminiu. Mitsubishi ML3015EX 4.5kW, toleranță ±0.05mm, de la 1 bucată.",
+            url: `${site.url}/servicii/debitare-laser`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Prelucrare Abkant CNC",
+            description: "Îndoire tablă CNC cu presă de 160T, 4 axe. Oțel, inox, aluminiu până la 12mm, repetabilitate ±0.1°.",
+            url: `${site.url}/servicii/prelucrare-abkant`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Confecții Metalice la Comandă",
+            description: "Dulapuri metalice, rafturi industriale, structuri din tablă la comandă. De la 1 bucată, dimensiuni custom.",
+            url: `${site.url}/servicii/confectii-metalice`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Piese Industriale la Comandă",
+            description: "Piese de schimb și componente industriale din tablă CNC. Inginerie inversă, de la 1 bucată, urgențe prioritizate.",
+            url: `${site.url}/servicii/piese-industriale-la-comanda`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Elemente Decorative din Metal",
+            description: "Garduri Corten, panouri perforat, litere și semnalistică din tablă. Orice pattern DXF/AI, de la 1 bucată.",
+            url: `${site.url}/servicii/elemente-decorative-metal`,
+          },
+        },
+      ],
+    },
     vatID: site.cui,
   };
 

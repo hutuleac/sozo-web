@@ -47,7 +47,7 @@ const equipmentSpecs = [
 
 const benefits = [
   { icon: Target, title: "Precizie", text: "±0.05mm pozițional, ±0.02mm repetabilitate. De 3× mai precis decât media mașinilor de import comod." },
-  { icon: Zap, title: "Viteză", text: "Fibră laser pe tablă subțire — de câteva ori mai rapid decât CO₂. Fișier clar: ofertă în 2–4h. Proiecte complexe: 24–48h. Urgențele — prioritizate." },
+  { icon: Zap, title: "Viteză", text: "CO2 4.5kW cu cap de tăiere rapid — fișier clar: ofertă în 2–4h, producție în 1–3 zile lucrătoare. Urgențe prioritizate în programul de producție." },
   { icon: Layers, title: "Versatilitate", text: "Oțel, inox, aluminiu. Contururi fine, găuri mici, profile complexe imposibil de făcut cu plasma." },
   { icon: Repeat, title: "Eficiență", text: "Loturi de la 1 piesă. Zero costuri matriță. Primul lot costă cât al sutălea." },
 ];
@@ -88,6 +88,7 @@ const faqs: FAQItem[] = [
   { q: "Ce grosime minimă de tablă puteți procesa?", a: "Nu există o limită minimă strictă. Tăiem regulat inox de 0.5mm și oțel de 0.8mm. Sub 0.5mm poate apărea deformare termică — consultați-ne înainte de a finaliza proiectul." },
   { q: "Puteți tăia tabla cu folia de protecție aplicată?", a: "Da, tăiem cu folia intactă. Recomandăm să o lăsați până la instalarea pieselor pentru a evita zgârieturile în transport și manipulare." },
   { q: "Faceți și marcaj laser sau gravură pe aceeași mașină?", a: "Mitsubishi ML3015EX este optimizat pentru tăiere, nu pentru gravură fină. Putem executa linii de pliere superficiale (score lines) dacă sunt necesare. Pentru gravură decorativă sau marcare industrială, recomandăm un serviciu dedicat." },
+  { q: "Faceți și finisare după tăiere — vopsire, zincare, eloxare aluminiu?", a: "Ne specializăm în debitare laser CNC. Pentru vopsire pulbere, zincare la cald sau eloxare aluminiu, colaborăm cu parteneri locali verificați din Iași și putem coordona procesul complet la cerere — primiți piesele gata de instalare sau asamblare." },
 ];
 
 const breadcrumbs = [
@@ -183,8 +184,80 @@ export default function DebitareLaserPage() {
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* Aluminium focus */}
       <section className="py-20 md:py-28">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-8 lg:px-12">
+          <SectionHeader
+            eyebrow="Material · Aluminiu"
+            heading="Debitare aluminiu laser CNC — particularități"
+            subheading="Aluminiul are proprietăți optice diferite față de oțel. Laserul CO2 de 4.5kW cu gaz de asistare azot (N₂) îl taie curat, fără strat de oxid, fără decolorare."
+          />
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="space-y-6">
+              <div className="bg-bg-elevated border border-border rounded-lg overflow-hidden">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-border bg-bg-surface">
+                      <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-3 px-5">Aliaj</th>
+                      <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-3 px-5">Grosime max</th>
+                      <th className="text-left text-text-secondary font-mono uppercase tracking-wider text-xs py-3 px-5">Caracteristici</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      { a: "5052-H32", t: "10 mm", n: "Ductil, taie curat, ideal decorativ și structural" },
+                      { a: "6061-T6",  t: "10 mm", n: "Mai dur, margine mai rugusă la grosimi mari — specificați dacă e critic" },
+                      { a: "1050 / 1060", t: "6 mm", n: "Aluminiu pur — taie excelent, aplicații electrice și termice" },
+                    ].map((r) => (
+                      <tr key={r.a} className="border-b border-border-subtle last:border-0">
+                        <td className="font-mono text-tech py-3 px-5">{r.a}</td>
+                        <td className="font-mono text-tech py-3 px-5">{r.t}</td>
+                        <td className="text-text-secondary py-3 px-5">{r.n}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  "Gaz de asistare N₂ — suprafață fără oxid, aptă pentru eloxare sau vopsire directă",
+                  "Toleranță ±0.1mm pe contur, găuri de la 1×t minim",
+                  "Folia de protecție rămâne intactă — piese fără zgârieturi",
+                  "Greutate ~3× mai mică decât oțelul la aceeași grosime",
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-3 text-text-secondary text-sm">
+                    <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-h4 text-text-primary mb-5">Aplicații tipice aluminiu</h3>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  { t: "Cadre și profile aluminiu la comandă", d: "Rame ferestre custom, cadre echipamente, structuri portante ușoare" },
+                  { t: "Carcase și panouri", d: "Carcase echipamente electrice, panouri de acces, uși tehnice, capace" },
+                  { t: "Elemente decorative", d: "Panouri perforat, litere, garduri și ecrane — eloxate sau vopsite" },
+                  { t: "Piese industriale ușoare", d: "Suporți, plăci de montaj, ghidaje pentru aplicații cu cerință de masă redusă" },
+                  { t: "Prototipuri design", d: "Iterații rapide pentru designeri industriali și arhitecți — de la 1 bucată" },
+                ].map((a) => (
+                  <div key={a.t} className="flex gap-4 p-4 bg-bg-elevated border border-border rounded">
+                    <div className="w-1 bg-accent rounded-full flex-shrink-0" />
+                    <div>
+                      <h4 className="text-text-primary font-semibold text-sm mb-1">{a.t}</h4>
+                      <p className="text-text-secondary text-xs">{a.d}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-20 md:py-28 bg-bg-elevated border-y border-border">
         <div className="max-w-[1280px] mx-auto px-6 md:px-8 lg:px-12">
           <SectionHeader eyebrow="Beneficii" heading="De ce alegi laserul (vs plasma, ștanțare, frezare)" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

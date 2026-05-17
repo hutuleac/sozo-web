@@ -61,7 +61,7 @@ const process = [
 ];
 
 const faqs: FAQItem[] = [
-  { q: "Faceți și finisare — vopsire, zincare, eloxare?", a: "Ne specializăm în debitare laser CO2 și îndoire abkant. Pentru vopsire, zincare la cald sau eloxare aluminiu, colaborăm cu parteneri locali verificați și putem coordona procesul complet la cerere." },
+  { q: "Faceți și finisare după execuție — vopsire pulbere, zincare, eloxare aluminiu?", a: "Ne specializăm în debitare laser CO2 și îndoire abkant. Pentru vopsire pulbere (paleta RAL completă), zincare la cald sau eloxare aluminiu, colaborăm cu parteneri locali verificați din Iași și putem coordona procesul complet la cerere — primiți piesele gata de instalare sau asamblare." },
   { q: "Pot trimite o schiță de mână pentru ofertă inițială?", a: "Da. O fotografie clară a schiței cu dimensiunile principale, materialul și grosimea e suficientă pentru o ofertă orientativă. Convertim noi schița în fișier de producție după confirmare." },
   { q: "Care e grosimea maximă de tablă pentru un dulap metalic?", a: "Structura unui dulap se execută de obicei din tablă de 1.5–3 mm (pereți, uși) și 4–6 mm (cadru, talpă). Presa noastră de 160T îndoaie oțel până la 12 mm — mai mult decât suficient pentru orice dulap industrial." },
   { q: "Livrați în afara Iașului?", a: "Da, livrăm în toată România prin curier sau transport dedicat pentru piese mari. Costul de transport e calculat la comandă în funcție de dimensiuni și greutate." },
