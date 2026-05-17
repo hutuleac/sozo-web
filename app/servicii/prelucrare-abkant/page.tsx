@@ -74,6 +74,11 @@ const faqs: FAQItem[] = [
   { q: "Puteți îndoi și piesele tăiate de voi cu laserul?", a: "Da, și acesta este serviciul complet cel mai eficient: tăiem și îndoim în cadrul aceleiași comenzi, fără costuri de transport intermediare." },
   { q: "Care este toleranța la îndoire?", a: "Repetabilitate unghiulară ±0.1° (precizie). Toleranță dimensională ±0.1mm pentru cote critice, ±0.3mm standard." },
   { q: "Cum primesc oferta?", a: "Trimiți fișierul sau schița pe WhatsApp, email sau formularul de ofertă. Fișier clar și piesă standard: de obicei 2–4h. Proiecte cu consultanță sau iterații: 24–48h. Program L–S, 07:00–20:00." },
+  { q: "Ce profile puteți executa la abkant?", a: "Presa CNC de 160T execută profile L, U/C, Z, hat (omega), cutii metalice și orice profil multi-bend cu 3 sau mai multe îndoiri. Back gauge-ul CNC programabil asigură repetabilitate identică pe toată seria, indiferent de complexitate." },
+  { q: "Ce format de fișier este ideal pentru o piesă cu îndoiri?", a: "DXF cu cotele flangelor și liniile de pliere marcate pe layere separate, sau STEP 3D. Fișierele din SolidWorks, Fusion 360 sau Inventor sunt preferate — includ K-factor și bend allowance automat. PDF cu dimensiuni clare sau schiță de mână funcționează pentru ofertă inițială." },
+  { q: "Puteți îndoi piese tăiate de altcineva sau aduse de client?", a: "Da, lucrăm și pe materie primă sau piese tăiate extern. Specificați materialul exact, grosimea și marca — sunt necesare pentru a calcula corect raza și K-factor-ul și a evita crăpăturile la îndoire." },
+  { q: "Care este lungimea minimă a flanșei pe care o puteți îndoi?", a: "Lungimea minimă a flanșei depinde de grosimea tablei și de matriță. Regulă practică: min. flanșă ≈ 3× grosimea tablei + 2mm. Exemplu: tablă de 2mm → flanșă minimă ~8mm. Pentru profile cu flange foarte înguste, consultați-ne înainte de finalizarea desenului." },
+  { q: "Cum influențează direcția fibrei materialului calitatea îndoirii?", a: "Îndoirea perpendiculară pe direcția de laminare reduce riscul crăpăturilor la raze mici — important mai ales pentru inox și aluminiu dur. La proiectare, indicați direcția preferată sau lăsați-ne să optimizăm orientarea în fișier înainte de tăiere." },
 ];
 
 const breadcrumbs = [

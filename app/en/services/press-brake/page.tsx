@@ -73,6 +73,11 @@ const faqs: FAQItem[] = [
   { q: "Can you bend parts that you also cut with the laser?", a: "Yes, this is our most efficient combined service: we cut and bend in the same order, with no intermediate transport costs." },
   { q: "What is the bending tolerance?", a: "Angular repeatability ±0.1° (precision). Dimensional tolerance ±0.1mm for critical dimensions, ±0.3mm standard." },
   { q: "How do I receive a quote?", a: "Send your file or sketch via WhatsApp, email, or the quote form. Clear file and standard part: usually 2–4h. Complex projects: 24–48h. Mon–Sat 07:00–20:00." },
+  { q: "What profiles can you produce on the press brake?", a: "Our 160T CNC press produces L, U/C, Z, hat (omega), metal enclosures, and any multi-bend profile with 3 or more bends. The programmable CNC back gauge ensures identical repeatability across the entire batch, regardless of complexity." },
+  { q: "What file format works best for a part with bends?", a: "DXF with flange dimensions and fold lines on separate layers, or a 3D STEP file. Files from SolidWorks, Fusion 360, or Inventor are preferred — they include K-factor and bend allowance automatically. A PDF with clear dimensions or a hand sketch works for an initial quote." },
+  { q: "Can you bend parts cut by someone else or supplied by the client?", a: "Yes, we work with client-supplied blanks or parts cut externally. Please specify the exact material, thickness, and grade — these are needed to calculate bend radius and K-factor correctly and avoid cracking." },
+  { q: "What is the minimum flange length you can bend?", a: "Minimum flange length depends on material thickness and tooling. Practical rule: min. flange ≈ 3× material thickness + 2mm. Example: 2mm sheet → minimum flange ~8mm. For very narrow flanges, consult us before finalising the drawing." },
+  { q: "How does material grain direction affect bend quality?", a: "Bending perpendicular to the rolling direction reduces cracking risk at tight radii — especially important for stainless steel and hard aluminium alloys. Indicate your preferred grain direction in the design, or let us optimise orientation before cutting." },
 ];
 
 const breadcrumbs = [
