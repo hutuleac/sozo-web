@@ -640,6 +640,101 @@ const posts: Post[] = [
       { q: "Pot comanda un panou de probă înainte de comanda finală?", a: "Da. Dacă nu ești sigur de dimensiunile exacte sau de densitatea patternului, executăm o probă pe un panou mai mic (de obicei 300×300 sau 500×500 mm). Costul probei se deduce din comanda finală dacă continuați cu ea." },
     ],
   },
+  // ─────────────────────────────────────────────────────────────
+  // 8. Designer industrial × atelier CNC
+  // ─────────────────────────────────────────────────────────────
+  {
+    slug: "cum-lucrezi-atelier-cnc-designer-industrial",
+    title: "Cum lucrezi cu un atelier CNC dacă ești designer industrial",
+    description:
+      "Ghid practic pentru designeri, arhitecți și studenți la design: ce poate face un atelier CNC, cum pregătești brieful, ce fișier să trimiți și greșelile care costă timp și bani.",
+    metaTitle: "Cum lucrezi cu un atelier CNC — ghid pentru designeri industriali | SOZO PROJECT",
+    metaDescription:
+      "Ghid complet pentru designeri industriali și arhitecți: brief corect, format fișier DXF/AI, toleranțe, greșeli comune la prima comandă CNC. Atelier Iași — de la 1 bucată.",
+    datePublished: "2026-05-17",
+    readMin: 7,
+    hero: images.engineering,
+    heroAlt: "Atelier CNC laser — vedere de ansamblu mașină de debitare și operator",
+    category: "Ghid",
+    body: [
+      { type: "p", text: "Prima comandă la un atelier CNC e aproape întotdeauna mai complicată decât pare. Nu pentru că procesul e complex — ci pentru că designerii și inginerii de atelier vorbesc limbi diferite. Designerul gândește în formă și estetică; atelierul gândește în fișiere, material, toleranțe și timp de tăiere. Articolul de față traduce între cele două." },
+      { type: "h2", text: "Ce poate face un atelier CNC pentru un designer — și ce nu poate" },
+      { type: "p", text: "Un atelier de debitare laser și îndoire abkant poate executa orice piesă plată sau profilată (îndoită) care poate fi definită în 2D. Concret:" },
+      { type: "ul", items: [
+        "Piese tăiate din tablă cu orice formă de contur — geometric, organic, text, logo",
+        "Profile îndoite la unghiuri precise: L, U, Z, hat section, forme personalizate",
+        "Prototipuri și serii mici — de la 1 bucată",
+        "Piese cu toleranțe de ±0.05–0.1mm",
+        "Materiale: oțel carbon, inox 304/316, aluminiu 5052/6061, Corten",
+      ]},
+      { type: "p", text: "Ce NU poate face un atelier de tablă CNC standard:" },
+      { type: "ul", items: [
+        "Forme 3D complexe — suprafețe curbe libere necesită frezare multiax sau turnare",
+        "Grosimi foarte mari — debitare laser are limite pe material (oțel max 20mm, inox max 10mm)",
+        "Filetare, sudură sau tratamente de suprafață — de obicei subcontractate sau făcute în altă etapă",
+        "Produse finite cu asamblare — atelierul livrează piese, nu ansambluri complete (de regulă)",
+      ]},
+      { type: "h2", text: "Cum pregătești brieful: ce trebuie să specifici obligatoriu" },
+      { type: "p", text: "Un brief incomplet e cea mai frecventă cauză de întârzieri și costuri suplimentare. Atelierul nu poate presupune ce nu e scris. Lista minimă:" },
+      {
+        type: "table",
+        head: ["Informație", "De ce contează", "Exemplu"],
+        rows: [
+          ["Dimensiunile exacte", "Prețul se calculează pe suprafața tablei și pe conturul de tăiere", "300 × 450 mm"],
+          ["Materialul", "Preț, parametri de tăiere și finisaj diferă radical", "Inox 304"],
+          ["Grosimea tablei", "Afectează raza de îndoire, forța necesară și toleranța", "2 mm"],
+          ["Cantitatea", "La 1 buc vs 50 buc, prețul pe bucată diferă semnificativ", "3 buc prototip"],
+          ["Toleranțele critice", "Dacă nu specifici, atelierul aplică toleranța standard (±0.1mm)", "±0.2mm pe alezaje"],
+          ["Finisajul dorit", "Tăiat brut, șlefuit, vopsit, zincat — fiecare presupune alt flux", "Vopsire pulbere RAL 9005"],
+          ["Termenul", "Urgențele au prioritate în programare și pot influența prețul", "Vineri la prânz"],
+        ],
+      },
+      { type: "h2", text: "Ce format de fișier să folosești" },
+      { type: "p", text: "Ordinea preferinței din perspectiva atelierului:" },
+      { type: "ol", items: [
+        "DXF sau DWG — standardul de facto pentru debitare laser 2D. Scară 1:1 în milimetri, contururi închise, un singur layer de tăiere",
+        "SVG vectorial — acceptat direct din Illustrator sau Inkscape, util pentru pattern-uri decorative",
+        "STEP / STP — pentru piese cu îndoiri complexe unde geometria 3D e necesară",
+        "AI (Illustrator) sau CDR (Corel) — acceptat de multe ateliere după conversie",
+        "PDF vectorial cu dimensiuni reale — ca ultimă opțiune; verificați că nu e rasterizat",
+        "Foto sau schiță de mână — doar pentru estimare orientativă, nu pentru producție",
+      ]},
+      { type: "callout", text: "Regula de aur: trimite fișierul la scară 1:1 în milimetri. Cel mai frecvent motiv de reluare a comenzii e fișierul în inches sau la scară greșită — atelierul taie exact ce e în fișier." },
+      { type: "h2", text: "Cum funcționează prețul la un atelier CNC" },
+      { type: "p", text: "Prețul final include trei componente: material, timp de tăiere și programare CNC. Lucruri pe care mulți designeri nu le știu la prima comandă:" },
+      { type: "ul", items: [
+        "Prețul nu e 'pe metru pătrat' — conturul de tăiere contează la fel de mult ca suprafața. O piesă cu multe găuri mici costă mai mult decât una mare cu contur simplu, chiar la aceeași suprafață",
+        "La piese unice, costul de programare se împarte pe 1 bucată — piesele simple rămân accesibile, piesele complexe pot fi surprinzător de scumpe per bucată",
+        "De la 10 bucăți în sus, prețul pe bucată scade semnificativ — programarea se amortizează",
+        "Urgențele costă mai mult — prioriotizarea în programul de producție are un cost",
+        "Verificarea fișierului e gratuită — trimite fișierul înainte de confirmare, nu după",
+      ]},
+      { type: "h2", text: "6 greșeli comune ale designerilor la prima comandă CNC" },
+      { type: "ol", items: [
+        "Fișier fără grosime specificată — atelierul nu poate alege materialul în locul tău; prețul și comportamentul la îndoire depind de ea",
+        "Raze interioare de 0 (colțuri vii) la piese îndoite — imposibil fizic; raza minimă e funcție de grosimea tablei și materialului",
+        "Goluri mai mici decât grosimea tablei — laserul nu poate tăia un slot de 1mm în tablă de 2mm fără să topească marginile",
+        "Design ignorând direcția de laminare — la aluminiu 6061-T6 sau inox, orientarea față de fibră poate face diferența dintre o piesă funcțională și una crăpată",
+        "Nu specifică toleranțele critice — atelierul aplică toleranța standard; dacă ai alezaje pentru rulmenți sau îmbinări precise, specifică explicit",
+        "Comandă prototip fără să ceară o probă sau verificare a fișierului — o iterație corectată înainte de tăiere e gratuită; re-tăierea după livrare nu e",
+      ]},
+      { type: "h2", text: "Întrebările bune pe care să le pui atelierului" },
+      { type: "ul", items: [
+        "'Verificați fișierul înainte de tăiere?' — un atelier serios face asta implicit",
+        "'Care e raza minimă de îndoire pentru grosimea și materialul ales?' — răspunsul îți spune dacă designul e fabricabil",
+        "'Pot vedea o bucată de material înainte de comandă?' — util dacă finisajul vizual e critic",
+        "'Cum se schimbă prețul dacă măresc cantitatea la X bucăți?' — ajută la decizia de prototip vs serie mică",
+        "'Care e termenul standard și ce înseamnă urgent?' — termenele variază mult între ateliere",
+      ]},
+      { type: "internal", href: "/servicii/elemente-decorative-metal", label: "Elemente decorative din metal la comandă", text: "Garduri Corten, panouri perforat, litere și semnalistică — orice pattern DXF/AI, de la 1 bucată." },
+    ],
+    faqs: [
+      { q: "Ca designer, trebuie să știu să creez fișiere DXF?", a: "Nu neapărat. Dacă lucrezi în Illustrator, Corel sau Inkscape, exportul în SVG sau DXF e o opțiune din meniu. Dacă lucrezi în Fusion 360 sau SolidWorks, DXF-ul se exportă direct din sketch. Dacă nu ai niciun software CAD/vector, o schiță clară cu dimensiuni ne permite să creăm fișierul — contra unui mic cost de desenare." },
+      { q: "Pot comanda un singur prototip înainte de seria finală?", a: "Da, fără cantitate minimă. Un prototip de 1 bucată are același proces ca o serie — singura diferență e că programarea CNC se amortizează pe o singură piesă, deci costul per bucată e mai mare. Recomandat înainte de orice serie > 20 bucăți." },
+      { q: "Ce toleranțe pot obține pentru o piesă de design cu cerințe de asamblare?", a: "Debitare laser CO2: ±0.05–0.1mm pe contur. Îndoire abkant CNC: ±0.1° pe unghi, ±0.2mm pe dimensiunile rezultate. Dacă ai alezaje pentru rulmenți sau știfturi, specifică toleranța explicită în desen — atelierul poate optimiza parametrii de tăiere." },
+      { q: "Care e diferența practică dintre debitare laser și frezare CNC?", a: "Laserul taie tablă plată din exterior spre interior — ideal pentru contururi 2D complexe, găuri, pattern-uri. Frezarea CNC îndepărtează material din bloc solid — necesară pentru forme 3D, adâncimi, cavități. Dacă piesa ta se poate descompune în table tăiate și eventual îndoite, laserul e mai rapid și mai ieftin." },
+    ],
+  },
 ];
 
 export default posts;
