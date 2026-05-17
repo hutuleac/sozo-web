@@ -424,6 +424,96 @@ const posts: Post[] = [
       { q: "Inox sau oțel pentru conveioare în mediu umed?", a: "Inox 304 pentru medii umede generale (alimente, produse chimice de curățare). Inox 316 pentru medii cu cloruri, acid sau saramură. Oțelul carbon e potrivit doar în medii uscate sau dacă se vopsește/zincează ulterior." },
     ],
   },
+  // ─────────────────────────────────────────────────────────────
+  // 6. Garduri din tablă debitată
+  // ─────────────────────────────────────────────────────────────
+  {
+    slug: "garduri-tabla-debitata-custom",
+    title: "Garduri din tablă debitată la comandă: de la fișier la produs finit",
+    description:
+      "Cum funcționează un gard din tablă debitată laser — materiale, patternuri, dimensiuni și pregătire fișier. Ghid complet pentru proprietari și designeri.",
+    metaTitle: "Garduri din tablă debitată la comandă — Iași | SOZO PROJECT",
+    metaDescription:
+      "Garduri și panouri din tablă debitată laser la comandă în Iași: oțel zincat, Corten, inox. Orice pattern DXF/AI. De la 1 panou, ofertă în aceeași zi. ☎ +40 732 034 386",
+    datePublished: "2026-05-17",
+    readMin: 5,
+    hero: images.portfolio4,
+    heroAlt: "Panou decorativ din tablă inox tăiat laser CNC — exemplu gard metalic la comandă Iași",
+    category: "Decorativ",
+    body: [
+      { type: "p", text: "Un gard din tablă debitată laser nu arată ca gardurile clasice. Nu are spalieri sudate, nu are ornamente turnate și nu are profile standard. Are un pattern ales de tine — geometric, organic, cu inițiale sau cu un motiv care se potrivește casei. Și totul pornește dintr-un fișier DXF." },
+      { type: "h2", text: "Ce e un gard din tablă debitată și cum diferă de variantele clasice" },
+      {
+        type: "table",
+        head: ["Tip gard", "Aspect", "Flexibilitate design", "Durabilitate"],
+        rows: [
+          ["Tablă debitată laser", "Pattern orice formă, finish modern", "Maximă — orice fișier DXF/AI", "Ridicată (zincat/inox/vopsit)"],
+          ["Țeavă și profil sudat", "Geometric simplu, grilaj clasic", "Limitată — forme standard", "Ridicată"],
+          ["Gard ornamental turnat", "Ornamente clasice", "Mică — cataloage de tipare", "Ridicată"],
+          ["Tablă plină", "Opac, industrial", "Minimă", "Ridicată"],
+        ],
+      },
+      { type: "p", text: "Avantajul tablei debitate: obții orice pattern — inclusiv logo-ul firmei, un motiv floral, un design geometric parametric sau litere — dintr-un singur material, cu o singură operație de tăiere." },
+      { type: "h2", text: "Materiale recomandate pentru garduri exterioare" },
+      {
+        type: "table",
+        head: ["Material", "Finisaj recomandat", "Durabilitate exterior", "Observații"],
+        rows: [
+          ["Oțel carbon (OL37)", "Zincare + vopsire pulbere", "15–25 ani", "Cel mai comun — raport preț/durabilitate optim"],
+          ["Oțel Corten (S355J2W)", "Patinat natural (fără finisaj)", "30–50 ani", "Culoare ruginie caracteristică, strat de oxid protector stabil"],
+          ["Inox 304", "Periat sau lustruit", "25+ ani", "Rezistent la coroziune, aspect premium, fără întreținere"],
+          ["Aluminiu", "Eloxat sau vopsit pulbere", "20+ ani", "Greutate redusă — ideal pentru porți batante mari"],
+        ],
+      },
+      { type: "callout", text: "Cortenlul nu necesită vopsire. Se lasă să patineze natural timp de 6–18 luni și formează un strat de oxid stabil care oprește coroziunea în profunzime. Rezultat: textură brută, estetică industrială, durată de viață maximă." },
+      { type: "h2", text: "Cum pregătești fișierul pentru un gard debitare laser" },
+      { type: "p", text: "Fișierul e totul. Laserul taie exact ce e în fișier — nu interpolează, nu completează goluri, nu presupune intenții. Cerințe minime pentru un fișier corect:" },
+      { type: "ul", items: [
+        "Format: DXF sau DWG (recomandat), SVG, AI (Illustrator), sau PDF vectorial cu dimensiuni reale",
+        "Scară 1:1 în milimetri — nu în inches, nu în procente",
+        "Contururi închise — toate liniile trebuie să formeze contururi complete, fără segmente deschise",
+        "Un singur layer de tăiere — fără cote, texte de descriere sau axe pe același layer",
+        "Spațiu minim între decupaje: cel puțin egal cu grosimea tablei (ex: tablă 3mm → min 3mm între găuri adiacente)",
+      ]},
+      { type: "p", text: "Ai un pattern în Illustrator sau Corel? Exportează ca DXF sau SVG și trimite-l. Dacă nu ești sigur că fișierul e corect, trimite-l oricum — îl verificăm gratuit înainte de ofertă și îți spunem dacă e nevoie de ajustări." },
+      { type: "h2", text: "Tipuri de patternuri și ce funcționează bine la tăiere" },
+      { type: "ul", items: [
+        "Geometric (grile, hexagoane, romburi, triunghiuri) — cel mai simplu de tăiat, structură rigidă după tăiere",
+        "Organic (frunze, crengi, valuri) — funcționează bine dacă contururile rămase au min 8–10mm grosime la tablă de 2–3mm",
+        "Text și litere — literele cu insule interioare (O, A, B, D, P) se taie cu microponți care se șlefuiesc ulterior sau se proiectează cu bare de legătură tip stencil",
+        "Logo sau motiv complex — trimite fișierul vectorial, evaluăm structura și semnalăm dacă e nevoie de ajustări de fabricabilitate",
+      ]},
+      { type: "h2", text: "Dimensiuni și grosimi disponibile" },
+      {
+        type: "table",
+        head: ["Parametru", "Valoare"],
+        rows: [
+          ["Dimensiune maximă panou dintr-o singură bucată", "3050 × 1525 mm"],
+          ["Grosime recomandată garduri oțel/Corten exterior", "3–8 mm"],
+          ["Grosime recomandată inox exterior", "2–5 mm"],
+          ["Toleranță de tăiere", "±0.1 mm"],
+          ["Spațiu minim între decupaje", "≥ grosimea tablei"],
+        ],
+      },
+      { type: "p", text: "Panouri mai mari se execută din două sau mai multe bucăți cu îmbinare — specificați dimensiunea totală și propunem soluția constructivă." },
+      { type: "h2", text: "Procesul la SOZO PROJECT: de la fișier la panou gata" },
+      { type: "ol", items: [
+        "Trimiți fișierul (DXF, AI, PDF) sau o schiță cu dimensiunile și materialul dorit",
+        "Verificăm fișierul și semnalăm orice problemă de fabricabilitate — gratuit",
+        "Primești oferta cu preț, material și termen (2–4h pentru fișiere clare)",
+        "Confirmi comanda — avans sau credit pentru clienți recurenți",
+        "Tăiem și controlăm dimensional",
+        "Ridici din Strada Aviației 9, Iași sau livrăm prin curier în toată România",
+      ]},
+      { type: "internal", href: "/servicii/debitare-laser", label: "Specificații complete debitare laser CNC", text: "Materiale acceptate, grosimi maxime, toleranțe și formate de fișier acceptate." },
+    ],
+    faqs: [
+      { q: "Acceptați fișiere din Illustrator sau Corel pentru garduri decorative?", a: "Da. Fișierele AI (Illustrator) și CDR (Corel) se pot converti direct în DXF pentru producție. Exportați ca DXF sau SVG și trimiteți — dacă fișierul nu e imediat compatibil, îl ajustăm și confirmăm înainte de tăiere." },
+      { q: "Care e dimensiunea maximă a unui panou dintr-o singură bucată?", a: "3050 × 1525 mm — dimensiunea maximă a tablei pe care o procesăm. Panouri mai mari se execută din mai multe bucăți cu îmbinare — specificați dimensiunile finale și propunem soluția constructivă." },
+      { q: "Ce material recomandați pentru un gard exterior cu întreținere minimă?", a: "Corten pentru aspect industrial-rustic fără niciun finisaj suplimentar — patinează natural și devine autoportant. Inox 304 pentru aspect premium fără întreținere. Oțel carbon zincat + vopsit pulbere pentru raportul preț/durabilitate optim." },
+      { q: "Pot comanda un panou de probă înainte de comanda finală?", a: "Da. Dacă nu ești sigur de dimensiunile exacte sau de densitatea patternului, executăm o probă pe un panou mai mic (de obicei 300×300 sau 500×500 mm). Costul probei se deduce din comanda finală dacă continuați cu ea." },
+    ],
+  },
 ];
 
 export default posts;
