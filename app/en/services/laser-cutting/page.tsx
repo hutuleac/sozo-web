@@ -82,6 +82,11 @@ const faqs: FAQItem[] = [
   { q: "What is the lead time?", a: "Standard: 2–5 business days. Urgent: same-day delivery (availability confirmed at order)." },
   { q: "Is there a minimum order?", a: "No minimum piece count. We accept single parts. Minimum billable value: 50 RON + VAT (~€10)." },
   { q: "Can you do reverse engineering?", a: "Yes. Bring or send the physical part, we measure it and create the production file. Included at no extra cost for simple parts." },
+  { q: "Do you accept Illustrator (AI) or SVG files?", a: "Yes, if they are vector files at 1:1 scale in millimetres. We prefer conversion to DXF before sending — in Illustrator: File → Export → DXF. A PDF with exact dimensions also works for an initial quote." },
+  { q: "What is the kerf width and how does it affect part dimensions?", a: "Kerf varies between 0.2 and 0.5mm depending on material and thickness. For tight-fit or press-fit assemblies, design holes 0.15mm larger than the nominal diameter. We're happy to advise before you finalise your file." },
+  { q: "What is the minimum sheet thickness you can process?", a: "There is no hard lower limit. We regularly cut 0.5mm stainless and 0.8mm steel. Below 0.5mm, thermal distortion is a risk — consult us before finalising the design." },
+  { q: "Can you cut sheet metal with the protective film still applied?", a: "Yes, we cut with the protective film intact. We recommend leaving it on until installation to avoid scratches during transport and handling." },
+  { q: "Can you do laser marking or engraving on the same machine?", a: "The Mitsubishi ML3015EX is optimised for cutting, not fine engraving. We can add superficial score lines for fold guides if needed. For decorative engraving or industrial marking, we recommend a dedicated laser marking service." },
 ];
 
 const breadcrumbs = [

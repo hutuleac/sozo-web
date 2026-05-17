@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Debitare Laser CNC Iași | SOZO PROJECT",
     description:
-      "Mitsubishi ML3015EX, fibră 4.5kW, precizie ±0.05mm. Oțel până la 20mm, inox/aluminiu până la 10mm.",
+      "Mitsubishi ML3015EX, CO2 4.5kW, precizie ±0.05mm. Oțel până la 20mm, inox/aluminiu până la 10mm.",
     url: `${site.url}${URL_PATH}`,
   },
 };
@@ -83,6 +83,11 @@ const faqs: FAQItem[] = [
   { q: "Care este termenul de livrare?", a: "Standard: 2–5 zile lucrătoare. Urgente: livrare în aceeași zi (disponibilitate confirmată la comandă)." },
   { q: "Care este comanda minimă?", a: "Nu există limită minimă de bucăți. Acceptăm și piese unice. Valoare minimă facturabilă: 50 RON + TVA." },
   { q: "Puteți face inginerie inversă?", a: "Da. Aduceți sau trimiteți piesa fizică, o măsurăm și creăm fișierul de producție. Serviciu inclus fără cost adițional pentru piese simple." },
+  { q: "Acceptați fișiere Illustrator (AI) sau SVG?", a: "Da, dacă sunt vectoriale la scară 1:1 în milimetri. Preferăm conversia în DXF înainte de trimitere — în Illustrator: File → Export → DXF. Un PDF cu dimensiuni exacte funcționează de asemenea pentru ofertă inițială." },
+  { q: "Ce este kerf-ul și cum afectează dimensiunile piesei?", a: "Kerf-ul este lățimea tăieturii lăsate de fasciculul laser — între 0.2 și 0.5mm în funcție de material și grosime. Pentru piese cu ajustaj strâns sau press-fit, dimensionați găurile cu 0.15mm mai mari decât diametrul nominal. Suntem disponibili pentru consultanță înainte de finalizarea fișierului." },
+  { q: "Ce grosime minimă de tablă puteți procesa?", a: "Nu există o limită minimă strictă. Tăiem regulat inox de 0.5mm și oțel de 0.8mm. Sub 0.5mm poate apărea deformare termică — consultați-ne înainte de a finaliza proiectul." },
+  { q: "Puteți tăia tabla cu folia de protecție aplicată?", a: "Da, tăiem cu folia intactă. Recomandăm să o lăsați până la instalarea pieselor pentru a evita zgârieturile în transport și manipulare." },
+  { q: "Faceți și marcaj laser sau gravură pe aceeași mașină?", a: "Mitsubishi ML3015EX este optimizat pentru tăiere, nu pentru gravură fină. Putem executa linii de pliere superficiale (score lines) dacă sunt necesare. Pentru gravură decorativă sau marcare industrială, recomandăm un serviciu dedicat." },
 ];
 
 const breadcrumbs = [
@@ -97,8 +102,8 @@ export default function DebitareLaserPage() {
       <ServiceHero
         eyebrow="Serviciu · Debitare Laser CNC"
         title="Debitare Laser CNC în Iași"
-        intro="SOZO PROJECT oferă servicii de debitare laser CNC în Iași cu echipament Mitsubishi ML3015EX, fibră laser de 4.5kW. Tăiem oțel carbon până la 20mm, inox 304/316 și aluminiu până la 10mm, cu precizie pozițională de ±0.05mm/500mm. Trimiți fișierul DXF, DWG sau STEP și primești ofertă în aceeași zi."
-        badges={["Mitsubishi ML3015EX", "Fibră 4.5kW", "±0.05mm", "3050 × 1525mm"]}
+        intro="SOZO PROJECT oferă servicii de debitare laser CO2 CNC în Iași cu echipament Mitsubishi ML3015EX, laser CO2 de 4.5kW. Tăiem oțel carbon până la 20mm, inox 304/316 și aluminiu până la 10mm, cu precizie pozițională de ±0.05mm/500mm. Trimiți fișierul DXF, DWG sau STEP și primești ofertă în aceeași zi."
+        badges={["Mitsubishi ML3015EX", "CO2 4.5kW", "±0.05mm", "3050 × 1525mm"]}
         image={images.precisionEdge}
         imageAlt="Margine debitată laser pe tablă inox 304, fără bavuri, suprafață curată"
         crumbs={breadcrumbs}
@@ -115,7 +120,7 @@ export default function DebitareLaserPage() {
                 subheading="Investim în echipamente de calitate industrială pentru că știm că precizia nu se negociază."
               />
               <p className="text-text-secondary leading-relaxed mb-6">
-                Mitsubishi ML3015EX este o mașină de debitare cu fibră laser din gama industrială — același tip de echipament folosit de furnizori Tier 1 din industria automotive. Precizia pozițională de ±0.05mm este de 3 ori mai bună decât media mașinilor de categorie inferioară, iar suprafața de tăiere rămâne curată, fără slag.
+                Mitsubishi ML3015EX este o mașină de debitare laser CO2 din gama industrială — același tip de echipament folosit de furnizori Tier 1 din industria automotive. Precizia pozițională de ±0.05mm este de 3 ori mai bună decât media mașinilor de categorie inferioară, iar suprafața de tăiere rămâne curată, fără slag.
               </p>
               <ul className="space-y-3">
                 {[
