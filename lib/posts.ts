@@ -735,6 +735,87 @@ const posts: Post[] = [
       { q: "Care e diferența practică dintre debitare laser și frezare CNC?", a: "Laserul taie tablă plată din exterior spre interior — ideal pentru contururi 2D complexe, găuri, pattern-uri. Frezarea CNC îndepărtează material din bloc solid — necesară pentru forme 3D, adâncimi, cavități. Dacă piesa ta se poate descompune în table tăiate și eventual îndoite, laserul e mai rapid și mai ieftin." },
     ],
   },
+  // ─────────────────────────────────────────────────────────────
+  // 9. Elemente metalice pentru spații comerciale
+  // ─────────────────────────────────────────────────────────────
+  {
+    slug: "elemente-metalice-spatii-comerciale",
+    title: "Elemente metalice pentru spații comerciale: ce se poate face și cum comanzi",
+    description:
+      "Cum integrezi metalul brut, Cortenlul sau inoxul în retail, HoReCa și birouri — panouri perforat, litere, rafturi și mobilier metalic la comandă. Ghid pentru arhitecți și designeri de interior.",
+    metaTitle: "Elemente metalice pentru spații comerciale — la comandă Iași | SOZO PROJECT",
+    metaDescription:
+      "Elemente metalice pentru retail, HoReCa și birouri: panouri perforat, litere din tablă, rafturi și mobilier metalic la comandă. Corten, inox, oțel vopsit. Atelier Iași, livrare în toată România.",
+    datePublished: "2026-05-17",
+    readMin: 6,
+    hero: images.portfolio9,
+    heroAlt: "Firmă metalică din tablă ruginită — element de branding pentru spațiu HoReCa executat laser CNC",
+    category: "Decorativ",
+    body: [
+      { type: "p", text: "Metalul brut a intrat definitiv în vocabularul vizual al spațiilor comerciale. Oțelul vopsit mat, Cortenlul patinat, inoxul periat — nu mai sunt materiale industriale ascunse în pereți, ci elemente de design vizibile, intenționate, cu identitate proprie. Și spre deosebire de multe alte materiale de finisaj, metalul tăiat laser se execută exact la dimensiunile din proiect, fără adaptări și fără compromisuri constructive." },
+      { type: "h2", text: "Ce tipuri de elemente metalice se execută pentru spații comerciale" },
+      { type: "ul", items: [
+        "Panouri perforat și ecrane decorative — separatoare de spații, fațade interne, căptușeli bar, ecrane pentru zone de așteptare",
+        "Litere, cifre și logo-uri din tablă — semnalistică, branding de perete, numere de masă, inscripții",
+        "Rafturi și display-uri metalice — retail shelving, expunere produse, wine rack, suporturi sticlă",
+        "Mobilier la comandă — picioare masă, baze pentru blat de lemn sau marmură, rame bănci, suporți bar",
+        "Suporturi și accesorii — meniuri metalice, card holders, tablouri cu rame metalice, aplice decorative",
+        "Partiții și balustrade — separatoare de zone, balustrade scări, garduri interioare cu pattern custom",
+      ]},
+      { type: "h2", text: "Materiale recomandate per estetică" },
+      { type: "p", text: "Alegerea materialului definește tonul vizual al spațiului, nu doar durabilitatea:" },
+      {
+        type: "table",
+        head: ["Estetică", "Material", "Finish", "Se potrivește cu"],
+        rows: [
+          ["Industrial brut", "Oțel carbon OL37", "Wax sau lac mat transparent", "Lemn masiv, beton aparent, cărămidă"],
+          ["Industrial modern", "Oțel carbon OL37", "Vopsire pulbere negru mat (RAL 9005) sau antracit", "Alb, gri, lemn deschis"],
+          ["Cald & organic", "Corten (S355J2W)", "Patinat natural", "Plante, lemn natural, teracotă"],
+          ["Premium rece", "Inox 304 periat", "Periat linie sau lustruit oglindă", "Marmură, sticlă, beton șlefuit"],
+          ["Minimalist light", "Aluminiu 5052", "Eloxat natural sau negru", "Spații albe, luminate, minimal"],
+        ],
+      },
+      { type: "callout", text: "Cortenlul pentru interior nu patinează la fel ca în exterior — fără umiditate și precipitații, procesul e mai lent și mai controlabil. Dacă vreți efectul vizual fără patinare activă, există și Corten pre-patinat disponibil la comandă." },
+      { type: "h2", text: "Fluxul de lucru cu un arhitect sau designer de interior" },
+      { type: "p", text: "Colaborăm frecvent cu arhitecți și designeri de interior pentru proiecte comerciale. Procesul tipic:" },
+      { type: "ol", items: [
+        "Brief vizual + dimensiuni — mood board, referințe foto, schițe cu cotele principale. Nu e nevoie de fișier tehnic complet de la început",
+        "Propunere materiale + verificare fabricabilitate — confirmăm ce se poate executa din fișierul primit și propunem dacă e nevoie de ajustări",
+        "Mostră de material (la cerere) — dacă finisajul vizual e critic, trimitem o mostră de tablă cu finisajul ales înainte de confirmare",
+        "Ofertă pe proiect — preț per element, termen de execuție și condiții de livrare",
+        "Producție — debitare laser + îndoire + control dimensional",
+        "Livrare sau pickup — ambalaj protejat, curier rapid sau transport dedicat pentru piese mari",
+      ]},
+      { type: "h2", text: "Timp de execuție — ce să incluzi în planificarea proiectului" },
+      {
+        type: "table",
+        head: ["Tip comandă", "Timp de execuție", "Observații"],
+        rows: [
+          ["Elemente simple (litere, suporturi)", "2–5 zile lucrătoare", "Fișier DXF gata, material disponibil"],
+          ["Set mediu (rafturi, panouri, 5–20 piese)", "5–10 zile lucrătoare", "Depinde de complexitate și material"],
+          ["Proiect complet (mobilier + semnalistică)", "10–20 zile lucrătoare", "Recomandăm confirmare cu 3–4 săptămâni înainte de inaugurare"],
+          ["Urgențe punctuale", "1–3 zile lucrătoare", "Disponibilitate la confirmare — contactați direct pe WhatsApp"],
+        ],
+      },
+      { type: "p", text: "Cel mai frecvent motiv de depășire a termenului: fișierele sosesc târziu sau necesită revizii. Recomandăm trimiterea fișierelor cu cel puțin 2 săptămâni înainte de data instalării, chiar dacă producția durează mai puțin." },
+      { type: "h2", text: "Ce include un brief bun pentru un proiect comercial" },
+      { type: "ul", items: [
+        "Plan sau schiță cu cotele exacte — chiar și o fotografie cu dimensiunile scrise de mână e suficientă pentru o estimare",
+        "Referințe vizuale — Pinterest, foto din alte proiecte, materiale de mood board",
+        "Material și finish vizual dorit — sau lăsați-ne să propunem pe baza esteticii dorite",
+        "Cantitate per element — important pentru calculul prețului",
+        "Data inaugurării sau termenul limită de livrare — planificăm în funcție de el",
+        "Dacă se dorește montaj — colaborăm cu echipe de montaj la cerere",
+      ]},
+      { type: "internal", href: "/servicii/elemente-decorative-metal", label: "Serviciul complet — elemente decorative din metal", text: "Garduri Corten, panouri perforat, litere și semnalistică — orice pattern, de la 1 bucată." },
+    ],
+    faqs: [
+      { q: "Cât durează execuția unui set de elemente pentru un spațiu comercial?", a: "Depinde de complexitate: elemente simple (litere, suporturi) — 2–5 zile lucrătoare. Un set mediu de rafturi sau panouri — 5–10 zile. Un proiect complet cu mobilier și semnalistică — 10–20 zile. Recomandăm confirmare cu cel puțin 3–4 săptămâni înainte de inaugurare." },
+      { q: "Pot comanda elemente de test sau mostră înainte de toată comanda?", a: "Da. Trimitem mostră de material cu finisajul ales (wax, vopsire pulbere, inox periat) și putem executa un element pilot înainte de comanda finală. Recomandat pentru proiecte cu vizibilitate ridicată sau materiale speciale." },
+      { q: "Livrați și în afara Iașului pentru proiecte comerciale?", a: "Da, livrăm în toată România prin curier rapid sau transport dedicat pentru piese mari sau fragile. Costul de transport se calculează la comandă în funcție de dimensiuni, greutate și distanță." },
+      { q: "Faceți și montaj sau doar livrare?", a: "Ne specializăm în producție — debitare laser și îndoire. Nu avem echipă proprie de montaj, dar colaborăm cu echipe specializate din Iași și putem coordona la cerere pentru proiecte mari." },
+    ],
+  },
 ];
 
 export default posts;
