@@ -62,6 +62,9 @@ export const images = {
   // Portfolio — SOZO piece: metal laser-cut sign
   portfolioSemnMetal:    "/images/portofoliu-semn-metal-laser.webp",
 
+  // SOZO own equipment — Mitsubishi ML3015EX laser CNC
+  mitsubishiLaser: "/images/echipament-mitsubishi-laser-cnc-scantei.webp",
+
   // Stainless steel & lights batch — service page heroes
   balustradeDecorLaser:   "/images/servicii-balustrade-laser-ornamental.webp",
   masaInoxHoreca:         "/images/servicii-masa-inox-picioare-otel.webp",

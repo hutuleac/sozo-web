@@ -16,8 +16,8 @@ const posts: Post[] = [
     datePublished: "2026-05-09",
     dateModified: "2026-05-16",
     readMin: 6,
-    hero: images.heroLaser,
-    heroAlt: "Comparație debitare laser CNC vs plasma CNC — atelier industrial",
+    hero: images.mitsubishiLaser,
+    heroAlt: "Laser CNC Mitsubishi ML3015EX în acțiune — scântei la debitarea tablei, atelier SOZO PROJECT Iași",
     category: "Tehnic",
     body: [
       { type: "p", text: "Pentru orice piesă tăiată din tablă există două tehnologii principale care concurează direct: debitarea laser CNC și debitarea plasma CNC. Alegerea greșită nu e o catastrofă, dar costă — fie în precizie, fie în bani, fie în timp. Acest ghid îți spune când alegi fiecare metodă, pe baza specificațiilor reale ale piesei tale, nu a vorbei vânzătorului." },
@@ -274,8 +274,8 @@ const posts: Post[] = [
     datePublished: "2026-05-09",
     dateModified: "2026-05-16",
     readMin: 8,
-    hero: images.steelSheet,
-    heroAlt: "Tablă oțel pregătită pentru debitare laser CNC, atelier industrial",
+    hero: images.laserSparksCNC,
+    heroAlt: "Laser CNC în acțiune — tăiere tablă oțel cu scântei, precizie ±0.05mm",
     category: "Tehnic",
     body: [
       { type: "p", text: "Trei familii de materiale acoperă peste 95% din debitarea laser industrială: oțel carbon, inox și aluminiu. Fiecare cu nuanțe care influențează cost, comportament la tăiere, toleranțe finale și aplicații recomandate. Ghidul de mai jos te ajută să alegi corect din prima — nu după primul lot eșuat." },

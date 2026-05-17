@@ -105,8 +105,8 @@ export default function DebitareLaserPage() {
         title="Debitare Laser CNC în Iași"
         intro="SOZO PROJECT oferă servicii de debitare laser CO2 CNC în Iași cu echipament Mitsubishi ML3015EX, laser CO2 de 4.5kW. Tăiem oțel carbon până la 20mm, inox 304/316 și aluminiu până la 10mm, cu precizie pozițională de ±0.05mm/500mm. Trimiți fișierul DXF, DWG sau STEP și primești ofertă în aceeași zi."
         badges={["Mitsubishi ML3015EX", "CO2 4.5kW", "±0.05mm", "3050 × 1525mm"]}
-        image={images.precisionEdge}
-        imageAlt="Margine debitată laser pe tablă inox 304, fără bavuri, suprafață curată"
+        image={images.mitsubishiLaser}
+        imageAlt="Laser CNC Mitsubishi ML3015EX în acțiune — debitare tablă cu scântei, atelier SOZO PROJECT Iași"
         crumbs={breadcrumbs}
       />
 
