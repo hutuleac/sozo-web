@@ -37,7 +37,7 @@ const groupOrders: FAQItem[] = [
   { q: "Care este termenul de livrare?", a: "Pentru comenzi standard: 2–5 zile lucrătoare. Pentru urgențe: livrare în aceeași zi (sub rezerva capacității disponibile). Ne contactezi și stabilim împreună." },
   { q: "Cum primesc oferta?", a: "Trimiți fișierul și detaliile pe WhatsApp, email sau formularul de ofertă. Fișier clar și piesă standard: de obicei în 2–4h. Proiecte cu consultanță, iterații de design sau specificații incomplete: 24–48h. Program L–S, 07:00–20:00." },
   { q: "Care este comanda minimă?", a: "Nu există comandă minimă ca număr de bucăți. Acceptăm și piese unice. Valoarea minimă de facturat este de 50 RON + TVA." },
-  { q: "Livrați în toată România?", a: "Da, prin servicii de curierat rapid. Ridicarea de la sediu (Strada Aviației 9, Iași) este gratuită." },
+  { q: "Livrați în toată România?", a: "Da, prin servicii de curierat rapid. Ridicarea de la sediu (Strada Aurel Vlaicu 77, Iași) este gratuită." },
 ];
 
 const allFaqs = [...groupLaser, ...groupAbkant, ...groupOrders];

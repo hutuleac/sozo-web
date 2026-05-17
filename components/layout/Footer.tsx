@@ -93,7 +93,7 @@ export function Footer() {
 
         <div className="border-t border-border-subtle mt-12 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="text-xs text-text-muted">
-            {site.legalName} · CUI {site.cui} · {site.reg} · © {new Date().getFullYear()} SOZO PROJECT.
+            {site.legalName} · Sediu social: {site.legalAddress} · CUI {site.cui} · {site.reg} · © {new Date().getFullYear()} SOZO PROJECT.
           </p>
           <div className="flex gap-6 text-xs text-text-muted">
             <Link href="/politica-de-confidentialitate" className="hover:text-text-secondary transition-colors">Politică de confidențialitate</Link>

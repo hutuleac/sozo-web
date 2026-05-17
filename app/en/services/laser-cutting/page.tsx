@@ -57,7 +57,7 @@ const process = [
   { n: 3, t: "Consultation", d: "We review your design and flag any optimisation before cutting." },
   { n: 4, t: "Confirm order", d: "Agree on price, quantity, and lead time. Deposit or credit for recurring clients." },
   { n: 5, t: "We produce", d: "CNC programming → cutting → dimensional and visual quality control." },
-  { n: 6, t: "Pick up or delivery", d: "Strada Aviației 9, Iași — or fast courier anywhere in Romania." },
+  { n: 6, t: "Pick up or delivery", d: "Strada Aurel Vlaicu 77, Iași — or fast courier anywhere in Romania." },
 ];
 
 const fileFormats = [

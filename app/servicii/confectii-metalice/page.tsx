@@ -57,7 +57,7 @@ const process = [
   { n: 3, t: "Consultanță înainte de producție", d: "Verificăm desenul și semnalăm orice problemă de fabricabilitate — grosimi, raze de îndoire, toleranțe." },
   { n: 4, t: "Confirmi comanda", d: "Acord pe preț, cantitate și termen. Avans sau credit pentru clienți recurenți." },
   { n: 5, t: "Producem", d: "Programare CNC → debitare laser → îndoire abkant → control dimensional și vizual." },
-  { n: 6, t: "Ridici sau livrăm", d: "Strada Aviației 9, Iași — sau curier rapid în toată România." },
+  { n: 6, t: "Ridici sau livrăm", d: "Strada Aurel Vlaicu 77, Iași — sau curier rapid în toată România." },
 ];
 
 const faqs: FAQItem[] = [

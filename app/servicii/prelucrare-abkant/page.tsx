@@ -64,7 +64,7 @@ const process = [
   { n: 2, t: "Primești oferta", d: "Fișier pregătit și specificații clare: de obicei 2–4h. Proiecte complexe sau cu consultanță: 24–48h. Program L–S, 07:00–20:00." },
   { n: 3, t: "Confirmi", d: "Acord pe preț, cantitate și termen." },
   { n: 4, t: "Producem", d: "Programare CNC → debitare (dacă e cazul) → îndoire → control unghi/dimensiune." },
-  { n: 5, t: "Ridici sau livrăm", d: "Sediul Strada Aviației 9, Iași — sau curier rapid în toată România." },
+  { n: 5, t: "Ridici sau livrăm", d: "Sediul Strada Aurel Vlaicu 77, Iași — sau curier rapid în toată România." },
 ];
 
 const faqs: FAQItem[] = [

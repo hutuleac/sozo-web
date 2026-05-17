@@ -63,7 +63,7 @@ const process = [
   { n: 2, t: "Receive your quote", d: "Clear file and standard part: usually 2–4h. Complex projects or requiring consultation: 24–48h. Mon–Sat 07:00–20:00." },
   { n: 3, t: "Confirm order", d: "Agree on price, quantity, and lead time." },
   { n: 4, t: "We produce", d: "CNC programming → cutting (if needed) → bending → angle/dimension quality control." },
-  { n: 5, t: "Pick up or delivery", d: "Strada Aviației 9, Iași — or fast courier anywhere in Romania." },
+  { n: 5, t: "Pick up or delivery", d: "Strada Aurel Vlaicu 77, Iași — or fast courier anywhere in Romania." },
 ];
 
 const faqs: FAQItem[] = [

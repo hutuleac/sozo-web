@@ -629,7 +629,7 @@ const posts: Post[] = [
         "Primești oferta cu preț, material și termen (2–4h pentru fișiere clare)",
         "Confirmi comanda — avans sau credit pentru clienți recurenți",
         "Tăiem și controlăm dimensional",
-        "Ridici din Strada Aviației 9, Iași sau livrăm prin curier în toată România",
+        "Ridici din Strada Aurel Vlaicu 77, Iași sau livrăm prin curier în toată România",
       ]},
       { type: "internal", href: "/servicii/debitare-laser", label: "Specificații complete debitare laser CNC", text: "Materiale acceptate, grosimi maxime, toleranțe și formate de fișier acceptate." },
     ],

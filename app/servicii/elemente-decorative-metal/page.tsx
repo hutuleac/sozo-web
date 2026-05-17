@@ -59,7 +59,7 @@ const process = [
   { n: 3, t: "Primești oferta", d: "Fișier clar: 2–4h. Proiecte cu consultanță sau materiale speciale: 24h. Program L–S, 07:00–20:00." },
   { n: 4, t: "Confirmi comanda", d: "Acord pe preț, material, finish și termen. Avans sau credit pentru clienți recurenți." },
   { n: 5, t: "Tăiem cu precizie ±0.1mm", d: "Mitsubishi ML3015EX CO2 4.5kW — muchii curate, fără slag, fără bavuri pe tablă debitată." },
-  { n: 6, t: "Ridici sau livrăm", d: "Strada Aviației 9, Iași — sau curier rapid în toată România. Piesele sunt ambalate protejat." },
+  { n: 6, t: "Ridici sau livrăm", d: "Strada Aurel Vlaicu 77, Iași — sau curier rapid în toată România. Piesele sunt ambalate protejat." },
 ];
 
 const faqs: FAQItem[] = [

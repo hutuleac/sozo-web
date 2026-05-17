@@ -108,7 +108,7 @@ export default function EnContactPage() {
           <div className="border border-border rounded-lg overflow-hidden bg-bg-elevated">
             <iframe
               src={mapsEmbed}
-              title="SOZO PROJECT location — Strada Aviației 9, Iași"
+              title="SOZO PROJECT location — Strada Aurel Vlaicu 77, Iași"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-[400px]"
