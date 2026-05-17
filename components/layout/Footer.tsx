@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Linkedin } from "lucide-react";
 import { Logo } from "./Logo";
 import { site, telLink, mailLink, mapsLink } from "@/lib/site";
 
@@ -23,6 +23,15 @@ export function Footer() {
                 className="w-9 h-9 flex items-center justify-center rounded border border-border hover:border-border-strong text-text-secondary hover:text-text-primary transition-colors"
               >
                 <Facebook className="w-4 h-4" />
+              </a>
+              <a
+                href={site.socials.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn SOZO PROJECT"
+                className="w-9 h-9 flex items-center justify-center rounded border border-border hover:border-border-strong text-text-secondary hover:text-text-primary transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
               </a>
             </div>
           </div>

@@ -15,7 +15,7 @@ const URL_PATH = "/en/services/laser-cutting";
 export const metadata: Metadata = {
   title: "CNC Laser Cutting Iași — Mitsubishi ML3015EX",
   description:
-    "CNC fiber laser cutting services in Iași, Romania. Mitsubishi ML3015EX, steel up to 20mm, stainless/aluminium up to 10mm, ±0.05mm tolerance. Quote same day. ☎ +40 732 034 386",
+    "CNC CO2 laser cutting services in Iași, Romania. Mitsubishi ML3015EX, steel up to 20mm, stainless/aluminium up to 10mm, ±0.05mm tolerance. Quote same day. ☎ +40 732 034 386",
   alternates: {
     canonical: URL_PATH,
     languages: { "en": URL_PATH, "ro": "/servicii/debitare-laser", "x-default": "/servicii/debitare-laser" },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CNC Laser Cutting Iași | SOZO PROJECT",
     description:
-      "Mitsubishi ML3015EX, 4.5kW fiber laser, ±0.05mm precision. Steel up to 20mm, stainless/aluminium up to 10mm.",
+      "Mitsubishi ML3015EX, 4.5kW CO2 laser, ±0.05mm precision. Steel up to 20mm, stainless/aluminium up to 10mm.",
     url: `${site.url}${URL_PATH}`,
   },
 };
@@ -46,7 +46,7 @@ const equipmentSpecs = [
 
 const benefits = [
   { icon: Target, title: "Precision", text: "±0.05mm positional, ±0.02mm repeatability. 3× better than the average import machine." },
-  { icon: Zap, title: "Speed", text: "Fiber laser on thin sheet — several times faster than CO₂. Clear file: quote in 2–4h. Complex projects: 24–48h. Urgent orders prioritised." },
+  { icon: Zap, title: "Speed", text: "CO₂ laser precision from thin sheet to 20mm steel — fast, clean cuts across the full range. Clear file: quote in 2–4h. Complex projects: 24–48h. Urgent orders prioritised." },
   { icon: Layers, title: "Versatility", text: "Steel, stainless, aluminium. Fine contours, small holes, complex profiles impossible with plasma." },
   { icon: Repeat, title: "Efficiency", text: "Batches from 1 piece. Zero tooling costs. Part 1 costs the same as part 100." },
 ];
@@ -96,8 +96,8 @@ export default function LaserCuttingPage() {
       <ServiceHero
         eyebrow="Service · CNC Laser Cutting"
         title="CNC Laser Cutting in Iași"
-        intro="SOZO PROJECT provides CNC fiber laser cutting in Iași using a Mitsubishi ML3015EX, 4.5kW fiber laser. We cut carbon steel up to 20mm, stainless 304/316 and aluminium up to 10mm, with positional accuracy of ±0.05mm/500mm. Send your DXF, DWG or STEP file and get a quote the same day."
-        badges={["Mitsubishi ML3015EX", "4.5kW Fiber", "±0.05mm", "3050 × 1525mm"]}
+        intro="SOZO PROJECT provides CNC CO2 laser cutting in Iași using a Mitsubishi ML3015EX, 4.5kW CO2 laser. We cut carbon steel up to 20mm, stainless 304/316 and aluminium up to 10mm, with positional accuracy of ±0.05mm/500mm. Send your DXF, DWG or STEP file and get a quote the same day."
+        badges={["Mitsubishi ML3015EX", "4.5kW CO2", "±0.05mm", "3050 × 1525mm"]}
         image={images.precisionEdge}
         imageAlt="Laser-cut edge on 304 stainless steel — no burrs, clean surface"
         crumbs={breadcrumbs}
@@ -114,7 +114,7 @@ export default function LaserCuttingPage() {
                 subheading="We invest in industrial-grade equipment because precision is non-negotiable."
               />
               <p className="text-text-secondary leading-relaxed mb-6">
-                The Mitsubishi ML3015EX is an industrial-class fiber laser cutting machine — the same type used by Tier 1 automotive suppliers. Its positional accuracy of ±0.05mm is 3× better than entry-level machines, and the cut surface is clean with no slag.
+                The Mitsubishi ML3015EX is an industrial-class CO2 laser cutting machine — the same type used by Tier 1 automotive suppliers. Its positional accuracy of ±0.05mm is 3× better than entry-level machines, and the cut surface is clean with no slag.
               </p>
               <ul className="space-y-3">
                 {[
@@ -298,9 +298,9 @@ export default function LaserCuttingPage() {
 
       <ServiceSchema
         name="CNC Laser Cutting"
-        description="CNC fiber laser cutting on Mitsubishi ML3015EX. Steel up to 20mm, stainless/aluminium up to 10mm. Tolerance ±0.05mm."
+        description="CNC CO2 laser cutting on Mitsubishi ML3015EX. Steel up to 20mm, stainless/aluminium up to 10mm. Tolerance ±0.05mm."
         url={`${site.url}${URL_PATH}`}
-        serviceType="Laser cutting / CNC fiber laser"
+        serviceType="Laser cutting / CNC CO2 laser"
       />
       <FAQSchema items={faqs} />
       <BreadcrumbSchema

@@ -20,6 +20,7 @@ export const site = {
   hours: "Luni–Sâmbătă, 07:00–20:00",
   socials: {
     facebook: "https://facebook.com/61569075448456",
+    linkedin: "https://www.linkedin.com/company/sozo-project/",
   },
   defaultLocale: "ro" as const,
 };

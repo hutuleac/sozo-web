@@ -299,7 +299,7 @@ export default function DebitareLaserPage() {
         name="Debitare Laser CNC"
         description="Servicii debitare laser CNC pe Mitsubishi ML3015EX. Oțel până la 20mm, inox/aluminiu până la 10mm. Toleranță ±0.05mm."
         url={`${site.url}${URL_PATH}`}
-        serviceType="Laser cutting / CNC fiber laser"
+        serviceType="Laser cutting / CNC CO2 laser"
       />
       <FAQSchema items={faqs} />
       <BreadcrumbSchema

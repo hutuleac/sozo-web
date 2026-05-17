@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | SOZO PROJECT",
   },
   description:
-    "SOZO PROJECT — CNC fiber laser cutting and press brake bending in Iași, Romania. Mitsubishi ML3015EX, ±0.05mm precision, same-day quotes. ☎ +40 732 034 386",
+    "SOZO PROJECT — CNC CO2 laser cutting and press brake bending in Iași, Romania. Mitsubishi ML3015EX, ±0.05mm precision, same-day quotes. ☎ +40 732 034 386",
   alternates: {
     canonical: `${site.url}/en`,
     languages: { "en": "/en", "ro": "/", "x-default": "/" },

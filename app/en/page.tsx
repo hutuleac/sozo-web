@@ -8,14 +8,14 @@ import { site, whatsappLinkEN } from "@/lib/site";
 export const metadata: Metadata = {
   title: "CNC Metal Fabrication Iași, Romania — SOZO PROJECT",
   description:
-    "SOZO PROJECT — CNC fiber laser cutting and press brake bending in Iași, Romania. Mitsubishi ML3015EX, ±0.05mm precision, same-day quotes. ☎ +40 732 034 386",
+    "SOZO PROJECT — CNC CO2 laser cutting and press brake bending in Iași, Romania. Mitsubishi ML3015EX, ±0.05mm precision, same-day quotes. ☎ +40 732 034 386",
   alternates: {
     canonical: "/en",
     languages: { "en": "/en", "ro": "/", "x-default": "/" },
   },
   openGraph: {
     title: "CNC Metal Fabrication Iași | SOZO PROJECT",
-    description: "CNC fiber laser cutting & press brake bending. ±0.05mm precision, same-day quotes.",
+    description: "CNC CO2 laser cutting & press brake bending. ±0.05mm precision, same-day quotes.",
     url: `${site.url}/en`,
   },
 };
@@ -24,8 +24,8 @@ const services = [
   {
     title: "CNC Laser Cutting",
     href: "/en/services/laser-cutting",
-    specs: ["Mitsubishi ML3015EX", "4.5kW fiber laser", "Steel up to 20mm", "±0.05mm precision"],
-    desc: "High-precision fiber laser cutting on carbon steel, stainless 304/316, and aluminium. Industrial-grade machine, clean edges, no slag.",
+    specs: ["Mitsubishi ML3015EX", "4.5kW CO2 laser", "Steel up to 20mm", "±0.05mm precision"],
+    desc: "High-precision CO2 laser cutting on carbon steel, stainless 304/316, and aluminium. Industrial-grade machine, clean edges, no slag.",
   },
   {
     title: "CNC Press Brake Bending",
@@ -56,7 +56,7 @@ export default function EnHomePage() {
             Precision laser cutting &amp; press brake bending in Romania
           </h1>
           <p className="text-lg text-text-secondary max-w-2xl mb-10 leading-relaxed">
-            SOZO PROJECT provides CNC fiber laser cutting and press brake bending in Iași, Romania.
+            SOZO PROJECT provides CNC CO2 laser cutting and press brake bending in Iași, Romania.
             We serve B2B clients across the EU with fast turnaround, industrial-grade equipment, and same-day quotes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
