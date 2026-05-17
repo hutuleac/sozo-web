@@ -563,8 +563,8 @@ const posts: Post[] = [
       "Garduri și panouri din tablă debitată laser la comandă în Iași: oțel zincat, Corten, inox. Orice pattern DXF/AI. De la 1 panou, ofertă în aceeași zi. ☎ +40 732 034 386",
     datePublished: "2026-05-17",
     readMin: 5,
-    hero: images.portfolio4,
-    heroAlt: "Panou decorativ din tablă inox tăiat laser CNC — exemplu gard metalic la comandă Iași",
+    hero: images.gardMetalicLamele,
+    heroAlt: "Gard metalic din lamele orizontale — tablă tăiată laser CNC, aspect modern, lumina apusului",
     category: "Decorativ",
     body: [
       { type: "p", text: "Un gard din tablă debitată laser nu arată ca gardurile clasice. Nu are spalieri sudate, nu are ornamente turnate și nu are profile standard. Are un pattern ales de tine — geometric, organic, cu inițiale sau cu un motiv care se potrivește casei. Și totul pornește dintr-un fișier DXF." },
@@ -653,8 +653,8 @@ const posts: Post[] = [
       "Ghid complet pentru designeri industriali și arhitecți: brief corect, format fișier DXF/AI, toleranțe, greșeli comune la prima comandă CNC. Atelier Iași — de la 1 bucată.",
     datePublished: "2026-05-17",
     readMin: 7,
-    hero: images.engineering,
-    heroAlt: "Atelier CNC laser — vedere de ansamblu mașină de debitare și operator",
+    hero: images.elementDecorativPattern,
+    heroAlt: "Element decorativ din tablă tăiată laser CNC — pattern complex cu efect de lumină",
     category: "Ghid",
     body: [
       { type: "p", text: "Prima comandă la un atelier CNC e aproape întotdeauna mai complicată decât pare. Nu pentru că procesul e complex — ci pentru că designerii și inginerii de atelier vorbesc limbi diferite. Designerul gândește în formă și estetică; atelierul gândește în fișiere, material, toleranțe și timp de tăiere. Articolul de față traduce între cele două." },
@@ -748,8 +748,8 @@ const posts: Post[] = [
       "Elemente metalice pentru retail, HoReCa și birouri: panouri perforat, litere din tablă, rafturi și mobilier metalic la comandă. Corten, inox, oțel vopsit. Atelier Iași, livrare în toată România.",
     datePublished: "2026-05-17",
     readMin: 6,
-    hero: images.portfolio9,
-    heroAlt: "Firmă metalică din tablă ruginită — element de branding pentru spațiu HoReCa executat laser CNC",
+    hero: images.cortenInteriorHoreca,
+    heroAlt: "Perete Corten într-un spațiu HoReCa — fațadă metalică oxidată cu efect industrial, finisaj natural",
     category: "Decorativ",
     body: [
       { type: "p", text: "Metalul brut a intrat definitiv în vocabularul vizual al spațiilor comerciale. Oțelul vopsit mat, Cortenlul patinat, inoxul periat — nu mai sunt materiale industriale ascunse în pereți, ci elemente de design vizibile, intenționate, cu identitate proprie. Și spre deosebire de multe alte materiale de finisaj, metalul tăiat laser se execută exact la dimensiunile din proiect, fără adaptări și fără compromisuri constructive." },
@@ -903,8 +903,8 @@ const posts: Post[] = [
       "Tot ce trebuie să știi despre oțelul Corten: ce aliaje sunt, cum funcționează patinarea, gard Corten vs vopsit, paturi înălțate din Corten (siguranță Fe), grosimi și prețuri orientative. Execuție Iași.",
     datePublished: "2026-05-17",
     readMin: 8,
-    hero: images.portfolio9,
-    heroAlt: "Firmă metalică patinată din oțel Corten — tablă tăiată laser CNC, aspect industrial brut, Iași",
+    hero: images.cortenFatada,
+    heroAlt: "Fațadă din oțel Corten perforat — panouri metalice patinate cu decupaje circulare, arhitectură contemporană",
     category: "Materiale",
     body: [
       { type: "p", text: "\"Vreau garduri ruginite\" sau \"acel aspect de tablă oxidată, ca la berăriile moderne\" — asta auzim des. Materialul din spatele acelui look nu e tablă ordinară care a stat în ploaie. E oțelul Corten, un aliaj proiectat special să-și formeze o rugină protectoare — și să se oprească acolo." },

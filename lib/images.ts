@@ -43,6 +43,24 @@ export const images = {
   welding:   "/images/servicii-sudura-metal-atelier.webp",
   grinding:  "/images/servicii-slefuire-metal-atelier.webp",
   bending:   "/images/servicii-operator-abkant-indoire.webp",
+
+  // Blog / article images — Corten steel content
+  cortenFatada:          "/images/blog-corten-fatada-perforata.webp",
+  cortenInteriorHoreca:  "/images/blog-corten-interior-horeca.webp",
+  cortenCabinaExterior:  "/images/blog-corten-cabana-exterior.webp",
+  cortenCladireArh:      "/images/blog-corten-cladire-arhitectura.webp",
+  cortenCladireUrban:    "/images/blog-corten-cladire-urbana.webp",
+  cortenFatadaPanorama:  "/images/blog-corten-fatada-panoramica.webp",
+  cortenPanouGard:       "/images/blog-corten-panou-perforat-gard.webp",
+
+  // Blog / article images — decorative & perforated metal
+  panouDecorativLaser:   "/images/serviciu-panou-decorativ-laser.webp",
+  panouPerforatApus:     "/images/blog-panou-perforat-apus.webp",
+  gardMetalicLamele:     "/images/blog-gard-metalic-lamele.webp",
+  elementDecorativPattern:"/images/blog-element-decorativ-pattern.webp",
+
+  // Portfolio — SOZO piece: metal laser-cut sign
+  portfolioSemnMetal:    "/images/portofoliu-semn-metal-laser.webp",
 };
 
 export type ImageKey = keyof typeof images;

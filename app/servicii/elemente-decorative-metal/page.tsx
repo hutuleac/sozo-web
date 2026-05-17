@@ -85,8 +85,8 @@ export default function ElementeDecorativePage() {
         title="Elemente decorative din metal la comandă — Iași"
         intro="SOZO PROJECT execută elemente decorative din metal la comandă în Iași: garduri Corten cu pattern custom, panouri perforat, litere și cifre din tablă, semnalistică pentru spații comerciale. Orice fișier vectorial — DXF, AI, SVG — tăiat cu precizie ±0.1mm. De la 1 bucată, ofertă în aceeași zi."
         badges={["Orice pattern DXF/AI", "Corten · Inox · Oțel", "De la 1 buc", "Iași"]}
-        image={images.portfolio2}
-        imageAlt="Panou decorativ floral din tablă tăiată laser CNC — element decorativ metal la comandă Iași"
+        image={images.panouDecorativLaser}
+        imageAlt="Panouri decorative din tablă tăiată laser — pattern organic pe fațadă exterioară, execuție CNC la comandă"
         crumbs={breadcrumbs}
       />
 

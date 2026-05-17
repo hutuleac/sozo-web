@@ -31,6 +31,7 @@ const items: PortfolioItem[] = [
   { id: "10", src: images.steelSheet,    alt: "Tablă perforată din inox 304 debitată laser CNC — panouri decorative serie la comandă Iași",                          title: "Tablă perforată inox 304",      material: "Inox",   service: "Laser",           industry: "Decorativ" },
   { id: "11", src: images.portfolio2,    alt: "Panou decorativ floral din tablă tăiată laser CNC — element decorativ metal la comandă Iași",                         title: "Panou decorativ floral",        material: "Oțel",   service: "Laser",           industry: "Decorativ" },
   { id: "12", src: images.portfolio5,    alt: "Producție serie rondele din oțel tăiate laser CNC — piese industriale la comandă Iași",                               title: "Serie rondele oțel",            material: "Oțel",   service: "Laser",           industry: "Industrial" },
+  { id: "13", src: images.portfolioSemnMetal, alt: "Semn decorativ laser cut din tablă metalică — inscripție decorativă cu text tăiat laser CNC, finisaj industrial", title: "Semn decorativ metalic",        material: "Oțel",   service: "Laser",           industry: "Decorativ" },
 ];
 
 export default function PortofoliuPage() {
