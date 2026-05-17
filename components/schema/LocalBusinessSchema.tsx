@@ -54,6 +54,8 @@ export function LocalBusinessSchema() {
       "Panouri tablă balustrade scări",
       "Piese schimb utilaje agricole tablă CNC",
       "Componente combine tractoare semănători",
+      "Carcase tablouri electrice la comandă",
+      "Dulapuri metalice automatizări industriale",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -129,6 +131,15 @@ export function LocalBusinessSchema() {
             name: "Piese Utilaje Agricole la Comandă",
             description: "Piese de schimb din tablă CNC pentru utilaje agricole în Iași și Moldova. Combine, tractoare, semănători. Inginerie inversă inclusă, urgențe prioritizate, de la 1 bucată.",
             url: `${site.url}/servicii/piese-utilaje-agricole`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Tablouri Electrice și Carcase Metalice la Comandă",
+            description: "Carcase pentru tablouri electrice, dulapuri de automatizare și carcase tehnice din tablă CNC. Dimensiuni personalizate, decupaje precise, de la 1 bucată.",
+            url: `${site.url}/servicii/tablouri-electrice-carcase`,
           },
         },
       ],
