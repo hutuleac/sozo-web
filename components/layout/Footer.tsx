@@ -46,6 +46,7 @@ export function Footer() {
               <li><Link href="/servicii/prelucrare-abkant" className="text-text-secondary hover:text-accent transition-colors">Prelucrare Abkant CNC</Link></li>
               <li><Link href="/servicii/confectii-metalice" className="text-text-secondary hover:text-accent transition-colors">Confecții Metalice</Link></li>
               <li><Link href="/servicii/piese-industriale-la-comanda" className="text-text-secondary hover:text-accent transition-colors">Piese Industriale</Link></li>
+              <li><Link href="/servicii/elemente-decorative-metal" className="text-text-secondary hover:text-accent transition-colors">Elemente Decorative</Link></li>
               <li><Link href="/cere-oferta" className="text-text-secondary hover:text-accent transition-colors">Cere ofertă</Link></li>
             </ul>
           </div>
