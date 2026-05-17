@@ -158,7 +158,13 @@ export default function ElementeDecorativePage() {
               </table>
             </div>
           </div>
-          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="mt-8 bg-bg-elevated border border-border rounded-lg px-6 py-5">
+            <p className="text-text-primary font-semibold text-sm mb-1">Ce este oțelul Corten?</p>
+            <p className="text-text-secondary text-sm leading-relaxed">
+              Oțelul Corten (denumire comercială pentru aliajele rezistente la intemperii, ex. S355J2W) e un oțel carbon cu adaos de cupru, crom și nichel care dezvoltă natural un strat protector de oxid stabil — "rugina controlată". Spre deosebire de oțelul moale care corodează în profunzime, stratul de oxid al Cortenului oprește coroziunea și se stabilizează în 6–18 luni de expunere la exterior. Rezultatul: aspect brut, industrial, fără nicio vopsire, cu durată de viață de 30–50 ani.
+            </p>
+          </div>
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               "Debitare laser CO2 CNC — toleranță ±0.1mm",
               "Format acceptat: DXF, AI, SVG, PDF vectorial",
