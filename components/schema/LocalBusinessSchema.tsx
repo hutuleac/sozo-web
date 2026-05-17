@@ -48,6 +48,8 @@ export function LocalBusinessSchema() {
       "Confecții metalice la comandă",
       "Elemente decorative din metal",
       "Piese industriale la comandă",
+      "Inox 304 316 industria alimentară",
+      "Tablă inox HoReCa bucătărie profesională",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -96,6 +98,15 @@ export function LocalBusinessSchema() {
             name: "Elemente Decorative din Metal",
             description: "Garduri Corten, panouri perforat, litere și semnalistică din tablă. Orice pattern DXF/AI, de la 1 bucată.",
             url: `${site.url}/servicii/elemente-decorative-metal`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Inox pentru Industria Alimentară și HoReCa",
+            description: "Tablă inox 304 și 316 tăiată laser CNC la comandă. Mese de lucru, rafturi, carcase echipamente, tăvi pentru bucătării profesionale și procesare alimente.",
+            url: `${site.url}/servicii/inox-industria-alimentara`,
           },
         },
       ],
