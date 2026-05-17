@@ -19,18 +19,18 @@ export const metadata: Metadata = {
 };
 
 const items: PortfolioItem[] = [
-  { id: "1", src: images.portfolio1, alt: "Componentă mecanică debitată laser", title: "Componentă structurală", material: "Oțel", service: "Laser", industry: "Construcții" },
-  { id: "2", src: images.precisionEdge, alt: "Margine debitată pe inox", title: "Detaliu margine debitare", material: "Inox", service: "Laser", industry: "Prototipuri" },
-  { id: "3", src: images.portfolio3, alt: "Piese metalice diverse", title: "Set componente schimb", material: "Oțel", service: "Laser + Abkant", industry: "Echipamente agricole" },
-  { id: "4", src: images.portfolio4, alt: "Profil U metalic", title: "Profil U îndoit", material: "Oțel", service: "Abkant", industry: "Construcții" },
-  { id: "5", src: images.finishedParts, alt: "Piese finisate aliniate", title: "Serie scurtă piese auto", material: "Oțel", service: "Laser + Abkant", industry: "Automotive" },
-  { id: "6", src: images.portfolio6, alt: "Componentă inox lustruit", title: "Detaliu inox 304", material: "Inox", service: "Laser", industry: "Mobilă industrială" },
-  { id: "7", src: images.portfolio7, alt: "Carcasă metalică pliată", title: "Carcasă metalică", material: "Oțel", service: "Abkant", industry: "Mobilă industrială" },
-  { id: "8", src: images.portfolio8, alt: "Suport metalic complex", title: "Suport multifuncțional", material: "Aluminiu", service: "Laser + Abkant", industry: "Prototipuri" },
-  { id: "9", src: images.portfolio9, alt: "Set rame metalice", title: "Rame structurale", material: "Oțel", service: "Abkant", industry: "Mobilă industrială" },
-  { id: "10", src: images.steelSheet, alt: "Tablă oțel pregătită", title: "Tablă pregătită debitare", material: "Oțel", service: "Laser", industry: "Construcții" },
-  { id: "11", src: images.portfolio2, alt: "Cutie metalică finisată", title: "Cutie tehnică", material: "Oțel", service: "Laser + Abkant", industry: "Echipamente agricole" },
-  { id: "12", src: images.portfolio5, alt: "Componente prototipuri R&D", title: "Prototip R&D", material: "Aluminiu", service: "Laser", industry: "Prototipuri" },
+  { id: "1",  src: images.portfolio1,    alt: "Firmă luminoasă Depobox din tablă tăiată laser CNC — semnalistică metalică la comandă Iași",                          title: "Firmă luminoasă la comandă",    material: "Oțel",   service: "Laser",           industry: "Semnalistică" },
+  { id: "2",  src: images.precisionEdge, alt: "Suporți din inox 304 tăiați laser CNC — precizie ±0.1mm, debitare tablă inox Iași",                                    title: "Suporți inox 304",              material: "Inox",   service: "Laser",           industry: "Industrial" },
+  { id: "3",  src: images.portfolio3,    alt: "Panou decorativ cu portret tăiat laser din tablă oțel — element decorativ metal la comandă Iași",                      title: "Panou decorativ portret",       material: "Oțel",   service: "Laser",           industry: "Decorativ" },
+  { id: "4",  src: images.portfolio4,    alt: "Grătar metalic decorativ din inox 304 tăiat laser CNC — panou perforat la comandă Iași",                               title: "Grătar metalic inox",           material: "Inox",   service: "Laser",           industry: "Decorativ" },
+  { id: "5",  src: images.finishedParts, alt: "Suporți din oțel debitați laser și îndoiți abkant CNC — serie scurtă piese metalice la comandă Iași",                 title: "Suporți oțel laser + abkant",   material: "Oțel",   service: "Laser + Abkant",  industry: "Industrial" },
+  { id: "6",  src: images.portfolio6,    alt: "Piesă din tablă oțel debitată laser CNC și îndoită abkant — profil metalic personalizat la comandă",                  title: "Profil tablă îndoit",           material: "Oțel",   service: "Laser + Abkant",  industry: "Construcții" },
+  { id: "7",  src: images.portfolio7,    alt: "Serie suporți U din oțel executați prin debitare laser și îndoire abkant CNC — producție repetabilă Iași",             title: "Serie suporți U oțel",          material: "Oțel",   service: "Laser + Abkant",  industry: "Industrial" },
+  { id: "8",  src: images.portfolio8,    alt: "Suport din oțel executat prin debitare laser CNC și îndoire abkant — piesă metalică la comandă Iași",                 title: "Suport oțel la comandă",        material: "Oțel",   service: "Laser + Abkant",  industry: "Industrial" },
+  { id: "9",  src: images.portfolio9,    alt: "Firmă metalică patinată pentru spațiu HoReCa — tablă tăiată laser CNC, finisaj Corten Iași",                          title: "Firmă HoReCa din tablă",        material: "Corten", service: "Laser",           industry: "HoReCa" },
+  { id: "10", src: images.steelSheet,    alt: "Tablă perforată din inox 304 debitată laser CNC — panouri decorative serie la comandă Iași",                          title: "Tablă perforată inox 304",      material: "Inox",   service: "Laser",           industry: "Decorativ" },
+  { id: "11", src: images.portfolio2,    alt: "Panou decorativ floral din tablă tăiată laser CNC — element decorativ metal la comandă Iași",                         title: "Panou decorativ floral",        material: "Oțel",   service: "Laser",           industry: "Decorativ" },
+  { id: "12", src: images.portfolio5,    alt: "Producție serie rondele din oțel tăiate laser CNC — piese industriale la comandă Iași",                               title: "Serie rondele oțel",            material: "Oțel",   service: "Laser",           industry: "Industrial" },
 ];
 
 export default function PortofoliuPage() {

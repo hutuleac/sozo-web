@@ -8,17 +8,17 @@ export type PortfolioItem = {
   src: string;
   alt: string;
   title: string;
-  material: "Oțel" | "Inox" | "Aluminiu";
+  material: "Oțel" | "Inox" | "Aluminiu" | "Corten";
   service: "Laser" | "Abkant" | "Laser + Abkant";
-  industry: "Construcții" | "Automotive" | "Mobilă industrială" | "Echipamente agricole" | "Prototipuri";
+  industry: "Construcții" | "Industrial" | "Decorativ" | "Semnalistică" | "HoReCa" | "Automotive" | "Mobilă industrială" | "Echipamente agricole" | "Prototipuri";
 };
 
 type Filter = "all" | string;
 
 const filters = {
   service: ["Laser", "Abkant", "Laser + Abkant"],
-  material: ["Oțel", "Inox", "Aluminiu"],
-  industry: ["Construcții", "Automotive", "Mobilă industrială", "Echipamente agricole", "Prototipuri"],
+  material: ["Oțel", "Inox", "Aluminiu", "Corten"],
+  industry: ["Industrial", "Decorativ", "Construcții", "Semnalistică", "HoReCa", "Prototipuri"],
 } as const;
 
 export function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
