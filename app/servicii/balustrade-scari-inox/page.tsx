@@ -85,8 +85,8 @@ export default function BalustradeScariPage() {
         title="Balustrade și scări inox la comandă — Iași"
         intro="SOZO PROJECT execută componente pentru balustrade și scări din inox, oțel și Corten la comandă în Iași: panouri infill tăiate laser, profile tablă îndoite CNC, mâini curente plate și trepte din tablă. Orice dimensiune, orice pattern, de la 1 bucată. Ofertă în aceeași zi."
         badges={["Inox · Oțel · Corten", "Orice pattern DXF", "De la 1 buc", "Iași"]}
-        image={images.portfolioPerforated}
-        imageAlt="Panouri perforate din tablă inox tăiate laser CNC — componente pentru balustrade la comandă Iași"
+        image={images.balustradeDecorLaser}
+        imageAlt="Balustradă ornamentală cu panou laser-cut decorativ — componente metalice la comandă Iași"
         crumbs={breadcrumbs}
       />
 

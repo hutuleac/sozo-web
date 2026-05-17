@@ -84,8 +84,8 @@ export default function TablouriElectriceCarcase() {
         title="Tablouri electrice și carcase metalice la comandă — Iași"
         intro="SOZO PROJECT execută carcase pentru tablouri electrice, dulapuri de automatizare și carcase tehnice din tablă CNC în Iași. Dimensiuni exacte, decupaje precise pentru orice aparataj, finisaj la alegere — de la 1 bucată, ofertă în aceeași zi."
         badges={["Dimensiuni custom", "Decupaje precise", "Laser + Abkant", "De la 1 buc"]}
-        image={images.finishedParts}
-        imageAlt="Carcase metalice și dulapuri tehnice executate din tablă CNC — debitare laser și îndoire abkant la comandă Iași"
+        image={images.carcasaPerforata}
+        imageAlt="Carcasă metalică perforată pentru tablou electric — tablă tăiată laser CNC la dimensiuni exacte, comandă Iași"
         crumbs={breadcrumbs}
       />
 

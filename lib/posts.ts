@@ -42,6 +42,7 @@ const posts: Post[] = [
           ["Detalii fine, găuri mici", "Imposibil de bătut", "Limitate (kerf mare)"],
         ],
       },
+      { type: "image", src: images.laserCutSparks, alt: "Debitare laser CNC în acțiune — scântei intense portocalii la tăierea tablei de oțel", caption: "Temperatura la punctul de tăiere depășește 1.500°C — topitura este evacuată instantaneu de jetul de gaz de asistare." },
       { type: "h2", text: "Când alegi laserul?" },
       { type: "ul", items: [
         "Piese cu contururi fine, găuri mici (sub 5 mm diametru), text gravat sau decupat",
@@ -308,6 +309,7 @@ const posts: Post[] = [
           ["430", "8 mm", "0.85×", "Decorativ interior, electrocasnice"],
         ],
       },
+      { type: "image", src: images.inoxRacorduriIndustriale, alt: "Racorduri circulare din inox 304 montate în perete de beton — aplicații industriale inox tăiat laser", caption: "Inox 304 — standard pentru toate aplicațiile industriale care implică umiditate, produse chimice sau contact alimentar." },
       { type: "h2", text: "Aluminiu (1050, 5052, 6061-T6)" },
       { type: "p", text: "Aluminiul taie bine cu laser CO2, dar reflectă mai mult decât oțelul, deci viteza scade față de oțel la aceeași grosime. Densitatea lui (2.7 g/cm³ vs 7.85 pentru oțel) îl face de 3× mai ușor — critic pentru auto, aerospațial, electronică portabilă." },
       { type: "h3", text: "Aluminiu 1050" },
@@ -323,6 +325,7 @@ const posts: Post[] = [
         "Compari cost vs durată de viață: oțelul vopsit costă mai puțin decât inoxul, dar pe 10 ani inoxul rămâne, vopseaua se duce.",
         "Verifici disponibilitatea grosimii: nu toate gradele se găsesc în orice grosime; uneori e mai practic să schimbi gradul decât să aștepți import.",
       ]},
+      { type: "image", src: images.tablaMetalSlotata, alt: "Tablă metalică cu decupaje slot alungite în serie — debitare laser CNC precizie, format stivuit", caption: "Slot-uri alungite repetate la ±0.05mm — imposibil de obținut prin alte metode de tăiere la cost comparabil." },
       { type: "h2", text: "Tabel comparativ complet" },
       {
         type: "table",
@@ -778,6 +781,8 @@ const posts: Post[] = [
         ],
       },
       { type: "callout", text: "Cortenlul pentru interior nu patinează la fel ca în exterior — fără umiditate și precipitații, procesul e mai lent și mai controlabil. Dacă vreți efectul vizual fără patinare activă, există și Corten pre-patinat disponibil la comandă." },
+      { type: "image", src: images.panouriPerforateArh, alt: "Panouri metalice perforate pe fațadă arhitecturală — rânduri orizontale de tablă cu perforații circulare", caption: "Tablă perforată pe fațadă — filtrează lumina, reduce zgomotul și defineșste aspectul vizual al clădirii dintr-o singură decizie de material." },
+      { type: "image", src: images.fatadaMetalTriunghiuri, alt: "Fațadă arhitecturală cu panouri metalice triunghiulare pliate — tablă cu relief geometric, finisaj industrial", caption: "Panouri triunghiulare pliate din tablă — fiecare element e tăiat laser și îndoit la raze precise, repetabilitate perfectă în serie." },
       { type: "h2", text: "Fluxul de lucru cu un arhitect sau designer de interior" },
       { type: "p", text: "Colaborăm frecvent cu arhitecți și designeri de interior pentru proiecte comerciale. Procesul tipic:" },
       { type: "ol", items: [
@@ -809,6 +814,7 @@ const posts: Post[] = [
         "Data inaugurării sau termenul limită de livrare — planificăm în funcție de el",
         "Dacă se dorește montaj — colaborăm cu echipe de montaj la cerere",
       ]},
+      { type: "image", src: images.corpIluminatMetal, alt: "Corp de iluminat cu carcasă metalică montată pe perete — design industrial cu tablă tăiată laser", caption: "Aplică de perete cu carcasă metalică — formă simplă, tablă de 1.5mm, efectul de lumină face toată munca." },
       { type: "internal", href: "/servicii/elemente-decorative-metal", label: "Serviciul complet — elemente decorative din metal", text: "Garduri Corten, panouri perforat, litere și semnalistică — orice pattern, de la 1 bucată." },
     ],
     faqs: [
@@ -856,6 +862,7 @@ const posts: Post[] = [
         ],
       },
       { type: "callout", text: "5052-H32 e aliajul de bază pentru 80% din comenzile de aluminiu. Ductil, taie curat și se îndoaie bine după tăiere. Dacă nu ai o cerință specifică, 5052 e alegerea implicită." },
+      { type: "image", src: images.tablaPerforataPattern, alt: "Tablă metalică perforată cu pattern decorativ — decupaje circulare și formă ornamentală suprapusă, finisaj industrial", caption: "Aluminiu 5052 perforat cu pattern laser — greutate redusă, aspect curat, gata de eloxare sau vopsire pulbere." },
       { type: "h2", text: "Gaz de asistare: N₂ vs aer comprimat" },
       {
         type: "table",

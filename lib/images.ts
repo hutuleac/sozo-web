@@ -61,6 +61,32 @@ export const images = {
 
   // Portfolio — SOZO piece: metal laser-cut sign
   portfolioSemnMetal:    "/images/portofoliu-semn-metal-laser.webp",
+
+  // Stainless steel & lights batch — service page heroes
+  balustradeDecorLaser:   "/images/servicii-balustrade-laser-ornamental.webp",
+  masaInoxHoreca:         "/images/servicii-masa-inox-picioare-otel.webp",
+  fatadaMetalGeometrica:  "/images/servicii-fatada-metalica-geometrica.webp",
+  carcasaPerforata:       "/images/servicii-carcasa-tabla-perforata.webp",
+  laserSparksCNC:         "/images/servicii-laser-cnc-scantei-aproape.webp",
+  atelierMarcareTabla:    "/images/servicii-atelier-marcare-tabla-inox.webp",
+
+  // Blog inline images — laser cutting & materials
+  laserCutSparks:         "/images/blog-laser-taiere-scantei-dramatic.webp",
+  tablaMetalSlotata:      "/images/blog-tabla-metal-slotata.webp",
+
+  // Blog inline images — decorative metal & perforated panels
+  panouPerforatIluminat:  "/images/blog-panou-perforat-iluminat.webp",
+  corpIluminatMetal:      "/images/blog-corp-iluminat-carcasa-metal.webp",
+  panouriPerforateArh:    "/images/blog-panouri-perforate-arhitectura.webp",
+  tablaPerforataPattern:  "/images/blog-tabla-perforata-pattern-decorativ.webp",
+  fatadaMetalTriunghiuri: "/images/blog-fatada-metal-triunghiuri.webp",
+
+  // Blog inline images — stainless steel & inox applications
+  inoxRacorduriIndustriale: "/images/blog-inox-racorduri-industriale.webp",
+  scaraMetalicaInox:        "/images/blog-scara-metalica-trepte-inox.webp",
+
+  // Portfolio — metal directional signage
+  portfolioSemnDirectional: "/images/portofoliu-semnalistica-directional-metal.webp",
 };
 
 export type ImageKey = keyof typeof images;

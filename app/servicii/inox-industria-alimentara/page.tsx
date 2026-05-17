@@ -98,8 +98,8 @@ export default function InoxIndustriaAlimentaraPage() {
         title="Inox pentru industria alimentară și HoReCa — Iași"
         intro="SOZO PROJECT taie și îndoaie tablă inox 304 și 316 la comandă în Iași pentru bucătării profesionale, procesare alimente și HoReCa. Mese de lucru, rafturi, carcase echipamente, tăvi și panouri — la dimensiunile exacte din desen, de la 1 bucată. Ofertă în aceeași zi."
         badges={["Inox 304 & 316", "De la 1 buc", "±0.05mm", "Iași"]}
-        image={images.steelSheet}
-        imageAlt="Tablă inox 304 tăiată laser CNC — piese pentru industria alimentară și HoReCa la comandă Iași"
+        image={images.masaInoxHoreca}
+        imageAlt="Masă cu picioare din oțel inox — componente metalice la comandă pentru HoReCa și industria alimentară"
         crumbs={breadcrumbs}
       />
 
