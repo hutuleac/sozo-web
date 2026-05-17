@@ -52,6 +52,8 @@ export function LocalBusinessSchema() {
       "Tablă inox HoReCa bucătărie profesională",
       "Balustrade inox la comandă",
       "Panouri tablă balustrade scări",
+      "Piese schimb utilaje agricole tablă CNC",
+      "Componente combine tractoare semănători",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -118,6 +120,15 @@ export function LocalBusinessSchema() {
             name: "Balustrade și Scări Inox la Comandă",
             description: "Componente pentru balustrade și scări din inox, oțel și Corten: panouri infill tăiate laser, profile îndoite CNC, mâini curente plate, trepte din tablă.",
             url: `${site.url}/servicii/balustrade-scari-inox`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Piese Utilaje Agricole la Comandă",
+            description: "Piese de schimb din tablă CNC pentru utilaje agricole în Iași și Moldova. Combine, tractoare, semănători. Inginerie inversă inclusă, urgențe prioritizate, de la 1 bucată.",
+            url: `${site.url}/servicii/piese-utilaje-agricole`,
           },
         },
       ],
