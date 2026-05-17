@@ -50,6 +50,8 @@ export function LocalBusinessSchema() {
       "Piese industriale la comandă",
       "Inox 304 316 industria alimentară",
       "Tablă inox HoReCa bucătărie profesională",
+      "Balustrade inox la comandă",
+      "Panouri tablă balustrade scări",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -107,6 +109,15 @@ export function LocalBusinessSchema() {
             name: "Inox pentru Industria Alimentară și HoReCa",
             description: "Tablă inox 304 și 316 tăiată laser CNC la comandă. Mese de lucru, rafturi, carcase echipamente, tăvi pentru bucătării profesionale și procesare alimente.",
             url: `${site.url}/servicii/inox-industria-alimentara`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Balustrade și Scări Inox la Comandă",
+            description: "Componente pentru balustrade și scări din inox, oțel și Corten: panouri infill tăiate laser, profile îndoite CNC, mâini curente plate, trepte din tablă.",
+            url: `${site.url}/servicii/balustrade-scari-inox`,
           },
         },
       ],
