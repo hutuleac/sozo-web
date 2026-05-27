@@ -65,7 +65,7 @@ export function Testimonials() {
             >
               <Stars />
               <blockquote className="text-text-primary leading-relaxed mb-5 flex-1">
-                „{t.quote}"
+                „{t.quote}&rdquo;
               </blockquote>
               <figcaption className="border-t border-border-subtle pt-4">
                 <div className="text-text-primary font-medium text-sm">{t.author}</div>

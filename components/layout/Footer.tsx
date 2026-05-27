@@ -47,6 +47,10 @@ export function Footer() {
               <li><Link href="/servicii/confectii-metalice" className="text-text-secondary hover:text-accent transition-colors">Confecții Metalice</Link></li>
               <li><Link href="/servicii/piese-industriale-la-comanda" className="text-text-secondary hover:text-accent transition-colors">Piese Industriale</Link></li>
               <li><Link href="/servicii/elemente-decorative-metal" className="text-text-secondary hover:text-accent transition-colors">Elemente Decorative</Link></li>
+              <li><Link href="/servicii/inox-industria-alimentara" className="text-text-secondary hover:text-accent transition-colors">Inox Alimentar & HoReCa</Link></li>
+              <li><Link href="/servicii/balustrade-scari-inox" className="text-text-secondary hover:text-accent transition-colors">Balustrade & Scări Inox</Link></li>
+              <li><Link href="/servicii/piese-utilaje-agricole" className="text-text-secondary hover:text-accent transition-colors">Piese Utilaje Agricole</Link></li>
+              <li><Link href="/servicii/tablouri-electrice-carcase" className="text-text-secondary hover:text-accent transition-colors">Tablouri & Carcase Metalice</Link></li>
               <li><Link href="/cere-oferta" className="text-text-secondary hover:text-accent transition-colors">Cere ofertă</Link></li>
             </ul>
           </div>

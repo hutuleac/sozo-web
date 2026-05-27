@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Check, FileCode, Zap, Target, Layers, Repeat } from "lucide-react";
 import { ServiceHero } from "@/components/sections/ServiceHero";
 import { CtaSection } from "@/components/sections/CtaSection";

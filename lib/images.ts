@@ -90,6 +90,10 @@ export const images = {
 
   // Portfolio — metal directional signage
   portfolioSemnDirectional: "/images/portofoliu-semnalistica-directional-metal.webp",
-};
 
-export type ImageKey = keyof typeof images;
+  // Portfolio — circular cutout template
+  portfolioSablon: "/images/portofoliu-sablon-decupaj-circular.webp",
+
+  // Brand
+  sozoLogo: "/images/sozo_logo.webp",
+};
