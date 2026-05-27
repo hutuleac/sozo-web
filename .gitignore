@@ -19,6 +19,9 @@ Thumbs.db
 .vscode/
 .idea/
 
+# TypeScript build cache
+tsconfig.tsbuildinfo
+
 # Internal planning docs
 _plans/
 New Pictures/
