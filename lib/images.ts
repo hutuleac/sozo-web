@@ -35,7 +35,6 @@ export const images = {
   portfolioConstruct:  "/images/portofoliu-constructie-metalica-sudura.webp",
 
   // Equipment
-  equipmentLaserMachine: "/images/echipament-masina-taiere-laser-cnc.webp",
   equipmentPressBrake:   "/images/echipament-presa-abkant-scule-cnc.webp",
   equipmentLaserAlt:     "/images/echipament-masina-laser-laterala.webp",
 
@@ -119,8 +118,7 @@ export const images = {
   // Atelier / despre noi
   atelierMasurareMetal: "/images/atelier-prelucrare-metal-masurare.webp",
 
-  // Inox HoReCa — masă cu picioare din inox
-  masaInoxPicioareOtel: "/images/servicii-masa-inox-picioare-otel.webp",
+
 
   // Brand
   sozoLogo: "/images/sozo_logo.webp",
