@@ -16,7 +16,7 @@ const URL_PATH = "/servicii/debitare-laser";
 export const metadata: Metadata = {
   title: "Debitare Laser CNC Iași — Mitsubishi ML3015EX",
   description:
-    "Servicii debitare laser CNC în Iași. Mitsubishi ML3015EX, tablă oțel până la 20mm, inox/aluminiu până la 10mm, toleranță ±0.05mm. Ofertă în aceeași zi. ☎ +40 732 034 386",
+    "Atelier de prelucrare cu laser CNC în Iași. Mitsubishi ML3015EX, tablă oțel până la 20mm, inox/aluminiu până la 10mm, toleranță ±0.05mm. Ofertă în aceeași zi. ☎ +40 732 034 386",
   alternates: {
     canonical: URL_PATH,
     languages: { "ro": URL_PATH, "en": "/en/services/laser-cutting", "x-default": URL_PATH },
@@ -103,7 +103,7 @@ export default function DebitareLaserPage() {
       <ServiceHero
         eyebrow="Serviciu · Debitare Laser CNC"
         title="Debitare Laser CNC în Iași"
-        intro="SOZO PROJECT oferă servicii de debitare laser CO2 CNC în Iași cu echipament Mitsubishi ML3015EX, laser CO2 de 4.5kW. Tăiem oțel carbon până la 20mm, inox 304/316 și aluminiu până la 10mm, cu precizie pozițională de ±0.05mm/500mm. Trimiți fișierul DXF, DWG sau STEP și primești ofertă în aceeași zi."
+        intro="Atelier de prelucrare cu laser CNC în Iași — SOZO PROJECT operează un Mitsubishi ML3015EX, CO2 4.5kW. Tăiem oțel carbon până la 20mm, inox 304/316 și aluminiu până la 10mm, cu precizie pozițională de ±0.05mm/500mm. Trimiți fișierul DXF, DWG sau STEP și primești ofertă în aceeași zi."
         badges={["Mitsubishi ML3015EX", "CO2 4.5kW", "±0.05mm", "3050 × 1525mm"]}
         image={images.mitsubishiLaser}
         imageAlt="Laser CNC Mitsubishi ML3015EX în acțiune — debitare tablă cu scântei, atelier SOZO PROJECT Iași"

@@ -7,12 +7,12 @@ const posts: Post[] = [
   // ─────────────────────────────────────────────────────────────
   {
     slug: "debitare-laser-vs-plasma",
-    title: "Debitare laser vs plasma: care este diferența și când alegi fiecare?",
+    title: "Debitare laser vs plasma CNC metal: diferențe, toleranțe și când alegi fiecare",
     description:
-      "Comparație directă debitare laser CNC vs plasma CNC: toleranțe, finisaj, materiale, costuri. Ghid tehnic pentru cumpărători B2B.",
-    metaTitle: "Debitare laser vs plasma: ghid comparație 2026 | SOZO PROJECT",
+      "Comparație directă laser CNC vs plasma CNC metal: toleranțe, finisaj, materiale, costuri. Ghid tehnic pentru cumpărători B2B.",
+    metaTitle: "Laser vs plasma CNC metal: ghid comparație 2026 | SOZO PROJECT",
     metaDescription:
-      "Comparație completă debitare laser CNC vs plasma CNC: toleranțe, materiale, costuri, aplicații. Ghid tehnic pentru cumpărători B2B din industrie.",
+      "Laser CNC vs plasma CNC metal — comparație completă pe toleranțe, materiale, costuri și aplicații. Ghid tehnic pentru cumpărători B2B din industrie.",
     datePublished: "2026-05-09",
     dateModified: "2026-05-16",
     readMin: 6,
@@ -20,7 +20,7 @@ const posts: Post[] = [
     heroAlt: "Laser CNC Mitsubishi ML3015EX în acțiune — scântei la debitarea tablei, atelier SOZO PROJECT Iași",
     category: "Tehnic",
     body: [
-      { type: "p", text: "Pentru orice piesă tăiată din tablă există două tehnologii principale care concurează direct: debitarea laser CNC și debitarea plasma CNC. Alegerea greșită nu e o catastrofă, dar costă — fie în precizie, fie în bani, fie în timp. Acest ghid îți spune când alegi fiecare metodă, pe baza specificațiilor reale ale piesei tale, nu a vorbei vânzătorului." },
+      { type: "p", text: "Dacă cauți servicii de tăiere metal și ai primit oferte atât pentru laser CNC cât și pentru plasma CNC metal, ești în locul potrivit. Debitarea laser CNC și plasma CNC metal sunt cele două tehnologii principale pentru tăiere tablă — și alegerea greșită costă: fie în precizie, fie în bani, fie în timp. Acest ghid îți spune când alegi fiecare metodă, pe baza specificațiilor reale ale piesei tale, nu a vorbei vânzătorului." },
       { type: "h2", text: "Ce este debitarea laser CNC?" },
       { type: "p", text: "Debitarea laser folosește un fascicul de lumină concentrată — la laserul CO2, generat printr-un amestec de gaze excitat electric, cu o putere de 4–6 kW — pentru a topi și vaporiza local materialul, urmat de un jet de gaz (azot sau oxigen) care evacuează topitura. Rezultatul: o tăietură cu lățime sub 0.3 mm, marginile curate, fără bavuri pe majoritatea grosimilor uzuale, și toleranțe poziționale tipic de ±0.05–0.1 mm." },
       { type: "p", text: "Mașinile moderne, cum e Mitsubishi ML3015EX cu care lucrăm noi, au repetabilitate ±0.02 mm — adică piesa numărul 100 din serie iese identică cu prima. Asta contează când livrezi în industria automotive sau medicală, unde două piese diferite înseamnă două lucrări de control respinse." },
@@ -983,6 +983,76 @@ const posts: Post[] = [
       { q: "Cortenul lasă urme portocalii pe betonul sau pardoseala din jur?", a: "Da, în primele 3–12 luni patinarea activă produce scurgeri portocalii când plouă. Recomandăm un rost de 5–10 mm față de suprafețele adiacente sau protejarea lor cu folie temporară. După stabilizarea patinei, scurgerile se reduc drastic." },
       { q: "Pot să vopsesc sau să tratez Cortenul pentru a-i stabiliza culoarea mai repede?", a: "Există soluții chimice de accelerare a patinării (soluție de acid tanic sau sare) care comprimă procesul la câteva săptămâni. Nu sunt necesare — patinarea naturală e mai uniformă și mai durabilă. Nu vopsiți Cortenul — înfrângeți scopul materialului." },
       { q: "Care e prețul gardului Corten față de unul galvanizat sau vopsit?", a: "Tablă Corten e similară ca preț cu OL37 standard și cu ~20–40% mai scumpă decât tablă galvanizată la prețul de material. Pe ciclu de viață (30–50 ani fără întreținere vs. revopsire la 10 ani), Cortenul iese semnificativ mai economic." },
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // Laser construcții
+  // ─────────────────────────────────────────────────────────────
+  {
+    slug: "debitare-laser-pentru-constructii",
+    title: "Debitare laser pentru construcții: profile, elemente de fațadă și piese structurale",
+    description:
+      "Cum se folosește debitarea laser CNC în construcții: profile metalice, panouri de fațadă, console, suporți, balustrade. Ghid pentru constructori și proiectanți.",
+    metaTitle: "Debitare laser pentru construcții — piese metalice la comandă | SOZO PROJECT",
+    metaDescription:
+      "Debitare laser CNC pentru construcții: profile structurale, elemente de fațadă, console, suporți, balustrade metalice. Precizie ±0.05mm, ofertă în aceeași zi. Iași.",
+    datePublished: "2026-05-27",
+    dateModified: "2026-05-27",
+    readMin: 6,
+    hero: images.portfolioConstruct,
+    heroAlt: "Structură metalică construcție — elemente tăiate laser CNC, suporți și profile oțel",
+    category: "Aplicații",
+    body: [
+      { type: "p", text: "Industria construcțiilor e unul dintre cei mai mari consumatori de tăiere laser CNC — chiar dacă mulți constructori și proiectanți nu se gândesc la laser ca la prima opțiune. Dacă proiectul tău implică piese metalice repetitive, elemente de fațadă, profile structurale sau piese de asamblare, debitarea laser îți dă precizie, viteză și costuri mai mici decât orice alternativă pentru serii sub câteva mii de bucăți." },
+      { type: "h2", text: "Aplicații laser în construcții — ce se taie frecvent" },
+      { type: "p", text: "La SOZO PROJECT lucrăm cu firme de construcții, proiectanți și antreprenori care comandă piese metalice tăiate laser pentru o gamă largă de aplicații:" },
+      { type: "ul", items: [
+        "Gusee și console structurale — piese de ranforsare pentru îmbinări grindă-stâlp, tăiate din oțel OL52 cu găuri precise pentru șuruburi M12–M24.",
+        "Bride și plăcuțe de ancorare — elemente de fixare pentru structuri metalice ușoare (hale, pergole, carport-uri), tăiate din tablă 5–12mm.",
+        "Panouri de fațadă metalică — tablă perforată sau cu decupaje geometrice pentru ventilație, umbrire sau efect arhitectural.",
+        "Grile și jaluzele metalice — lamele tăiate laser cu unghi și pas precis, asamblate ulterior în rame.",
+        "Balustrade și parapeți — profile plate și elemente ornamentale tăiate din inox 304 sau oțel carbon pentru balustrăzi exterioare/interioare.",
+        "Piese de asamblare repetitive — colțare, bride, plăcuțe de nivelment în serii mici (10–500 buc.), imposibil de justificat cu matriță.",
+      ]},
+      { type: "h2", text: "De ce laser și nu plasma CNC pentru piese de construcții" },
+      { type: "p", text: "Plasma CNC metal e mai ieftină per oră, dar dezavantajele contează în construcții: kerf de 1.5–4mm (față de 0.2–0.3mm la laser), margini cu slag care necesită rectificare manuală și toleranțe de ±0.5–1mm — problematice pentru găuri de șuruburi și îmbinări ajustate." },
+      { type: "p", text: "Laserul CNC produce găuri la diametrul exact, margini curate fără rectificare și toleranțe de ±0.05mm — piesa intră la montaj fără ajustări. Pe serii mici și medii (sub 1.000 buc.), costul total e comparabil sau mai mic decât plasma, odată ce incluzi timpul de finisare." },
+      { type: "table",
+        head: ["Criteriu", "Laser CNC", "Plasma CNC metal"],
+        rows: [
+          ["Toleranță", "±0.05mm", "±0.5–1mm"],
+          ["Margini după tăiere", "Curate, fără rectificare", "Slag — necesită rectificare"],
+          ["Găuri sub Ø15mm", "Precise, utilizabile direct", "Deformate, necesită alezare"],
+          ["Grosime max. (oțel)", "20mm", "40mm+"],
+          ["Potrivit pentru serii", "1–5.000 buc.", "1.000+ buc. tablă groasă"],
+        ],
+      },
+      { type: "h2", text: "Materiale disponibile pentru construcții" },
+      { type: "p", text: "Tăiem materialele uzuale în construcții:" },
+      { type: "ul", items: [
+        "Oțel carbon OL37 / OL52 — până la 20mm grosime. Cel mai frecvent pentru structuri, console și gusee.",
+        "Inox 304 / 316 — până la 10mm. Utilizat pentru balustrade, parapeți și elemente expuse la coroziune.",
+        "Aluminiu — până la 10mm. Panouri de fațadă ușoare, elemente decorative arhitecturale.",
+        "Oțel Corten — același parametri ca OL, aspect ruginos natural fără vopsire.",
+      ]},
+      { type: "h2", text: "Ce ai nevoie pentru a comanda" },
+      { type: "p", text: "Procesul e simplu — constructorii și proiectanții trimit de obicei:" },
+      { type: "ol", items: [
+        "Fișier DXF sau DWG cu geometria piesei, la scară 1:1, în milimetri.",
+        "Material și grosime (ex. OL52, 8mm).",
+        "Cantitate și termen dorit.",
+        "Opțional: fișier STEP sau PDF cu cotele critice pentru verificare.",
+      ]},
+      { type: "p", text: "Dacă nu ai fișier DXF, trimite un desen tehnic sau o schiță cu cote — re-desenăm piesa fără cost suplimentar pentru comenzi de peste 10 bucăți. Oferta ajunge în 2–4 ore de la trimitere, producția în 1–3 zile lucrătoare." },
+      { type: "internal", href: "/cere-oferta", label: "Cere ofertă pentru piese de construcții", text: "Trimite fișierul DXF sau schița cu cote — ofertă în aceeași zi pentru piese metalice tăiate laser." },
+    ],
+    faqs: [
+      { q: "Puteți tăia tablă groasă de 15–20mm pentru gusee structurale?", a: "Da. Mitsubishi ML3015EX taie oțel carbon până la 20mm. Pentru gusee și plăcuțe de ancorare din OL52, 15–20mm e în parametrii normali de lucru. Marginile ies curate, găurile la diametrul exact — montaj direct fără rectificare." },
+      { q: "Faceți și găuri de șuruburi în piese structurale?", a: "Da — orice găuri incluse în fișierul DXF sunt tăiate simultan cu conturul. Specificați diametrul exact și toleranța necesară (clearance pentru șuruburi libere sau ajustaj strâns pentru bolțuri presate). Pentru găuri sub Ø6mm în tablă groasă, consultați-ne înainte de finalizarea desenului." },
+      { q: "Care e dimensiunea maximă a unei piese?", a: "Tabla maximă procesabilă: 3050 × 1525mm. Piesele individuale pot fi orice dimensiune sub aceasta. Pentru elemente lungi (profile de 3m), contactați-ne — uneori facem excepții sau tăiem în mai multe segmente cu îmbinare precisă." },
+      { q: "Livrați în șantier sau trebuie să ridic eu piesele?", a: "Ambele variante. Ridicare directă din atelierul nostru de pe Strada Aurel Vlaicu 77, Iași, sau livrare prin curier rapid în toată România — piesele sunt ambalate individual pentru protecție la transport." },
+      { q: "Pot comanda fără fișier DXF, pe baza unui desen tehnic?", a: "Da, pentru comenzi de peste 10 bucăți redesenăm gratuit pe baza unui desen tehnic cu cote clare sau a unui PDF. Trimiteți documentul și descrierea materialului — vă confirmăm fezabilitatea în câteva ore." },
     ],
   },
 ];
