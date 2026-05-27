@@ -94,6 +94,34 @@ export const images = {
   // Portfolio — circular cutout template
   portfolioSablon: "/images/portofoliu-sablon-decupaj-circular.webp",
 
+  // Portfolio — SOZO own work: laser-cut motivational sign
+  portfolioSemnMotivational: "/images/portofoliu-semn-metal-laser-motivational.webp",
+
+  // Equipment — Mitsubishi ML3015EX front angle
+  mitsubishiLaserFrontal: "/images/echipament-mitsubishi-laser-cnc-unghi.webp",
+
+  // Blog — Corten additional
+  cortenFatadaArcPerforat:  "/images/blog-corten-fatada-arc-perforat.webp",
+  cortenCladireNordica:     "/images/blog-corten-cladire-nordica-apus.webp",
+
+  // Blog — decorative panels
+  panouDecorativGeometric:  "/images/servicii-panou-decorativ-geometric-laser.webp",
+  panouDecorativArabesc:    "/images/blog-panou-decorativ-arabesc-crem.webp",
+
+  // Blog — laser pentru construcții
+  constructiiFatadaTriunghiuri: "/images/blog-constructii-fatada-triunghiuri-metal.webp",
+  constructiiGrilajSoare:       "/images/blog-constructii-grilaj-lamele-soare.webp",
+  constructiiFatadaBW:          "/images/blog-constructii-fatada-triunghiuri-bw.webp",
+
+  // Blog — plasma CNC
+  plasmaCNCScantei: "/images/blog-plasma-cnc-cap-taiere-scantei.webp",
+
+  // Atelier / despre noi
+  atelierMasurareMetal: "/images/atelier-prelucrare-metal-masurare.webp",
+
+  // Inox HoReCa — masă cu picioare din inox
+  masaInoxPicioareOtel: "/images/servicii-masa-inox-picioare-otel.webp",
+
   // Brand
   sozoLogo: "/images/sozo_logo.webp",
 };

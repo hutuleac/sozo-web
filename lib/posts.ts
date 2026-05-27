@@ -27,6 +27,7 @@ const posts: Post[] = [
       { type: "h2", text: "Ce este debitarea plasma?" },
       { type: "p", text: "Plasma folosește un arc electric ionizat printr-un jet de gaz pentru a tăia metalul — temperatura plasma-ului ajunge la ~30.000 °C și topește practic orice material conductiv, inclusiv tablă groasă. Mașinile moderne cu plasma de înaltă definiție (HD plasma) ajung la toleranțe de ±0.5–1 mm și o zonă afectată termic mai mică decât plasma clasică, dar tot mai mare decât laser." },
       { type: "p", text: "Avantajul plasma: cost mai mic per oră de funcționare, capacitate ușoară de a tăia tablă foarte groasă (peste 25 mm), și mașini mai ieftine ca investiție. Dezavantajul: tăieturile sunt mai late (kerf 1.5–4 mm), suprafețele au reziduuri (slag) care necesită rectificare, și piesele mici cu contururi fine devin imprecise." },
+      { type: "image", src: images.plasmaCNCScantei, alt: "Mașină plasma CNC în acțiune — cap de tăiere cu scântei intense la tăierea tablei metalice", caption: "Plasma CNC: scântei vizibile, kerf larg, slag pe margini — comparativ cu tăietura netedă a laserului." },
       { type: "h2", text: "Comparație directă pe puncte critice" },
       {
         type: "table",
@@ -1015,6 +1016,7 @@ const posts: Post[] = [
         "Balustrade și parapeți — profile plate și elemente ornamentale tăiate din inox 304 sau oțel carbon pentru balustrăzi exterioare/interioare.",
         "Piese de asamblare repetitive — colțare, bride, plăcuțe de nivelment în serii mici (10–500 buc.), imposibil de justificat cu matriță.",
       ]},
+      { type: "image", src: images.constructiiGrilajSoare, alt: "Grilaj metalic cu lamele tăiate laser — soare filtrat prin structura de oțel", caption: "Jaluzele și grile metalice tăiate laser: unghi și pas precis, fără rectificare după tăiere." },
       { type: "h2", text: "De ce laser și nu plasma CNC pentru piese de construcții" },
       { type: "p", text: "Plasma CNC metal e mai ieftină per oră, dar dezavantajele contează în construcții: kerf de 1.5–4mm (față de 0.2–0.3mm la laser), margini cu slag care necesită rectificare manuală și toleranțe de ±0.5–1mm — problematice pentru găuri de șuruburi și îmbinări ajustate." },
       { type: "p", text: "Laserul CNC produce găuri la diametrul exact, margini curate fără rectificare și toleranțe de ±0.05mm — piesa intră la montaj fără ajustări. Pe serii mici și medii (sub 1.000 buc.), costul total e comparabil sau mai mic decât plasma, odată ce incluzi timpul de finisare." },
@@ -1028,6 +1030,7 @@ const posts: Post[] = [
           ["Potrivit pentru serii", "1–5.000 buc.", "1.000+ buc. tablă groasă"],
         ],
       },
+      { type: "image", src: images.constructiiFatadaTriunghiuri, alt: "Fațadă metalică cu panouri triunghiulare — construcție modernă cu tablă tăiată laser CNC", caption: "Fațadă metalică arhitecturală: panouri din tablă tăiată laser, asamblate în structuri 3D complexe." },
       { type: "h2", text: "Materiale disponibile pentru construcții" },
       { type: "p", text: "Tăiem materialele uzuale în construcții:" },
       { type: "ul", items: [
