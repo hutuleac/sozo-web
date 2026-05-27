@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { spaceGrotesk, dmMono } from "@/lib/fonts";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -66,6 +67,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <WhatsAppFAB />
         <LocalBusinessSchema />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BKEJ2WRQ3Q"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-config" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BKEJ2WRQ3Q');`}
+        </Script>
       </body>
     </html>
   );
