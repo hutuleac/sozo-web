@@ -41,11 +41,6 @@ export default function BlogPage() {
           <h1 className="text-h1 text-text-primary mb-4 max-w-3xl">
             Resurse tehnice pentru ingineri și producători
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl">
-            Comparații între tehnologii, ghiduri de toleranțe, recomandări de materiale și
-            instrucțiuni practice de pregătire fișiere — scrise pentru cei care iau decizii
-            tehnice, nu pentru SEO.
-          </p>
         </div>
       </section>
 

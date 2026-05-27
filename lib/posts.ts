@@ -911,7 +911,7 @@ const posts: Post[] = [
     metaTitle: "Oțel Corten: ce este, proprietăți și aplicații exterioare | SOZO PROJECT Iași",
     metaDescription:
       "Tot ce trebuie să știi despre oțelul Corten: ce aliaje sunt, cum funcționează patinarea, gard Corten vs vopsit, paturi înălțate din Corten (siguranță Fe), grosimi și prețuri orientative. Execuție Iași.",
-    datePublished: "2026-05-17",
+    datePublished: "2026-05-28",
     readMin: 8,
     hero: images.cortenFatada,
     heroAlt: "Fațadă din oțel Corten perforat — panouri metalice patinate cu decupaje circulare, arhitectură contemporană",
